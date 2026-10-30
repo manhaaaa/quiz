@@ -1,0 +1,2942 @@
+[
+  {
+    "id": "q001",
+    "topicId": 1,
+    "topicName": "Introduction & Overview",
+    "question": "Trong khoa học máy tính, khái niệm Cấu trúc dữ liệu (Data Structure) được định nghĩa chuẩn xác nhất là gì?",
+    "options": [
+      "Cách tổ chức, quản lý và lưu trữ dữ liệu trong bộ nhớ máy tính cho phép truy cập và sửa đổi hiệu quả",
+      "Một chương trình phần mềm hoàn chỉnh dùng để quản lý hệ điều hành và phần cứng máy tính",
+      "Tập hợp các câu lệnh ngôn ngữ máy được nạp trực tiếp vào thanh ghi của vi xử lý CPU",
+      "Một thiết bị phần cứng chuyên dụng dùng để lưu trữ dữ liệu lâu dài trên đĩa từ"
+    ],
+    "answer": "Cách tổ chức, quản lý và lưu trữ dữ liệu trong bộ nhớ máy tính cho phép truy cập và sửa đổi hiệu quả",
+    "explanation": "Theo bài giảng Lecture 1, Cấu trúc dữ liệu (Data Structure) là cách tổ chức, quản lý và lưu trữ dữ liệu trong bộ nhớ máy tính nhằm giúp cho việc truy cập, tìm kiếm và thao tác cập nhật dữ liệu được thực hiện một cách tối ưu và hiệu quả nhất."
+  },
+  {
+    "id": "q002",
+    "topicId": 1,
+    "topicName": "Introduction & Overview",
+    "question": "Ba tiêu chuẩn kỹ thuật cốt lõi dùng để đánh giá chất lượng của một Cấu trúc dữ liệu bao gồm những yếu tố nào?",
+    "options": [
+      "Tính đúng đắn (Correctness), Độ phức tạp thời gian (Time complexity), và Độ phức tạp không gian (Space complexity)",
+      "Dung lượng dòng lệnh, số lượng hàm thành viên, và kích thước file mã nguồn",
+      "Độ phân giải màn hình, tốc độ mạng Internet, và số lượng luồng đa nhiệm",
+      "Tính bảo mật mã hóa, số lượng biến toàn cục, và khả năng tương thích phần cứng"
+    ],
+    "answer": "Tính đúng đắn (Correctness), Độ phức tạp thời gian (Time complexity), và Độ phức tạp không gian (Space complexity)",
+    "explanation": "Theo Slide 8 Lecture 1, 3 đặc điểm cốt lõi đánh giá một CTDL là: Tính đúng đắn (thực thi chính xác các phép toán hỗ trợ), Chi phí thời gian (thực hiện công việc trong thời gian nhỏ nhất có thể), và Chi phí không gian bộ nhớ (sử dụng lượng RAM nhỏ nhất có thể)."
+  },
+  {
+    "id": "q003",
+    "topicId": 1,
+    "topicName": "Introduction & Overview",
+    "question": "Khi giải quyết bài toán trên máy tính, dữ liệu xử lý thường được phân loại thành ba nhóm nào sau đây?",
+    "options": [
+      "Dữ liệu đầu vào (Input), dữ liệu trung gian, và dữ liệu đầu ra (Output)",
+      "Dữ liệu phần cứng, dữ liệu phần mềm, và dữ liệu mạng viễn thông",
+      "Dữ liệu hệ điều hành, dữ liệu trình biên dịch, và dữ liệu thư viện liên kết",
+      "Dữ liệu nhị phân, dữ liệu thập lục phân, và dữ liệu bát phân"
+    ],
+    "answer": "Dữ liệu đầu vào (Input), dữ liệu trung gian, và dữ liệu đầu ra (Output)",
+    "explanation": "Theo bài giảng Lecture 1, trong quá trình xử lý bài toán, thông tin dữ liệu được chia thành: dữ liệu vào (Input - các thông tin đã biết ban đầu), dữ liệu trung gian (sinh ra trong quá trình tính toán), và dữ liệu ra (Output - kết quả cần đạt được)."
+  },
+  {
+    "id": "q004",
+    "topicId": 1,
+    "topicName": "Introduction & Overview",
+    "question": "Kiểu dữ liệu nào sau đây thuộc nhóm kiểu dữ liệu có cấu trúc (Structured Data Types)?",
+    "options": [
+      "Mảng (Array), Bản ghi (Struct / Record), và Chuỗi ký tự (String)",
+      "Số nguyên (int), Số thực (float), và Ký tự đơn (char)",
+      "Kiểu logic (bool), Con trỏ void (void*), và Số thực độ chính xác kép (double)",
+      "Số nguyên không dấu (unsigned int) và Số nguyên dài (long long)"
+    ],
+    "answer": "Mảng (Array), Bản ghi (Struct / Record), và Chuỗi ký tự (String)",
+    "explanation": "Các kiểu dữ liệu cơ sở (đơn giản, nguyên tử) là int, float, char, bool. Kiểu dữ liệu có cấu trúc là kiểu được tạo thành từ nhiều phần tử dữ liệu thành phần, ví dụ Mảng (Array), Cấu trúc (Struct), Lớp (Class), Chuỗi (String)."
+  },
+  {
+    "id": "q005",
+    "topicId": 1,
+    "topicName": "Introduction & Overview",
+    "question": "Khái niệm Giải thuật (Algorithm) được định nghĩa chuẩn xác nhất là gì?",
+    "options": [
+      "Tập hữu hạn có thứ tự các bước tác động lên dữ liệu để sau một số hữu hạn bước sẽ thu được kết quả mong muốn",
+      "Một đoạn mã nguồn C++ bắt buộc phải biên dịch thành công mà không có cảnh báo",
+      "Một tập hợp vô hạn các phép tính toán số học chạy liên tục trên bộ xử lý trung tâm",
+      "Quy trình cài đặt một hệ quản trị cơ sở dữ liệu quan hệ trên máy chủ"
+    ],
+    "answer": "Tập hữu hạn có thứ tự các bước tác động lên dữ liệu để sau một số hữu hạn bước sẽ thu được kết quả mong muốn",
+    "explanation": "Theo Slide 14 Lecture 1, Giải thuật là tập hữu hạn có thứ tự các bước tính toán, chỉ thị rõ ràng nhằm tác động lên dữ liệu đầu vào để sau một số hữu hạn lần thực hiện sẽ cho ra kết quả mong muốn, mang tính độc lập với ngôn ngữ lập trình."
+  },
+  {
+    "id": "q006",
+    "topicId": 1,
+    "topicName": "Introduction & Overview",
+    "question": "Đặc trưng \"Tính hữu hạn\" (Finiteness) của một giải thuật đòi hỏi điều kiện gì?",
+    "options": [
+      "Giải thuật bắt buộc phải dừng lại sau một số hữu hạn bước thực thi với mọi bộ dữ liệu đầu vào hợp lệ",
+      "Kích thước file mã nguồn thuật toán không được vượt quá giới hạn 1 Megabyte",
+      "Số lượng biến khai báo trong chương trình không được vượt quá 100 biến",
+      "Thời gian chạy của chương trình trên máy tính không được vượt quá 1 giây thực tế"
+    ],
+    "answer": "Giải thuật bắt buộc phải dừng lại sau một số hữu hạn bước thực thi với mọi bộ dữ liệu đầu vào hợp lệ",
+    "explanation": "Tính hữu hạn (Finiteness) là một trong 5 đặc trưng nền tảng của thuật toán: với mọi đầu vào hợp lệ, thuật toán không được rơi vào vòng lặp vô tận mà bắt buộc phải kết thúc và dừng lại sau một số bước tính toán hữu hạn."
+  },
+  {
+    "id": "q007",
+    "topicId": 1,
+    "topicName": "Introduction & Overview",
+    "question": "Đặc trưng \"Tính xác định / Tính đơn trị\" (Definiteness / Uniqueness) của một giải thuật có nghĩa là gì?",
+    "options": [
+      "Mỗi bước thực hiện phải được mô tả rõ ràng, không gây mập mờ, kết quả trung gian chỉ phụ thuộc vào đầu vào và các bước trước đó",
+      "Thuật toán chỉ được phép có duy nhất một câu lệnh gán biến trong toàn bộ chương trình",
+      "Mọi biến trong thuật toán chỉ được nhận một giá trị số nguyên duy nhất trong suốt vòng đời",
+      "Thuật toán chỉ được phép chạy trên một nhân vi xử lý đơn độc"
+    ],
+    "answer": "Mỗi bước thực hiện phải được mô tả rõ ràng, không gây mập mờ, kết quả trung gian chỉ phụ thuộc vào đầu vào và các bước trước đó",
+    "explanation": "Theo Slide 15 Lecture 1, Tính xác định / Tính đơn trị (Definiteness / Uniqueness) đòi hỏi mỗi bước chỉ dẫn phải thật sáng sủa, chính xác, không đa nghĩa; tại mỗi bước, hành động tiếp theo và kết quả sinh ra được xác định duy nhất từ dữ liệu đầu vào và các bước đã xử lý trước đó."
+  },
+  {
+    "id": "q008",
+    "topicId": 1,
+    "topicName": "Introduction & Overview",
+    "question": "Đặc trưng \"Tính tổng quát\" (Generality) của một thuật toán thể hiện ở điểm nào?",
+    "options": [
+      "Thuật toán áp dụng được để giải quyết cho cả một lớp các bài toán có cùng dạng chứ không chỉ riêng một bộ dữ liệu cụ thể",
+      "Thuật toán có thể chạy trên mọi hệ điều hành mà không cần biên dịch lại",
+      "Thuật toán có thể tự động viết ra mã nguồn của các thuật toán khác",
+      "Thuật toán không sử dụng bất kỳ thư viện ngoài nào của ngôn ngữ lập trình"
+    ],
+    "answer": "Thuật toán áp dụng được để giải quyết cho cả một lớp các bài toán có cùng dạng chứ không chỉ riêng một bộ dữ liệu cụ thể",
+    "explanation": "Tính tổng quát (Generality) nghĩa là giải thuật được xây dựng để giải quyết một lớp bài toán tổng quát với miền đầu vào xác định, chứ không phải một công thức riêng lẻ chỉ tính đúng cho một vài trường hợp cá biệt."
+  },
+  {
+    "id": "q009",
+    "topicId": 1,
+    "topicName": "Introduction & Overview",
+    "question": "Theo các đặc trưng chuẩn mực của giải thuật, một thuật toán có thể có bao nhiêu dữ liệu đầu vào (Input) và dữ liệu đầu ra (Output)?",
+    "options": [
+      "Có 0 hoặc nhiều đầu vào (>= 0) và có ít nhất 1 đầu ra (>= 1)",
+      "Bắt buộc phải có ít nhất 1 đầu vào và không được có đầu ra",
+      "Có chính xác 1 đầu vào và chính xác 1 đầu ra",
+      "Có vô số đầu vào nhưng chỉ được có tối đa 0 đầu ra"
+    ],
+    "answer": "Có 0 hoặc nhiều đầu vào (>= 0) và có ít nhất 1 đầu ra (>= 1)",
+    "explanation": "Theo Slide 15 Lecture 1, một giải thuật nhận vào 0 hoặc nhiều dữ liệu đầu vào (Input >= 0, ví dụ thuật toán sinh số Pi hoặc sinh số ngẫu nhiên không cần nhận tham số) và bắt buộc phải tạo ra ít nhất một kết quả đầu ra (Output >= 1)."
+  },
+  {
+    "id": "q010",
+    "topicId": 1,
+    "topicName": "Introduction & Overview",
+    "question": "Trong các phương pháp biểu diễn giải thuật, nhược điểm lớn nhất của phương pháp dùng \"Ngôn ngữ tự nhiên\" là gì?",
+    "options": [
+      "Dễ gây hiểu lầm đa nghĩa, diễn đạt dài dòng và không có cấu trúc cú pháp chuẩn hóa",
+      "Không thể dịch sang tiếng Việt và chỉ hỗ trợ tiếng Anh kỹ thuật",
+      "Yêu cầu cấu hình phần cứng đồ họa chuyên dụng mới có thể đọc được",
+      "Bắt buộc phải cài đặt trình biên dịch GCC để dịch ra mã máy"
+    ],
+    "answer": "Dễ gây hiểu lầm đa nghĩa, diễn đạt dài dòng và không có cấu trúc cú pháp chuẩn hóa",
+    "explanation": "Biểu diễn giải thuật bằng ngôn ngữ tự nhiên tuy dễ tiếp cận ban đầu nhưng có nhược điểm chí mạng là phụ thuộc ngữ cảnh, dễ phát sinh nhập nhằng (đa nghĩa), dài dòng và thiếu cấu trúc hình thức chặt chẽ."
+  },
+  {
+    "id": "q011",
+    "topicId": 1,
+    "topicName": "Introduction & Overview",
+    "question": "Trong biểu diễn thuật toán bằng Lưu đồ khối (Flowchart), hình thoi (Diamond) biểu thị cho thao tác nào?",
+    "options": [
+      "Thao tác kiểm tra điều kiện logic để rẽ nhánh thực thi chương trình",
+      "Điểm bắt đầu (Start) hoặc kết thúc (End) của toàn bộ giải thuật",
+      "Thao tác gán giá trị hoặc tính toán xử lý dữ liệu thông thường",
+      "Thao tác nhập dữ liệu từ bàn phím hoặc xuất dữ liệu ra màn hình"
+    ],
+    "answer": "Thao tác kiểm tra điều kiện logic để rẽ nhánh thực thi chương trình",
+    "explanation": "Trong chuẩn vẽ Lưu đồ khối (Flowchart): Hình thoi biểu thị khối điều kiện kiểm tra (Decision/Branching) với các nhánh ra True/False; Hình chữ nhật biểu thị thao tác tính toán; Hình bình hành là Nhập/Xuất; Hình Oval/Elip là Bắt đầu/Kết thúc."
+  },
+  {
+    "id": "q012",
+    "topicId": 1,
+    "topicName": "Introduction & Overview",
+    "question": "Trong Lưu đồ khối (Flowchart), hình bình hành (Parallelogram) được quy ước sử dụng cho mục đích nào?",
+    "options": [
+      "Thao tác nhập dữ liệu đầu vào (Input) hoặc xuất dữ liệu kết quả (Output)",
+      "Thao tác tính toán số học và gán giá trị biểu thức",
+      "Khối gọi hàm con đệ quy hoặc chương trình con",
+      "Khối điều khiển rẽ nhánh Đúng/Sai"
+    ],
+    "answer": "Thao tác nhập dữ liệu đầu vào (Input) hoặc xuất dữ liệu kết quả (Output)",
+    "explanation": "Theo quy ước quốc tế về sơ đồ khối thuật toán (Flowchart symbols), hình bình hành đại diện cho khối Nhập/Xuất (Input/Output operations)."
+  },
+  {
+    "id": "q013",
+    "topicId": 1,
+    "topicName": "Introduction & Overview",
+    "question": "Phát biểu nào sau đây đúng nhất về Mã giả (Pseudocode)?",
+    "options": [
+      "Là ngôn ngữ tựa mã lệnh có cấu trúc chặt chẽ, độc lập với cú pháp máy móc của trình biên dịch, dùng từ khóa gần gũi với toán học và logic",
+      "Là đoạn mã độc hại được chèn vào chương trình để làm giả kết quả kiểm thử",
+      "Là mã máy nhị phân 0 và 1 được vi xử lý thực thi trực tiếp không cần biên dịch",
+      "Là tập hợp các sơ đồ đồ họa vẽ bằng phần mềm AutoCAD để mô phỏng thuật toán"
+    ],
+    "answer": "Là ngôn ngữ tựa mã lệnh có cấu trúc chặt chẽ, độc lập với cú pháp máy móc của trình biên dịch, dùng từ khóa gần gũi với toán học và logic",
+    "explanation": "Mã giả (Pseudocode) là phương tiện biểu diễn thuật toán chuẩn tắc trong khoa học máy tính: vừa có cấu trúc rành mạch (như if-else, while, for), vừa súc tích và độc lập hoàn toàn với cú pháp cứng nhắc của ngôn ngữ lập trình cụ thể."
+  },
+  {
+    "id": "q014",
+    "topicId": 1,
+    "topicName": "Introduction & Overview",
+    "question": "Phương trình kinh điển của Giáo sư Niklaus Wirth (tác giả ngôn ngữ Pascal) tóm lược bản chất của một chương trình phần mềm là gì?",
+    "options": [
+      "Chương trình = Cấu trúc dữ liệu + Giải thuật (Programs = Data Structures + Algorithms)",
+      "Chương trình = Phần cứng + Hệ điều hành (Programs = Hardware + Operating System)",
+      "Chương trình = Cơ sở dữ liệu * Giao diện người dùng (Programs = Database * UI)",
+      "Chương trình = Trình biên dịch / Ngôn ngữ máy (Programs = Compiler / Machine Code)"
+    ],
+    "answer": "Chương trình = Cấu trúc dữ liệu + Giải thuật (Programs = Data Structures + Algorithms)",
+    "explanation": "Câu khẩu hiệu và tiêu đề cuốn sách kinh điển năm 1976 của Giáo sư Niklaus Wirth là: \"Algorithms + Data Structures = Programs\" (hoặc Data Structures + Algorithms = Programs), khẳng định CTDL và Giải thuật là 2 trụ cột tạo nên phần mềm."
+  },
+  {
+    "id": "q015",
+    "topicId": 1,
+    "topicName": "Introduction & Overview",
+    "question": "Năm thao tác cơ bản và thông dụng nhất trên các cấu trúc dữ liệu bao gồm những thao tác nào?",
+    "options": [
+      "Tìm kiếm (Search), Sắp xếp (Sort), Chèn (Insert), Cập nhật (Update), và Xóa (Delete)",
+      "Biên dịch (Compile), Liên kết (Link), Nạp (Load), Gỡ lỗi (Debug), và Đóng gói (Package)",
+      "Mã hóa (Encrypt), Giải mã (Decrypt), Nén (Compress), Giải nén (Decompress), và Băm (Hash)",
+      "Cấp điện (Power On), Tắt máy (Shutdown), Khởi động lại (Restart), Ngủ đông (Hibernate), và Khóa (Lock)"
+    ],
+    "answer": "Tìm kiếm (Search), Sắp xếp (Sort), Chèn (Insert), Cập nhật (Update), và Xóa (Delete)",
+    "explanation": "Theo Slide 26 Lecture 1, 5 thao tác cơ sở nền tảng được định nghĩa trên các cấu trúc dữ liệu là: Search (tìm kiếm phần tử), Sort (sắp xếp phần tử), Insert (chèn phần tử mới), Update (cập nhật giá trị), và Delete (loại bỏ phần tử)."
+  },
+  {
+    "id": "q016",
+    "topicId": 2,
+    "topicName": "Basic C++ Language",
+    "question": "Bản chất của một biến con trỏ (Pointer) trong ngôn ngữ C++ là gì?",
+    "options": [
+      "Là một biến dùng để lưu trữ địa chỉ ô nhớ của một biến hoặc vùng nhớ khác",
+      "Là một kiểu dữ liệu dùng để biểu diễn các số thực có dấu phẩy động cực lớn",
+      "Là một chỉ thị tiền xử lý yêu cầu trình biên dịch nạp thêm thư viện ngoài",
+      "Là một hàm đặc biệt tự động kích hoạt khi chương trình bị lỗi ngắt dòng"
+    ],
+    "answer": "Là một biến dùng để lưu trữ địa chỉ ô nhớ của một biến hoặc vùng nhớ khác",
+    "explanation": "Theo Slide 7 Lecture 2, con trỏ (Pointer) là một biến đặc biệt trong C/C++, giá trị chứa bên trong nó không phải là dữ liệu thông thường mà chính là địa chỉ ô nhớ RAM của một biến hoặc vùng nhớ khác."
+  },
+  {
+    "id": "q017",
+    "topicId": 2,
+    "topicName": "Basic C++ Language",
+    "question": "Toán tử giải tham chiếu (Dereference Operator `*`) trong biểu thức `*p = 20;` có tác dụng gì?",
+    "options": [
+      "Truy xuất và ghi giá trị 20 vào ô nhớ mà con trỏ p đang trỏ tới",
+      "Nhân giá trị của con trỏ p với số nguyên 20",
+      "Khai báo một con trỏ mới có tên là p và gán giá trị 20",
+      "Giải phóng vùng bộ nhớ mà con trỏ p đang chiếm giữ"
+    ],
+    "answer": "Truy xuất và ghi giá trị 20 vào ô nhớ mà con trỏ p đang trỏ tới",
+    "explanation": "Toán tử `*` khi đứng trước một con trỏ đã khai báo đóng vai trò toán tử giải tham chiếu (Dereference operator), cho phép lập trình viên đọc hoặc ghi trực tiếp giá trị vào ô nhớ tại địa chỉ mà con trỏ đang lưu trữ."
+  },
+  {
+    "id": "q018",
+    "topicId": 2,
+    "topicName": "Basic C++ Language",
+    "question": "Phân biệt ý nghĩa của ký hiệu `&` trong hai câu lệnh: `int &r = x;` và `int *p = &x;`?",
+    "options": [
+      "`int &r = x;` khai báo biến tham chiếu r là bí danh của x; còn `&x` là toán tử lấy địa chỉ ô nhớ của x",
+      "Cả hai câu lệnh đều là toán tử lấy địa chỉ ô nhớ và gán cho con trỏ",
+      "`int &r = x;` tạo bản sao giá trị của x; còn `int *p = &x;` tạo bí danh cho x",
+      "`&` trong cả hai trường hợp đều là phép toán logic bitwise AND"
+    ],
+    "answer": "`int &r = x;` khai báo biến tham chiếu r là bí danh của x; còn `&x` là toán tử lấy địa chỉ ô nhớ của x",
+    "explanation": "Trong C++, khi `&` xuất hiện bên cạnh kiểu dữ liệu (`int &r`), nó biểu thị khai báo tham chiếu (Reference) tạo bí danh (alias) chung ô nhớ với biến `x`. Khi `&` đứng trước tên biến đã có (`&x`), nó là toán tử lấy địa chỉ (Address-of operator)."
+  },
+  {
+    "id": "q019",
+    "topicId": 2,
+    "topicName": "Basic C++ Language",
+    "question": "Để cấp phát động và giải phóng đúng cách một mảng gồm `n` số nguyên kiểu `int` trong C++, cặp lệnh nào sau đây là chuẩn xác?",
+    "options": [
+      "`int *a = new int[n];` và `delete[] a;`",
+      "`int *a = new int(n);` và `delete a;`",
+      "`int a = malloc(n);` và `free[] a;`",
+      "`int *a = alloc int[n];` và `destruct a;`"
+    ],
+    "answer": "`int *a = new int[n];` và `delete[] a;`",
+    "explanation": "Theo Slide 15 Lecture 2, trong C++ toán tử cấp phát mảng động là `new DataType[size]`, và khi giải phóng bộ nhớ mảng động bắt buộc phải dùng toán tử `delete[] pointer;` để tránh lỗi Undefined Behavior và rò rỉ bộ nhớ."
+  },
+  {
+    "id": "q020",
+    "topicId": 2,
+    "topicName": "Basic C++ Language",
+    "question": "Cho con trỏ `int *p` đang trỏ tới địa chỉ ô nhớ `0x1000`. Giả sử kích thước kiểu `int` là 4 bytes (`sizeof(int) == 4`). Biểu thức `p + 2` sẽ có giá trị địa chỉ là bao nhiêu?",
+    "options": [
+      "`0x1008`",
+      "`0x1002`",
+      "`0x1004`",
+      "`0x1016`"
+    ],
+    "answer": "`0x1008`",
+    "explanation": "Theo quy tắc số học con trỏ (Pointer Arithmetic - Slide 11 Lecture 2), phép cộng con trỏ `p + k` sẽ dịch chuyển địa chỉ một lượng bằng `k * sizeof(*p)` bytes. Ở đây: `0x1000 + 2 * 4 bytes = 0x1000 + 8 = 0x1008`."
+  },
+  {
+    "id": "q021",
+    "topicId": 2,
+    "topicName": "Basic C++ Language",
+    "question": "Mối quan hệ bản chất giữa tên mảng 1 chiều `a` và con trỏ trong C++ được thể hiện như thế nào?",
+    "options": [
+      "Tên mảng `a` đóng vai trò là con trỏ hằng trỏ tới phần tử đầu tiên `&a[0]`, và biểu thức `a[i]` tương đương với `*(a + i)`",
+      "Tên mảng `a` là một biến con trỏ thông thường có thể thay đổi địa chỉ bằng phép gán `a = p;`",
+      "Mảng và con trỏ hoàn toàn không có liên hệ gì về cách truy xuất bộ nhớ",
+      "Biểu thức `a[i]` thực chất được trình biên dịch dịch thành `&a + i`"
+    ],
+    "answer": "Tên mảng `a` đóng vai trò là con trỏ hằng trỏ tới phần tử đầu tiên `&a[0]`, và biểu thức `a[i]` tương đương với `*(a + i)`",
+    "explanation": "Trong C/C++, tên mảng `a` là con trỏ hằng (constant pointer) cố định trỏ vào `&a[0]`. Phép truy xuất `a[i]` thực chất là cú pháp rút gọn của phép toán giải tham chiếu con trỏ `*(a + i)`."
+  },
+  {
+    "id": "q022",
+    "topicId": 2,
+    "topicName": "Basic C++ Language",
+    "question": "Cho đoạn mã: `int x = 10; int *p = &x; int **pp = &p;`. Biểu thức nào sau đây truy xuất được giá trị `10` của biến `x`?",
+    "options": [
+      "`**pp`",
+      "`*pp`",
+      "`&pp`",
+      "`pp`"
+    ],
+    "answer": "`**pp`",
+    "explanation": "`pp` là con trỏ trỏ đến con trỏ (pointer to pointer). Giải tham chiếu cấp 1 `*pp` trả về con trỏ `p` (địa chỉ của `x`). Giải tham chiếu cấp 2 `**pp` trả về giá trị thực của `x`, tức là 10."
+  },
+  {
+    "id": "q023",
+    "topicId": 2,
+    "topicName": "Basic C++ Language",
+    "question": "Để cấp phát bộ nhớ động cho ma trận 2 chiều kích thước `m x n` kiểu `int` trong C++, quy trình chuẩn xác là gì?",
+    "options": [
+      "Cấp phát mảng con trỏ `int **a = new int*[m];` sau đó duyệt vòng lặp `for (int i=0; i<m; i++) a[i] = new int[n];`",
+      "Chỉ cần gọi duy nhất một lệnh: `int **a = new int[m][n];`",
+      "Gọi lệnh `int **a = new int*[m * n];` mà không cần vòng lặp",
+      "Khai báo `int *a = new int[m];` rồi gán `a = new int[n];`"
+    ],
+    "answer": "Cấp phát mảng con trỏ `int **a = new int*[m];` sau đó duyệt vòng lặp `for (int i=0; i<m; i++) a[i] = new int[n];`",
+    "explanation": "Theo Slide 19-20 Lecture 2, cấp phát ma trận động 2 chiều gồm 2 bước: Bước 1 cấp phát mảng chứa m con trỏ hàng `new int*[m]`, bước 2 lặp qua từng hàng để cấp phát n phần tử cho hàng đó `a[i] = new int[n]`."
+  },
+  {
+    "id": "q024",
+    "topicId": 2,
+    "topicName": "Basic C++ Language",
+    "question": "Khi giải phóng bộ nhớ của ma trận 2 chiều động `int **a` gồm `m` hàng, thứ tự gọi lệnh nào sau đây là bắt buộc để tránh rò rỉ bộ nhớ (Memory Leak)?",
+    "options": [
+      "Duyệt vòng lặp gọi `delete[] a[i];` cho từng hàng trước, sau đó mới gọi `delete[] a;`",
+      "Gọi lệnh `delete[] a;` trước rồi mới lặp gọi `delete[] a[i];`",
+      "Chỉ cần gọi một lệnh duy nhất: `delete[][] a;`",
+      "Chỉ cần gọi lệnh `delete a;` là toàn bộ các hàng sẽ tự động được thu hồi"
+    ],
+    "answer": "Duyệt vòng lặp gọi `delete[] a[i];` cho từng hàng trước, sau đó mới gọi `delete[] a;`",
+    "explanation": "Nếu gọi `delete[] a` trước, mảng con trỏ quản lý các hàng sẽ bị mất, khiến các vùng nhớ của từng hàng `a[i]` bị cô lập và không thể giải phóng được (dẫn đến rò rỉ bộ nhớ). Do đó bắt buộc phải giải phóng từng hàng trước rồi mới giải phóng `a`."
+  },
+  {
+    "id": "q025",
+    "topicId": 2,
+    "topicName": "Basic C++ Language",
+    "question": "Cho hàm hoán vị: `void swap(int &a, int &b) { int t = a; a = b; b = t; }`. Cơ chế truyền tham số này trong C++ được gọi là gì?",
+    "options": [
+      "Truyền theo tham chiếu (Pass-by-reference)",
+      "Truyền theo tham trị (Pass-by-value)",
+      "Truyền theo con trỏ hằng (Pass-by-const-pointer)",
+      "Truyền theo địa chỉ macro tiền xử lý"
+    ],
+    "answer": "Truyền theo tham chiếu (Pass-by-reference)",
+    "explanation": "Cú pháp `int &a, int &b` là cơ chế truyền tham số bằng tham chiếu (Pass-by-reference) trong C++. Hàm làm việc trực tiếp trên ô nhớ của đối số truyền vào, cho phép hoán vị trực tiếp giá trị của 2 biến bên ngoài hàm."
+  },
+  {
+    "id": "q026",
+    "topicId": 2,
+    "topicName": "Basic C++ Language",
+    "question": "Cho đoạn mã C++11: `string s = \"c++\"; for (char &c : s) c = toupper(c);`. Giá trị của chuỗi `s` sau vòng lặp là gì?",
+    "options": [
+      "`\"C++\"`",
+      "`\"c++\"`",
+      "`\"C\"`",
+      "`\"\"` (chuỗi rỗng)"
+    ],
+    "answer": "`\"C++\"`",
+    "explanation": "Trong vòng lặp for-each (`for (char &c : s)`), biến `c` được khai báo là tham chiếu (`&`) tới từng ký tự trong chuỗi gốc `s`. Do đó thao tác `c = toupper(c)` sẽ sửa đổi trực tiếp các ký tự của chuỗi `s`, biến `\"c++\"` thành `\"C++\"`."
+  },
+  {
+    "id": "q027",
+    "topicId": 2,
+    "topicName": "Basic C++ Language",
+    "question": "Quy tắc bắt buộc khi khai báo hàm có tham số mặc định (Default Arguments) trong C++ là gì?",
+    "options": [
+      "Các tham số có giá trị mặc định phải nằm liên tục ở cuối danh sách tham số",
+      "Các tham số mặc định bắt buộc phải đặt ở đầu danh sách tham số",
+      "Hàm chỉ được phép có tối đa một tham số mặc định duy nhất",
+      "Tham số mặc định chỉ được áp dụng cho kiểu số thực float"
+    ],
+    "answer": "Các tham số có giá trị mặc định phải nằm liên tục ở cuối danh sách tham số",
+    "explanation": "Theo chuẩn C++ (Slide 33 Lecture 2), nếu một tham số có giá trị mặc định thì tất cả các tham số nằm phía sau nó trong danh sách cũng bắt buộc phải có giá trị mặc định. Nói cách khác, các đối số mặc định phải nằm ở cuối danh sách tham số."
+  },
+  {
+    "id": "q028",
+    "topicId": 2,
+    "topicName": "Basic C++ Language",
+    "question": "Trong C++, hai hàm nào sau đây KHÔNG THỂ nạp chồng (Overload) hợp lệ với nhau và sẽ gây lỗi biên dịch?",
+    "options": [
+      "`int calc(int a, int b);` và `double calc(int a, int b);`",
+      "`int calc(int a, int b);` và `int calc(double a, double b);`",
+      "`int calc(int a);` và `int calc(int a, int b);`",
+      "`void calc(char a);` và `void calc(int a);`"
+    ],
+    "answer": "`int calc(int a, int b);` và `double calc(int a, int b);`",
+    "explanation": "Quy tắc nạp chồng hàm (Function Overloading - Slide 36 Lecture 2) quy định danh sách tham số phải khác nhau về số lượng hoặc kiểu dữ liệu. Hai hàm có danh sách tham số giống hệt nhau mà chỉ khác kiểu trả về (return type) sẽ không được coi là nạp chồng hợp lệ và báo lỗi biên dịch."
+  },
+  {
+    "id": "q029",
+    "topicId": 2,
+    "topicName": "Basic C++ Language",
+    "question": "Cú pháp chuẩn để định nghĩa một hàm mẫu (Function Template) trong C++ là gì?",
+    "options": [
+      "`template <class T> T getMax(T a, T b) { return (a > b) ? a : b; }`",
+      "`generic <type T> T getMax(T a, T b) { return (a > b) ? a : b; }`",
+      "`define <typename T> T getMax(T a, T b) { return (a > b) ? a : b; }`",
+      "`macro <class T> T getMax(T a, T b) { return (a > b) ? a : b; }`"
+    ],
+    "answer": "`template <class T> T getMax(T a, T b) { return (a > b) ? a : b; }`",
+    "explanation": "Cú pháp định nghĩa hàm mẫu trong C++ bắt đầu bằng từ khóa `template <class T>` hoặc `template <typename T>`, cho phép viết hàm tổng quát áp dụng cho nhiều kiểu dữ liệu khác nhau."
+  },
+  {
+    "id": "q030",
+    "topicId": 2,
+    "topicName": "Basic C++ Language",
+    "question": "Hiện tượng \"Con trỏ treo\" (Dangling Pointer) xảy ra trong tình huống nào?",
+    "options": [
+      "Khi con trỏ vẫn trỏ tới địa chỉ ô nhớ cũ đã bị thu hồi/giải phóng bởi lệnh delete",
+      "Khi con trỏ được gán giá trị NULL hoặc nullptr an toàn",
+      "Khi con trỏ được cấp phát bộ nhớ thành công nhưng chưa gán dữ liệu",
+      "Khi con trỏ được khai báo là hằng số const pointer"
+    ],
+    "answer": "Khi con trỏ vẫn trỏ tới địa chỉ ô nhớ cũ đã bị thu hồi/giải phóng bởi lệnh delete",
+    "explanation": "Con trỏ treo (Dangling pointer) là con trỏ lưu trữ địa chỉ của một vùng nhớ trên heap đã bị giải phóng bằng `delete`. Thao tác đọc/ghi qua con trỏ treo dẫn đến lỗi Undefined Behavior nghiêm trọng."
+  },
+  {
+    "id": "q031",
+    "topicId": 3,
+    "topicName": "Classes & OOP in C++",
+    "question": "Điểm khác biệt căn bản giữa Lập trình Hướng thủ tục (POP) và Lập trình Hướng đối tượng (OOP) là gì?",
+    "options": [
+      "POP tập trung vào hàm và phân rã chức năng; OOP đóng gói dữ liệu thuộc tính và phương thức hành vi vào cùng một thực thể đối tượng",
+      "POP chỉ chạy được trên hệ điều hành Linux; OOP chỉ chạy được trên Windows",
+      "POP không cho phép sử dụng vòng lặp; OOP cho phép sử dụng vòng lặp",
+      "POP không có khái niệm biến số; OOP mới có khái niệm biến số"
+    ],
+    "answer": "POP tập trung vào hàm và phân rã chức năng; OOP đóng gói dữ liệu thuộc tính và phương thức hành vi vào cùng một thực thể đối tượng",
+    "explanation": "Theo Slide 3-4 Lecture 3, POP tập trung vào các giải thuật và hàm chức năng, dữ liệu tách rời; trong khi OOP lấy đối tượng làm trung tâm, đóng gói (encapsulation) trạng thái dữ liệu và các hành vi thao tác trên dữ liệu đó trong cùng một thực thể lớp."
+  },
+  {
+    "id": "q032",
+    "topicId": 3,
+    "topicName": "Classes & OOP in C++",
+    "question": "Trong ngôn ngữ C++, điểm khác biệt duy nhất giữa từ khóa `struct` và `class` là gì?",
+    "options": [
+      "Quyền truy cập mặc định của các thành viên trong `struct` là `public`, còn trong `class` là `private`",
+      "`struct` không thể chứa phương thức; chỉ `class` mới chứa được phương thức",
+      "`struct` được cấp phát trên Stack; `class` bắt buộc phải cấp phát trên Heap",
+      "`struct` không cho phép kế thừa; chỉ `class` mới có tính kế thừa"
+    ],
+    "answer": "Quyền truy cập mặc định của các thành viên trong `struct` là `public`, còn trong `class` là `private`",
+    "explanation": "Trong C++, `struct` và `class` hầu như giống hệt nhau về khả năng (đều có thể có phương thức, cấu tử, kế thừa). Điểm khác biệt kỹ thuật duy nhất là quyền truy cập mặc định: `struct` mặc định là `public`, còn `class` mặc định là `private`."
+  },
+  {
+    "id": "q033",
+    "topicId": 3,
+    "topicName": "Classes & OOP in C++",
+    "question": "Đặc tả truy xuất `private` trong một `class` C++ có ý nghĩa bảo vệ như thế nào?",
+    "options": [
+      "Chỉ các phương thức thành viên của lớp đó hoặc các hàm bạn (friend) mới có quyền truy cập trực tiếp",
+      "Bất kỳ hàm nào trong toàn bộ chương trình cũng đều có thể đọc và sửa đổi tự do",
+      "Chỉ cho phép các hàm của hệ điều hành truy cập khi có quyền quản trị Administrator",
+      "Dữ liệu được mã hóa và không bao giờ đọc được ngay cả từ các phương thức của lớp"
+    ],
+    "answer": "Chỉ các phương thức thành viên của lớp đó hoặc các hàm bạn (friend) mới có quyền truy cập trực tiếp",
+    "explanation": "Theo Slide 8 Lecture 3, thành viên có phạm vi `private` chỉ có thể được truy xuất từ bên trong các hàm thành viên của chính lớp đó hoặc từ các hàm bạn/lớp bạn (`friend`). Bên ngoài lớp không thể truy cập trực tiếp."
+  },
+  {
+    "id": "q034",
+    "topicId": 3,
+    "topicName": "Classes & OOP in C++",
+    "question": "Đặc tả truy xuất `protected` trong C++ khác với `private` ở điểm mấu chốt nào?",
+    "options": [
+      "Thành viên `protected` cho phép các lớp con kế thừa từ lớp đó được quyền truy cập trực tiếp",
+      "Thành viên `protected` có thể truy cập tự do từ hàm `main` bên ngoài",
+      "Thành viên `protected` không thể truy xuất từ các phương thức trong cùng một lớp",
+      "Thành viên `protected` bắt buộc phải là hằng số const"
+    ],
+    "answer": "Thành viên `protected` cho phép các lớp con kế thừa từ lớp đó được quyền truy cập trực tiếp",
+    "explanation": "`protected` là mức bảo vệ trung gian: đối với bên ngoài lớp nó đóng vai trò ẩn như `private`, nhưng đối với các lớp con dẫn xuất (derived classes) kế thừa từ lớp đó thì các thành viên `protected` lại cho phép truy cập trực tiếp."
+  },
+  {
+    "id": "q035",
+    "topicId": 3,
+    "topicName": "Classes & OOP in C++",
+    "question": "Toán tử định phạm vi (Scope Resolution Operator `::`) được sử dụng trong C++ với mục đích gì khi lập trình OOP?",
+    "options": [
+      "Định nghĩa mã nguồn của các phương thức thành viên ở bên ngoài phần khai báo của lớp",
+      "Giải phóng ô nhớ của đối tượng tương đương lệnh delete",
+      "Khai báo một biến con trỏ cấp hai trỏ tới đối tượng",
+      "Thực hiện phép chia lấy phần nguyên giữa hai đối tượng số học"
+    ],
+    "answer": "Định nghĩa mã nguồn của các phương thức thành viên ở bên ngoài phần khai báo của lớp",
+    "explanation": "Theo Slide 10 Lecture 3, cú pháp `ReturnType ClassName::MethodName(args)` sử dụng toán tử `::` để chỉ định phương thức `MethodName` thuộc phạm vi của lớp `ClassName` khi viết định nghĩa thân hàm bên ngoài lớp."
+  },
+  {
+    "id": "q036",
+    "topicId": 3,
+    "topicName": "Classes & OOP in C++",
+    "question": "Khi một phương thức thành viên được viết mã cài đặt ngay bên trong định nghĩa của `class`, trình biên dịch C++ sẽ mặc định coi phương thức đó là gì?",
+    "options": [
+      "Phương thức nội tuyến (Inline method)",
+      "Phương thức tĩnh (Static method)",
+      "Phương thức trừu tượng thuần ảo (Pure virtual method)",
+      "Hàm bạn toàn cục (Global friend function)"
+    ],
+    "answer": "Phương thức nội tuyến (Inline method)",
+    "explanation": "Theo Slide 11 Lecture 3, các phương thức được định nghĩa thân hàm ngay trong phần khai báo lớp sẽ tự động được xem là hàm `inline` (nội tuyến), trình biên dịch sẽ cố gắng chèn trực tiếp mã lệnh tại vị trí gọi để tối ưu tốc độ."
+  },
+  {
+    "id": "q037",
+    "topicId": 3,
+    "topicName": "Classes & OOP in C++",
+    "question": "Để gọi phương thức `area()` thông qua con trỏ đối tượng `CRectangle *rect = new CRectangle();`, cú pháp nào sau đây là đúng?",
+    "options": [
+      "`rect->area();` hoặc `(*rect).area();`",
+      "`rect.area();`",
+      "`*rect->area();`",
+      "`rect::area();`"
+    ],
+    "answer": "`rect->area();` hoặc `(*rect).area();`",
+    "explanation": "Khi thao tác với biến đối tượng thông thường, ta dùng toán tử dấu chấm (`obj.method()`). Khi thao tác với con trỏ đối tượng, ta dùng toán tử mũi tên (`ptr->method()`) hoặc giải tham chiếu rồi chấm (`(*ptr).method()`)."
+  },
+  {
+    "id": "q038",
+    "topicId": 3,
+    "topicName": "Classes & OOP in C++",
+    "question": "Phát biểu nào sau đây về Hàm khởi tạo (Constructor) trong C++ là SAI?",
+    "options": [
+      "Hàm khởi tạo có kiểu trả về mặc định là `void`",
+      "Hàm khởi tạo có tên trùng hoàn toàn với tên của lớp",
+      "Hàm khởi tạo tự động kích hoạt khi một đối tượng thuộc lớp được tạo ra",
+      "Hàm khởi tạo có thể được nạp chồng (Overloading) với nhiều danh sách tham số khác nhau"
+    ],
+    "answer": "Hàm khởi tạo có kiểu trả về mặc định là `void`",
+    "explanation": "Constructor KHÔNG CÓ kiểu trả về, kể cả kiểu `void`. Khai báo `void ClassName()` sẽ bị trình biên dịch báo lỗi hoặc coi là một hàm thành viên thông thường chứ không phải constructor."
+  },
+  {
+    "id": "q039",
+    "topicId": 3,
+    "topicName": "Classes & OOP in C++",
+    "question": "Phát biểu nào sau đây về Hàm hủy (Destructor) trong C++ là ĐÚNG?",
+    "options": [
+      "Tên hàm hủy bắt đầu bằng dấu ngã `~`, không nhận tham số, không có kiểu trả về, và mỗi lớp chỉ có duy nhất 1 hàm hủy",
+      "Hàm hủy có thể được nạp chồng giống như hàm khởi tạo",
+      "Hàm hủy phải nhận tham số là con trỏ của đối tượng cần hủy",
+      "Hàm hủy phải trả về giá trị kiểu boolean thông báo việc giải phóng thành công"
+    ],
+    "answer": "Tên hàm hủy bắt đầu bằng dấu ngã `~`, không nhận tham số, không có kiểu trả về, và mỗi lớp chỉ có duy nhất 1 hàm hủy",
+    "explanation": "Theo Slide 16-17 Lecture 3, Destructor có tên dạng `~ClassName()`, không có tham số và không có kiểu trả về. Do không có tham số nên hàm hủy KHÔNG THỂ nạp chồng, mỗi lớp chỉ có duy nhất một hàm hủy."
+  },
+  {
+    "id": "q040",
+    "topicId": 3,
+    "topicName": "Classes & OOP in C++",
+    "question": "Nếu một lớp quản lý mảng động cấp phát qua `new` nhưng không cài đặt giải phóng trong hàm hủy (Destructor), hậu quả gì sẽ xảy ra?",
+    "options": [
+      "Gây rò rỉ bộ nhớ (Memory Leak) khi đối tượng bị hủy vì vùng nhớ trên heap không được giải phóng",
+      "Chương trình sẽ tự động kích hoạt bộ thu gom rác tự động Garbage Collector giống như Java",
+      "Trình biên dịch sẽ từ chối biên dịch mã nguồn",
+      "Hệ điều hành sẽ tự động thu hồi ngay lập tức mà không ảnh hưởng gì"
+    ],
+    "answer": "Gây rò rỉ bộ nhớ (Memory Leak) khi đối tượng bị hủy vì vùng nhớ trên heap không được giải phóng",
+    "explanation": "C++ không có Garbage Collector tự động thu gom rác như Java/C#. Nếu lớp sở hữu vùng nhớ cấp phát động bằng `new` mà không gọi `delete[]` trong destructor, khi đối tượng bị hủy (ra khỏi scope), vùng nhớ động trên heap vẫn bị chiếm dụng, gây ra hiện tượng rò rỉ bộ nhớ (Memory Leak)."
+  },
+  {
+    "id": "q041",
+    "topicId": 3,
+    "topicName": "Classes & OOP in C++",
+    "question": "Bản chất của con trỏ `this` trong một phương thức thành viên không tĩnh của C++ là gì?",
+    "options": [
+      "Là một con trỏ ngầm định trỏ tới địa chỉ của chính đối tượng đang gọi phương thức đó",
+      "Là con trỏ trỏ tới đối tượng cha trong quan hệ kế thừa",
+      "Là biến toàn cục lưu trữ số lượng đối tượng đã được khởi tạo",
+      "Là con trỏ trỏ tới hàm `main` của chương trình"
+    ],
+    "answer": "Là một con trỏ ngầm định trỏ tới địa chỉ của chính đối tượng đang gọi phương thức đó",
+    "explanation": "Theo Slide 19 Lecture 3, con trỏ `this` là một tham số ẩn truyền vào mọi phương thức thành viên không tĩnh, trỏ trực tiếp đến địa chỉ của đối tượng đang thực thi phương thức (`this->member`)."
+  },
+  {
+    "id": "q042",
+    "topicId": 3,
+    "topicName": "Classes & OOP in C++",
+    "question": "Cú pháp khai báo một lớp mẫu (Class Template) nhận 2 kiểu dữ liệu tổng quát trong C++ là gì?",
+    "options": [
+      "`template <class T1, class T2> class MyClass { ... };`",
+      "`class <typename T1, T2> MyClass { ... };`",
+      "`template MyClass<class T1, class T2> { ... };`",
+      "`interface <T1, T2> class MyClass { ... };`"
+    ],
+    "answer": "`template <class T1, class T2> class MyClass { ... };`",
+    "explanation": "Cú pháp lớp mẫu bắt đầu bằng `template <class T1, class T2>` (hoặc `typename`), sau đó là định nghĩa `class MyClass { ... };` cho phép tạo lớp hoạt động với các kiểu dữ liệu tùy chọn khi khởi tạo."
+  },
+  {
+    "id": "q043",
+    "topicId": 3,
+    "topicName": "Classes & OOP in C++",
+    "question": "Khi quá tải toán tử hai ngôi cộng `+` dưới dạng phương thức thành viên: `PhanSo PhanSo::operator+(const PhanSo &b);`, toán hạng bên trái của phép cộng là đối tượng nào?",
+    "options": [
+      "Chính là đối tượng đang gọi phương thức, được đại diện bởi con trỏ `*this`",
+      "Là đối tượng tham số `b` truyền vào",
+      "Là một đối tượng tạm thời rỗng được tạo mới trên heap",
+      "Là biến toàn cục được định nghĩa trong thư viện `<iostream>`"
+    ],
+    "answer": "Chính là đối tượng đang gọi phương thức, được đại diện bởi con trỏ `*this`",
+    "explanation": "Khi cài đặt toán tử hai ngôi dưới dạng member function, toán hạng bên trái chính là đối tượng đang kích hoạt phương thức (`*this`), và biểu thức `a + b` được biên dịch tương đương lời gọi `a.operator+(b)`."
+  },
+  {
+    "id": "q044",
+    "topicId": 3,
+    "topicName": "Classes & OOP in C++",
+    "question": "Tại sao toán tử chèn luồng xuất `<<` (`cout << obj`) bắt buộc phải được quá tải dưới dạng hàm bạn (`friend`) hoặc hàm độc lập thay vì phương thức thành viên của lớp?",
+    "options": [
+      "Vì toán hạng bên trái là đối tượng của luồng xuất `ostream` (`cout`), không phải là đối tượng của lớp tự định nghĩa",
+      "Vì toán tử `<<` là từ khóa cấm không được nạp chồng trong C++",
+      "Vì phương thức thành viên không thể trả về kiểu tham chiếu luồng",
+      "Vì luồng `cout` được lưu trữ trên thanh ghi của CPU không cho phép lớp truy cập"
+    ],
+    "answer": "Vì toán hạng bên trái là đối tượng của luồng xuất `ostream` (`cout`), không phải là đối tượng của lớp tự định nghĩa",
+    "explanation": "Trong biểu thức `cout << obj`, toán hạng bên trái là `cout` (thuộc lớp `ostream`). Nếu cài đặt dưới dạng member function, ta sẽ phải sửa đổi mã nguồn lớp `ostream` (điều không thể). Do đó bắt buộc phải nạp chồng `<<` dưới dạng hàm tự do/hàm bạn với tham số đầu tiên là `ostream&`."
+  },
+  {
+    "id": "q045",
+    "topicId": 3,
+    "topicName": "Classes & OOP in C++",
+    "question": "Cú pháp chuẩn khai báo hàm bạn quá tải toán tử xuất luồng `<<` cho lớp `PhanSo` là gì?",
+    "options": [
+      "`friend ostream& operator<<(ostream &os, const PhanSo &p);`",
+      "`friend void operator<<(const PhanSo &p, ostream &os);`",
+      "`ostream operator<<(PhanSo p);`",
+      "`friend istream& operator<<(ostream &os, PhanSo &p);`"
+    ],
+    "answer": "`friend ostream& operator<<(ostream &os, const PhanSo &p);`",
+    "explanation": "Cú pháp chuẩn khai báo trong lớp: `friend ostream& operator<<(ostream &os, const PhanSo &p);`. Trả về tham chiếu `ostream&` cho phép ghép nối toán tử liên tiếp (chaining), ví dụ: `cout << p1 << p2;`."
+  },
+  {
+    "id": "q046",
+    "topicId": 4,
+    "topicName": "Algorithm Analysis & Big-O",
+    "question": "Hai yếu tố tài nguyên chính cần được đánh giá khi phân tích hiệu năng của một thuật toán là gì?",
+    "options": [
+      "Độ phức tạp thời gian thực thi (Running Time) và Độ phức tạp không gian bộ nhớ (Space Complexity)",
+      "Băng thông mạng truyền tải và dung lượng màn hình hiển thị",
+      "Số lượng comment giải thích và số dòng thụt lề trong mã nguồn",
+      "Nhiệt độ tỏa ra của vi xử lý CPU và điện năng tiêu thụ của nguồn điện"
+    ],
+    "answer": "Độ phức tạp thời gian thực thi (Running Time) và Độ phức tạp không gian bộ nhớ (Space Complexity)",
+    "explanation": "Theo Slide 3-4 Lecture 4, hai tài nguyên cốt lõi cần tối ưu khi đánh giá một thuật toán là: Thời gian thực thi (Running Time - mất bao nhiêu thời gian như hàm theo kích thước n) và Bộ nhớ sử dụng (Space Complexity - tiêu tốn bao nhiêu RAM để lưu trữ dữ liệu)."
+  },
+  {
+    "id": "q047",
+    "topicId": 4,
+    "topicName": "Algorithm Analysis & Big-O",
+    "question": "Trong phân tích thuật toán, tại sao trường hợp xấu nhất (Worst-case) luôn được ưu tiên phân tích hàng đầu?",
+    "options": [
+      "Vì nó cung cấp cận trên bảo đảm thuật toán sẽ không bao giờ chạy chậm hơn mức đó trên bất kỳ đầu vào nào",
+      "Vì trường hợp xấu nhất luôn xảy ra thường xuyên hơn trường hợp trung bình",
+      "Vì trường hợp xấu nhất chỉ xuất hiện khi thuật toán bị lỗi biên dịch",
+      "Vì trường hợp xấu nhất luôn có độ phức tạp là hàm hằng số O(1)"
+    ],
+    "answer": "Vì nó cung cấp cận trên bảo đảm thuật toán sẽ không bao giờ chạy chậm hơn mức đó trên bất kỳ đầu vào nào",
+    "explanation": "Theo Slide 5 Lecture 4, Worst-case cung cấp trần giới hạn trên (Upper bound) được đảm bảo tuyệt đối: hệ thống sẽ không bao giờ tốn nhiều thời gian hơn mức phân tích đó, rất quan trọng đối với các hệ thống thời gian thực và kiểm soát rủi ro."
+  },
+  {
+    "id": "q048",
+    "topicId": 4,
+    "topicName": "Algorithm Analysis & Big-O",
+    "question": "Nhược điểm lớn nhất của phương pháp đánh giá thuật toán bằng thực nghiệm (Experimental Studies) là gì?",
+    "options": [
+      "Phải viết mã nguồn hoàn chỉnh và kết quả đo phụ thuộc vào phần cứng, hệ điều hành, trình biên dịch cụ thể",
+      "Không thể đo được thời gian bằng các hàm đồng hồ trong thư viện",
+      "Không áp dụng được cho các thuật toán đệ quy",
+      "Chỉ chạy được trên các siêu máy tính máy chủ chuyên dụng"
+    ],
+    "answer": "Phải viết mã nguồn hoàn chỉnh và kết quả đo phụ thuộc vào phần cứng, hệ điều hành, trình biên dịch cụ thể",
+    "explanation": "Theo Slide 7-8 Lecture 4, đánh giá thực nghiệm có hạn chế: phải cài đặt code hoàn chỉnh, chỉ kiểm tra được trên tập hữu hạn các test cases, và kết quả phụ thuộc chặt chẽ vào môi trường phần cứng máy tính chạy thử."
+  },
+  {
+    "id": "q049",
+    "topicId": 4,
+    "topicName": "Algorithm Analysis & Big-O",
+    "question": "Mô hình máy tính trừu tượng RAM (Random Access Machine) giả định điều gì về thời gian truy xuất ô nhớ?",
+    "options": [
+      "Mọi truy xuất tới bất kỳ ô nhớ nào đều tiêu tốn một khoảng thời gian hằng số cố định O(1)",
+      "Thời gian truy xuất tăng dần tỉ lệ thuận với địa chỉ ô nhớ lớn hay nhỏ",
+      "Ô nhớ ở đầu RAM truy xuất nhanh gấp đôi ô nhớ ở cuối RAM",
+      "Thời gian truy xuất ô nhớ luôn là hàm số mũ O(2^n)"
+    ],
+    "answer": "Mọi truy xuất tới bất kỳ ô nhớ nào đều tiêu tốn một khoảng thời gian hằng số cố định O(1)",
+    "explanation": "Theo Slide 10 Lecture 4, mô hình máy tính RAM giả định CPU đơn và bộ nhớ ô nhớ không giới hạn; thời gian truy xuất tới bất kỳ ô nhớ nào là ngẫu nhiên và đồng đều, tốn thời gian hằng số O(1)."
+  },
+  {
+    "id": "q050",
+    "topicId": 4,
+    "topicName": "Algorithm Analysis & Big-O",
+    "question": "Thao tác nào sau đây KHÔNG PHẢI là một phép toán cơ sở (Primitive Operation) trong mô hình tính toán RAM?",
+    "options": [
+      "Duyệt tìm kiếm một phần tử trong mảng gồm n phần tử chưa có thứ tự",
+      "Phép gán giá trị một biến số học: `x = y + 1;`",
+      "Phép so sánh hai số nguyên: `if (a > b)`",
+      "Truy xuất một phần tử mảng qua chỉ số: `a[i]`"
+    ],
+    "answer": "Duyệt tìm kiếm một phần tử trong mảng gồm n phần tử chưa có thứ tự",
+    "explanation": "Theo Slide 12 Lecture 4, Phép toán cơ sở (Primitive Operation) là các phép tính cấp thấp thực thi trong thời gian hằng số O(1) như: gán, so sánh, truy xuất mảng, gọi hàm, return. Việc duyệt tìm kiếm trên mảng n phần tử tốn thời gian O(n), không phải phép toán cơ sở."
+  },
+  {
+    "id": "q051",
+    "topicId": 4,
+    "topicName": "Algorithm Analysis & Big-O",
+    "question": "Sắp xếp 6 hàm số sau theo tốc độ tăng trưởng tiệm cận TĂNG DẦN: `n^2, log n, 1, 2^n, n, n log n`?",
+    "options": [
+      "`1 < log n < n < n log n < n^2 < 2^n`",
+      "`1 < n < log n < n log n < n^2 < 2^n`",
+      "`log n < 1 < n < n log n < 2^n < n^2`",
+      "`1 < log n < n < n^2 < n log n < 2^n`"
+    ],
+    "answer": "`1 < log n < n < n log n < n^2 < 2^n`",
+    "explanation": "Theo Slide 14-16 Lecture 4 về 7 hàm tăng trưởng thông dụng: Hằng số (1) < Logarit (log n) < Tuyến tính (n) < Tuyến tính log (n log n) < Bậc hai (n^2) < Hàm mũ (2^n)."
+  },
+  {
+    "id": "q052",
+    "topicId": 4,
+    "topicName": "Algorithm Analysis & Big-O",
+    "question": "Định nghĩa toán học hình thức của ký hiệu Ô-lớn: Ta nói hàm f(n) là O(g(n)) khi nào?",
+    "options": [
+      "Tồn tại các hằng số thực dương c > 0 và số nguyên n₀ ≥ 1 sao cho f(n) ≤ c · g(n) với mọi n ≥ n₀",
+      "Hàm f(n) luôn luôn bằng đúng g(n) với mọi giá trị n",
+      "Tồn tại hằng số c > 0 sao cho f(n) ≥ c · g(n) với mọi n ≥ 1",
+      "Đạo hàm bậc nhất của f(n) nhỏ hơn đạo hàm của g(n) tại mọi điểm"
+    ],
+    "answer": "Tồn tại các hằng số thực dương c > 0 và số nguyên n₀ ≥ 1 sao cho f(n) ≤ c · g(n) với mọi n ≥ n₀",
+    "explanation": "Theo Slide 17 Lecture 4: f(n)  is  O(g(n)) nếu tồn tại hằng số thực c > 0 và số nguyên n₀ ≥ 1 sao cho với mọi n ≥ n₀, ta luôn có f(n) ≤ c · g(n) (cận trên tiệm cận)."
+  },
+  {
+    "id": "q053",
+    "topicId": 4,
+    "topicName": "Algorithm Analysis & Big-O",
+    "question": "Để chứng minh hàm f(n) = 3n + 7 là O(n), ta có thể chọn cặp hằng số (c, n₀) hợp lệ nào sau đây?",
+    "options": [
+      "c = 4, n₀ = 7 (vì khi n ≥ 7 thì 3n + 7 ≤ 3n + n = 4n)",
+      "c = 1, n₀ = 1 (vì 3n + 7 ≤ n)",
+      "c = 2, n₀ = 5 (vì 3n + 7 ≤ 2n)",
+      "c = 0.5, n₀ = 10"
+    ],
+    "answer": "c = 4, n₀ = 7 (vì khi n ≥ 7 thì 3n + 7 ≤ 3n + n = 4n)",
+    "explanation": "Khi n ≥ 7, ta có 7 ≤ n, do đó 3n + 7 ≤ 3n + n = 4n. Vậy chọn c = 4 và n₀ = 7 thỏa mãn định nghĩa f(n) ≤ c · n với mọi n ≥ n₀."
+  },
+  {
+    "id": "q054",
+    "topicId": 4,
+    "topicName": "Algorithm Analysis & Big-O",
+    "question": "Tại sao hàm f(n) = n² KHÔNG THỂ là O(n)?",
+    "options": [
+      "Vì không tồn tại bất kỳ hằng số c > 0 cố định nào để n² ≤ c · n (tương đương n ≤ c) với mọi n lớn tùy ý",
+      "Vì hàm n² luôn cho ra kết quả là số chẵn",
+      "Vì n² không thể tính được khi n âm",
+      "Vì đồ thị của n² là một đường thẳng dốc đứng"
+    ],
+    "answer": "Vì không tồn tại bất kỳ hằng số c > 0 cố định nào để n² ≤ c · n (tương đương n ≤ c) với mọi n lớn tùy ý",
+    "explanation": "Theo Slide 21 Lecture 4: Giả sử n² ≤ c · n, chia cả hai vế cho n > 0 ta được n ≤ c. Tuy nhiên, biến n có thể tiến tới vô cùng lớn, trong khi c là hằng số cố định, điều này mâu thuẫn. Do đó n² không thể là O(n)."
+  },
+  {
+    "id": "q055",
+    "topicId": 4,
+    "topicName": "Algorithm Analysis & Big-O",
+    "question": "Quy tắc bỏ qua hệ số hằng số trong ký hiệu Big-O có ý nghĩa là gì?",
+    "options": [
+      "Hằng số nhân không làm thay đổi lớp hàm tăng trưởng tiệm cận, ví dụ 1000n vẫn thuộc lớp O(n)",
+      "Mọi số nguyên trong biểu thức đều phải được thay thế bằng số 0",
+      "Chỉ được phép bỏ qua hằng số nếu hằng số đó nhỏ hơn 10",
+      "Thuật toán chạy nhanh gấp 1000 lần trên máy tính cá nhân"
+    ],
+    "answer": "Hằng số nhân không làm thay đổi lớp hàm tăng trưởng tiệm cận, ví dụ 1000n vẫn thuộc lớp O(n)",
+    "explanation": "Theo Slide 22 Lecture 4: Trong phân tích tiệm cận khi n tiến ra vô cùng, các hệ số hằng số nhân không làm thay đổi tốc độ tăng trưởng cơ bản của lớp hàm (ví dụ cf(n) vẫn là O(f(n)))."
+  },
+  {
+    "id": "q056",
+    "topicId": 4,
+    "topicName": "Algorithm Analysis & Big-O",
+    "question": "Cho đa thức thời gian: f(n) = 5n³ + 120n² + 8000. Theo quy tắc số hạng bậc cao nhất, f(n) thuộc lớp Big-O nào sau đây?",
+    "options": [
+      "O(n³)",
+      "O(n²)",
+      "O(n⁵)",
+      "O(1)"
+    ],
+    "answer": "O(n³)",
+    "explanation": "Theo quy tắc đa thức (Slide 22 Lecture 4): Nếu f(n) là đa thức bậc d, ta bỏ qua tất cả các số hạng bậc thấp và các hệ số hằng số, chỉ giữ lại số hạng có bậc cao nhất. Bậc cao nhất ở đây là n³, vậy f(n) ∈ O(n³)."
+  },
+  {
+    "id": "q057",
+    "topicId": 4,
+    "topicName": "Algorithm Analysis & Big-O",
+    "question": "Cho chương trình gồm hai khối lệnh tuần tự độc lập: khối 1 tốn thời gian O(n), khối 2 tốn thời gian O(n²). Theo Quy tắc cộng, tổng thời gian thực thi của cả chương trình là bao nhiêu?",
+    "options": [
+      "O(n²)",
+      "O(n³)",
+      "O(n)",
+      "O(n + n²)"
+    ],
+    "answer": "O(n²)",
+    "explanation": "Theo Quy tắc cộng (Slide 30 Lecture 4): Nếu chương trình gồm các khối tuần tự thực thi độc lập P₁, P₂ với độ phức tạp O(f(n)) và O(g(n)), thì tổng độ phức tạp là O(max(f(n), g(n))). Ở đây max(n, n²) = n², do đó là O(n²)."
+  },
+  {
+    "id": "q058",
+    "topicId": 4,
+    "topicName": "Algorithm Analysis & Big-O",
+    "question": "Cho đoạn mã gồm 2 vòng lặp lồng nhau: vòng ngoài lặp n lần, vòng trong lặp n lần, bên trong thực hiện phép gán O(1). Theo Quy tắc nhân, độ phức tạp thời gian là bao nhiêu?",
+    "options": [
+      "O(n²)",
+      "O(2n)",
+      "O(n)",
+      "O(n³)"
+    ],
+    "answer": "O(n²)",
+    "explanation": "Theo Quy tắc nhân (Slide 30 Lecture 4): Nếu một khối lệnh có độ phức tạp O(g(n)) được lồng bên trong một vòng lặp chạy O(f(n)) lần, thì tổng thời gian thực hiện là tích O(f(n) × g(n)). Ở đây n × n = n² nên độ phức tạp là O(n²)."
+  },
+  {
+    "id": "q059",
+    "topicId": 4,
+    "topicName": "Algorithm Analysis & Big-O",
+    "question": "Trong bài toán tính mảng trung bình cộng tiền tố (Prefix Averages - Slide 26-28), thuật toán cải tiến sử dụng một biến cộng dồn tích lũy đạt độ phức tạp thời gian là bao nhiêu so với cách ngây thơ hai vòng lặp?",
+    "options": [
+      "O(n) so với O(n²)",
+      "O(log n) so với O(n)",
+      "O(n log n) so với O(n³)",
+      "O(1) so với O(n)"
+    ],
+    "answer": "O(n) so với O(n²)",
+    "explanation": "Thuật toán 1 dùng 2 vòng lặp lồng nhau tính lại tổng từ đầu ở mỗi chỉ số i tốn O(n²) phép toán. Thuật toán 2 tận dụng biến tích lũy s = s + X[i] chỉ cần 1 vòng lặp duy nhất, giảm độ phức tạp thời gian xuống còn O(n) tuyến tính."
+  },
+  {
+    "id": "q060",
+    "topicId": 4,
+    "topicName": "Algorithm Analysis & Big-O",
+    "question": "Nguyên tắc chọn cận trên chặt nhất (Tightest Upper Bound) trong phân tích Big-O yêu cầu điều gì?",
+    "options": [
+      "Nên chọn lớp hàm tăng trưởng nhỏ nhất và đơn giản nhất mô tả sát thực tế (ví dụ: phát biểu 2n là O(n) thay vì O(n²))",
+      "Luôn chọn hàm số mũ O(2ⁿ) cho an toàn tuyệt đối",
+      "Bắt buộc phải nhân đôi giá trị hàm để tránh sai số đo đạc",
+      "Không được sử dụng ký hiệu logarit trong bất kỳ trường hợp nào"
+    ],
+    "answer": "Nên chọn lớp hàm tăng trưởng nhỏ nhất và đơn giản nhất mô tả sát thực tế (ví dụ: phát biểu 2n là O(n) thay vì O(n²))",
+    "explanation": "Theo Slide 23 Lecture 4: Dù về mặt toán học hàm tuyến tính 2n cũng thuộc O(n²), nhưng trong khoa học máy tính chuẩn tắc ta luôn chọn cận trên chặt chẽ nhất (tightest bound) là O(n) để phản ánh chính xác hiệu năng thực tế của thuật toán."
+  },
+  {
+    "id": "q061",
+    "topicId": 5,
+    "topicName": "Recursion",
+    "question": "Khái niệm Hàm đệ quy (Recursive Function) trong lập trình được định nghĩa là gì?",
+    "options": [
+      "Là một hàm tự gọi lại chính nó trực tiếp hoặc gián tiếp để giải quyết bài toán con có quy mô nhỏ hơn",
+      "Là một hàm được gọi lặp đi lặp lại bên trong một vòng lặp `while(true)`",
+      "Là một hàm chỉ có thể chạy được một lần duy nhất khi chương trình khởi động",
+      "Là một hàm không chứa bất kỳ câu lệnh `return` nào"
+    ],
+    "answer": "Là một hàm tự gọi lại chính nó trực tiếp hoặc gián tiếp để giải quyết bài toán con có quy mô nhỏ hơn",
+    "explanation": "Theo Slide 2-3 Lecture 5, Đệ quy (Recursion) xảy ra khi một hàm tự gọi lại chính nó (trực tiếp hoặc thông qua một hàm khác) nhằm chia bài toán ban đầu thành các bài toán con cùng cấu trúc nhưng kích thước nhỏ hơn."
+  },
+  {
+    "id": "q062",
+    "topicId": 5,
+    "topicName": "Recursion",
+    "question": "Hai thành phần cốt lõi bắt buộc phải có trong bất kỳ một giải thuật đệ quy đúng đắn nào là gì?",
+    "options": [
+      "Trường hợp cơ sở (Base case) và Bước đệ quy (Recursive step)",
+      "Hàm khởi tạo (Constructor) và Hàm hủy (Destructor)",
+      "Vòng lặp `for` và Vòng lặp `while`",
+      "Khối `try` và Khối `catch`"
+    ],
+    "answer": "Trường hợp cơ sở (Base case) và Bước đệ quy (Recursive step)",
+    "explanation": "Một hàm đệ quy hợp lệ bắt buộc gồm 2 phần: Base case (điều kiện dừng trực tiếp không cần gọi đệ quy tiếp) và Recursive step (lời gọi hàm thu hẹp quy mô bài toán tiến dần về base case)."
+  },
+  {
+    "id": "q063",
+    "topicId": 5,
+    "topicName": "Recursion",
+    "question": "Hiện tượng Tràn ngăn xếp (Stack Overflow Error) trong chương trình đệ quy nguyên nhân chủ yếu do đâu?",
+    "options": [
+      "Do đệ quy vô hạn vì thiếu điều kiện dừng (Base case) hoặc tham số không tiến về điều kiện dừng, làm cạn kiệt bộ nhớ Call Stack",
+      "Do RAM máy tính bị mất điện đột ngột",
+      "Do chương trình sử dụng quá nhiều câu lệnh `cout` xuất ra màn hình",
+      "Do file mã nguồn C++ có dung lượng quá lớn"
+    ],
+    "answer": "Do đệ quy vô hạn vì thiếu điều kiện dừng (Base case) hoặc tham số không tiến về điều kiện dừng, làm cạn kiệt bộ nhớ Call Stack",
+    "explanation": "Mỗi lần gọi hàm đệ quy, một khung ngăn xếp (Stack Frame) được cấp phát trên Call Stack. Nếu thiếu điều kiện dừng hoặc điều kiện dừng không bao giờ đạt tới, hàm tự gọi vô tận khiến Call Stack bị đầy tràn, gây lỗi Crash / Stack Overflow."
+  },
+  {
+    "id": "q064",
+    "topicId": 5,
+    "topicName": "Recursion",
+    "question": "Mỗi khi một hàm đệ quy được gọi, hệ thống lưu trữ những thông tin gì trong một Khung ngăn xếp (Stack Frame) trên Call Stack?",
+    "options": [
+      "Các biến cục bộ, giá trị tham số truyền vào, và địa chỉ lệnh hồi quy (Return address)",
+      "Toàn bộ mã nguồn C++ dưới dạng văn bản ASCII",
+      "Kích thước file thực thi `.exe` trên ổ cứng",
+      "Mật khẩu tài khoản người dùng đang đăng nhập"
+    ],
+    "answer": "Các biến cục bộ, giá trị tham số truyền vào, và địa chỉ lệnh hồi quy (Return address)",
+    "explanation": "Mỗi Stack Frame (Activation Record) lưu giữ: các tham số hàm được truyền vào, các biến cục bộ khai báo trong hàm, và địa chỉ lệnh quay về (return address) để CPU tiếp tục thực thi sau khi hàm con hoàn tất."
+  },
+  {
+    "id": "q065",
+    "topicId": 5,
+    "topicName": "Recursion",
+    "question": "Khái niệm Đệ quy tuyến tính (Linear Recursion) có đặc điểm nổi bật nào sau đây?",
+    "options": [
+      "Trong mỗi lần thực thi hàm, chỉ có tối đa duy nhất một lời gọi đệ quy được kích hoạt",
+      "Hàm chứa ít nhất hai lời gọi đệ quy rẽ nhánh độc lập",
+      "Thời gian chạy của hàm bắt buộc phải là hằng số O(1)",
+      "Hàm chỉ được phép nhận đối số là các số nguyên dương lẻ"
+    ],
+    "answer": "Trong mỗi lần thực thi hàm, chỉ có tối đa duy nhất một lời gọi đệ quy được kích hoạt",
+    "explanation": "Theo Slide 8 Lecture 5, Đệ quy tuyến tính (Linear Recursion) là dạng đệ quy mà mỗi bước thực thi chỉ gọi đệ quy tối đa đúng một lần (ví dụ: hàm tính giai thừa n!, duyệt mảng tuyến tính)."
+  },
+  {
+    "id": "q066",
+    "topicId": 5,
+    "topicName": "Recursion",
+    "question": "Cho hàm: `int fact(int n) { if (n <= 1) return 1; return n * fact(n - 1); }`. Độ phức tạp thời gian và không gian ngăn xếp của hàm khi tính `fact(n)` là bao nhiêu?",
+    "options": [
+      "Thời gian O(n) và không gian bộ nhớ ngăn xếp O(n)",
+      "Thời gian O(n²) và không gian O(1)",
+      "Thời gian O(log n) và không gian O(log n)",
+      "Thời gian O(1) và không gian O(n)"
+    ],
+    "answer": "Thời gian O(n) và không gian bộ nhớ ngăn xếp O(n)",
+    "explanation": "Hàm thực hiện n lần gọi đệ quy, mỗi lần tốn O(1) phép nhân ⇒ thời gian O(n). Do Call Stack phải lưu n khung ngăn xếp lồng nhau cho tới khi chạm base case ⇒ không gian bộ nhớ ngăn xếp là O(n)."
+  },
+  {
+    "id": "q067",
+    "topicId": 5,
+    "topicName": "Recursion",
+    "question": "Trong bài toán đảo ngược mảng bằng đệ quy `ReverseArray(A, i, j)` (Slide 13 Lecture 5), tại sao lại thiết kế bổ sung hai tham số chỉ số i và j?",
+    "options": [
+      "Để thu hẹp phạm vi đoạn mảng cần đảo qua mỗi bước đệ quy (i+1, j-1) mà không cần tạo mảng mới",
+      "Để đếm số lần đảo ngược đã thực hiện trong chương trình",
+      "Vì ngôn ngữ C++ không cho phép truyền mảng vào hàm nếu không có 2 chỉ số",
+      "Để hoán đổi kiểu dữ liệu của các phần tử trong mảng"
+    ],
+    "answer": "Để thu hẹp phạm vi đoạn mảng cần đảo qua mỗi bước đệ quy (i+1, j-1) mà không cần tạo mảng mới",
+    "explanation": "Theo Slide 13 Lecture 5, việc bổ sung tham số phạm vi (i, j) là kỹ thuật thiết kế đệ quy kinh điển trên mảng: hoán đổi A[i] và A[j], sau đó gọi đệ quy với đoạn con thu hẹp `ReverseArray(A, i + 1, j - 1)` cho đến khi i ≥ j."
+  },
+  {
+    "id": "q068",
+    "topicId": 5,
+    "topicName": "Recursion",
+    "question": "Thuật toán tính tổng mảng `LinearSum(A, n)` bằng cách đệ quy `LinearSum(A, n - 1) + A[n - 1]` có độ phức tạp thời gian là bao nhiêu?",
+    "options": [
+      "O(n)",
+      "O(n²)",
+      "O(log n)",
+      "O(1)"
+    ],
+    "answer": "O(n)",
+    "explanation": "Hàm gọi đệ quy n lần cho n phần tử, mỗi bước chỉ thực hiện một phép cộng hằng số O(1), do đó tổng thời gian thực thi là O(n)."
+  },
+  {
+    "id": "q069",
+    "topicId": 5,
+    "topicName": "Recursion",
+    "question": "Thuật toán tính lũy thừa nhanh (Repeated Squaring) p(x, n) = xⁿ bằng cách chia đôi số mũ có độ phức tạp thời gian là bao nhiêu?",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(n²)",
+      "O(n log n)"
+    ],
+    "answer": "O(log n)",
+    "explanation": "Theo Slide 15-18 Lecture 5, phương pháp chia đôi số mũ (Repeated Squaring): nếu n chẵn xⁿ = (x^{n/2})², nếu n lẻ xⁿ = x · (x^{(n-1)/2})². Số mũ giảm đi một nửa qua mỗi bước đệ quy nên số bước tính là log₂ n, đạt độ phức tạp O(log n)."
+  },
+  {
+    "id": "q070",
+    "topicId": 5,
+    "topicName": "Recursion",
+    "question": "Trong thuật toán lũy thừa nhanh đệ quy, tại sao cần lưu kết quả vào biến tạm `y = Power(x, n/2)` trước khi nhân?",
+    "options": [
+      "Để tránh việc gọi lại hàm đệ quy 2 lần riêng biệt làm bùng nổ độ phức tạp lên hàm tuyến tính",
+      "Để ép kiểu dữ liệu từ số nguyên sang số thực",
+      "Vì trình biên dịch C++ bắt buộc phải dùng biến y",
+      "Để xóa giá trị x khỏi bộ nhớ sau khi tính toán"
+    ],
+    "answer": "Để tránh việc gọi lại hàm đệ quy 2 lần riêng biệt làm bùng nổ độ phức tạp lên hàm tuyến tính",
+    "explanation": "Nếu viết `Power(x, n/2) * Power(x, n/2)`, hàm đệ quy sẽ bị gọi 2 lần cho cùng một giá trị, làm cây đệ quy nhân đôi và mất đi lợi thế O(log n). Bằng cách gán vào biến tạm `y`, hàm chỉ gọi đúng 1 lần cho mỗi cấp số mũ."
+  },
+  {
+    "id": "q071",
+    "topicId": 5,
+    "topicName": "Recursion",
+    "question": "Khái niệm Đệ quy nhị phân (Binary Recursion) được định nghĩa là gì?",
+    "options": [
+      "Là hàm mà trong thân của nó thực hiện hai lời gọi đệ quy độc lập với nhau",
+      "Là hàm chỉ nhận dữ liệu đầu vào là các bit nhị phân 0 và 1",
+      "Là hàm chỉ gọi đệ quy khi chỉ số mảng là số chẵn",
+      "Là hàm đệ quy bắt buộc phải trả về kiểu boolean"
+    ],
+    "answer": "Là hàm mà trong thân của nó thực hiện hai lời gọi đệ quy độc lập với nhau",
+    "explanation": "Theo Slide 19 Lecture 5, Đệ quy nhị phân (Binary Recursion) là trường hợp hàm thực hiện hai lời gọi đệ quy riêng biệt để giải quyết hai nửa bài toán (ví dụ: vẽ thước đo inch, duyệt cây nhị phân, MergeSort)."
+  },
+  {
+    "id": "q072",
+    "topicId": 5,
+    "topicName": "Recursion",
+    "question": "Thuật toán vẽ thước đo inch (English Ruler) trong bài giảng áp dụng dạng đệ quy nào?",
+    "options": [
+      "Đệ quy nhị phân (hàm `drawticks` gọi đệ quy 2 lần với chiều dài vạch giảm đi 1)",
+      "Đệ quy tuyến tính 1 lần",
+      "Đệ quy đuôi (Tail recursion)",
+      "Không sử dụng đệ quy mà dùng vòng lặp lồng nhau"
+    ],
+    "answer": "Đệ quy nhị phân (hàm `drawticks` gọi đệ quy 2 lần với chiều dài vạch giảm đi 1)",
+    "explanation": "Theo Slide 20-21 Lecture 5, thuật toán vẽ vạch thước inch `drawticks(k)` gọi `drawticks(k - 1)` để vẽ nửa trên, vẽ vạch giữa độ dài k, rồi lại gọi `drawticks(k - 1)` để vẽ nửa dưới, là cấu trúc đệ quy nhị phân kinh điển."
+  },
+  {
+    "id": "q073",
+    "topicId": 5,
+    "topicName": "Recursion",
+    "question": "Hàm tính số Fibonacci đệ quy ngây thơ: `int fib(int n) { if (n <= 1) return n; return fib(n-1) + fib(n-2); }` có độ phức tạp thời gian là bao nhiêu?",
+    "options": [
+      "O(2ⁿ) (thời gian hàm mũ)",
+      "O(n) (thời gian tuyến tính)",
+      "O(log n) (thời gian logarit)",
+      "O(n²) (thời gian bậc hai)"
+    ],
+    "answer": "O(2ⁿ) (thời gian hàm mũ)",
+    "explanation": "Theo Slide 24 Lecture 5, hàm Fibonacci đệ quy 2 nhánh ngây thơ dẫn đến cây đệ quy bùng nổ kích thước hàm mũ O(2ⁿ). Rất nhiều bài toán con như `fib(n-2)`, `fib(n-3)` bị tính đi tính lại hàng ngàn lần một cách lãng phí."
+  },
+  {
+    "id": "q074",
+    "topicId": 5,
+    "topicName": "Recursion",
+    "question": "Thuật toán `LinearFibonacci(k)` (Slide 25 Lecture 5) tối ưu hóa việc tính số Fibonacci như thế nào so với đệ quy ngây thơ?",
+    "options": [
+      "Trả về một cặp số (Fₖ, F_{k-1}) qua đệ quy tuyến tính giúp giảm thời gian chạy xuống O(k)",
+      "Chuyển đổi hoàn toàn sang tính bằng bảng lượng giác",
+      "Bỏ qua các số Fibonacci lẻ để chỉ tính số chẵn",
+      "Dùng con trỏ mảng tĩnh để lưu trữ trước vô hạn số Fibonacci"
+    ],
+    "answer": "Trả về một cặp số (Fₖ, F_{k-1}) qua đệ quy tuyến tính giúp giảm thời gian chạy xuống O(k)",
+    "explanation": "Theo Slide 25 Lecture 5, `LinearFibonacci(k)` sử dụng đệ quy tuyến tính trả về cặp 2 số liền kề (Fₖ, F_{k-1}). Mỗi bước chỉ gọi đệ quy 1 lần, giúp triệt tiêu việc tính toán trùng lặp và giảm thời gian từ O(2ᵏ) xuống còn O(k) tuyến tính."
+  },
+  {
+    "id": "q075",
+    "topicId": 5,
+    "topicName": "Recursion",
+    "question": "Thuật toán tính tổng mảng `BinarySum(A, i, n)` chia mảng thành hai nửa và cộng kết quả đệ quy của hai nửa có chiều sâu ngăn xếp Call Stack tối đa là bao nhiêu?",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(n²)",
+      "O(1)"
+    ],
+    "answer": "O(log n)",
+    "explanation": "Theo Slide 22 Lecture 5, khi chia đôi mảng đều đặn qua mỗi bước đệ quy nhị phân, cây đệ quy có chiều sâu là ⌈log₂ n⌉. Do đó độ sâu tối đa của Call Stack tại một thời điểm chỉ là O(log n) thay vì O(n) như `LinearSum`."
+  },
+  {
+    "id": "q076",
+    "topicId": 6,
+    "topicName": "Vector & Dynamic Arrays",
+    "question": "Khái niệm Kiểu dữ liệu trừu tượng Vector (Vector ADT) trong C++ khác biệt căn bản nhất với Mảng tĩnh (Static Array) ở điểm nào?",
+    "options": [
+      "Vector có khả năng tự động co giãn kích thước linh hoạt trên heap và quản lý bộ nhớ tự động theo cơ chế RAII",
+      "Vector chỉ lưu trữ được kiểu dữ liệu chuỗi ký tự string",
+      "Mảng tĩnh có thể mở rộng kích thước bất kỳ lúc nào mà không cần cấp phát lại",
+      "Vector không cho phép truy xuất phần tử ngẫu nhiên qua chỉ số O(1)"
+    ],
+    "answer": "Vector có khả năng tự động co giãn kích thước linh hoạt trên heap và quản lý bộ nhớ tự động theo cơ chế RAII",
+    "explanation": "Theo Slide Lecture 6, Vector ADT mở rộng khái niệm mảng: nó quản lý một vùng nhớ liên tục trên Heap, có khả năng tự động cấp phát mở rộng kích thước khi đầy và tự động giải phóng vùng nhớ khi hủy theo nguyên lý RAII."
+  },
+  {
+    "id": "q077",
+    "topicId": 6,
+    "topicName": "Vector & Dynamic Arrays",
+    "question": "Trong thư viện chuẩn C++ `std::vector`, phương thức `size()` và phương thức `capacity()` khác nhau như thế nào?",
+    "options": [
+      "`size()` là số lượng phần tử thực tế đang có; còn `capacity()` là dung lượng bộ nhớ tối đa đã được cấp phát trước khi phải tái cấp phát",
+      "`size()` luôn luôn lớn hơn hoặc bằng `capacity()` trong mọi thời điểm",
+      "`capacity()` là số lượng phần tử hiện tại; còn `size()` là kích thước tối đa của bộ nhớ RAM máy tính",
+      "Hai phương thức này hoàn toàn đồng nghĩa và luôn trả về cùng một giá trị như nhau"
+    ],
+    "answer": "`size()` là số lượng phần tử thực tế đang có; còn `capacity()` là dung lượng bộ nhớ tối đa đã được cấp phát trước khi phải tái cấp phát",
+    "explanation": "Trong `std::vector`, `size()` là số phần tử hiện hữu đang lưu trong vector, trong khi `capacity()` là dung lượng ô nhớ buffer đã được hệ thống cấp phát trước. Bất đẳng thức luôn thỏa mãn là: `capacity >= size`."
+  },
+  {
+    "id": "q078",
+    "topicId": 6,
+    "topicName": "Vector & Dynamic Arrays",
+    "question": "Sự khác biệt cốt lõi giữa hai phương thức `v.reserve(n)` và `v.resize(n)` trong `std::vector` là gì?",
+    "options": [
+      "`reserve(n)` chỉ đặt trước dung lượng bộ nhớ `capacity`, không thay đổi `size()`; còn `resize(n)` thay đổi trực tiếp `size()` và khởi tạo các phần tử mới",
+      "`reserve(n)` thêm n phần tử vào cuối vector; còn `resize(n)` chỉ thay đổi dung lượng bộ nhớ",
+      "`reserve(n)` chỉ dùng được khi vector rỗng; `resize(n)` chỉ dùng khi vector đã đầy",
+      "Cả hai phương thức đều làm tăng `size()` và gán giá trị mặc định cho các phần tử mới"
+    ],
+    "answer": "`reserve(n)` chỉ đặt trước dung lượng bộ nhớ `capacity`, không thay đổi `size()`; còn `resize(n)` thay đổi trực tiếp `size()` và khởi tạo các phần tử mới",
+    "explanation": "Phương thức `reserve(n)` chỉ cấp phát trước bộ nhớ để `capacity >= n` nhằm tránh tái cấp phát liên tục khi push_back, `size()` không đổi. Trong khi `resize(n)` thay đổi số phần tử thực tế thành n, nếu n > size sẽ khởi tạo thêm các phần tử mới."
+  },
+  {
+    "id": "q079",
+    "topicId": 6,
+    "topicName": "Vector & Dynamic Arrays",
+    "question": "Khi truy cập phần tử tại chỉ số `i` trong `std::vector`, điểm khác biệt giữa toán tử `v[i]` và phương thức `v.at(i)` là gì?",
+    "options": [
+      "`operator[]` không kiểm tra biên chỉ số; còn `at(i)` có kiểm tra biên và ném ra ngoại lệ `std::out_of_range` nếu vượt quá kích thước",
+      "`operator[]` có tốc độ chậm hơn `at(i)` vì phải giải mã chuỗi con trỏ",
+      "`at(i)` không cho phép sửa đổi giá trị phần tử; chỉ `operator[]` mới sửa được",
+      "`operator[]` sẽ tự động mở rộng vector nếu chỉ số vượt quá giới hạn"
+    ],
+    "answer": "`operator[]` không kiểm tra biên chỉ số; còn `at(i)` có kiểm tra biên và ném ra ngoại lệ `std::out_of_range` nếu vượt quá kích thước",
+    "explanation": "Toán tử `v[i]` ưu tiên tốc độ tối đa nên không kiểm tra biên (no bounds checking), nếu truy cập ngoài chỉ số sẽ dẫn đến Undefined Behavior. Ngược lại, `v.at(i)` kiểm tra an toàn nếu i ≥ v.size() sẽ ném ngoại lệ `std::out_of_range`."
+  },
+  {
+    "id": "q080",
+    "topicId": 6,
+    "topicName": "Vector & Dynamic Arrays",
+    "question": "Độ phức tạp thời gian của thao tác chèn phần tử vào cuối vector `v.push_back(val)` trong C++ được đánh giá chuẩn xác nhất là gì?",
+    "options": [
+      "Chi phí trung bình khấu hao (Amortized Time) là O(1)",
+      "Luôn luôn là hằng số O(1) trong mọi trường hợp xấu nhất",
+      "Chi phí luôn là O(n) trong mọi lần gọi",
+      "Chi phí là O(log n)"
+    ],
+    "answer": "Chi phí trung bình khấu hao (Amortized Time) là O(1)",
+    "explanation": "Phần lớn các thao tác `push_back` chỉ tốn O(1) khi buffer còn chỗ. Khi buffer bị đầy, vector phải tái cấp phát và copy n phần tử (O(n)). Tuy nhiên nhờ chiến lược nhân đôi dung lượng, chi phí trung bình khấu hao (Amortized time) cho mỗi thao tác push_back vẫn đạt O(1)."
+  },
+  {
+    "id": "q081",
+    "topicId": 6,
+    "topicName": "Vector & Dynamic Arrays",
+    "question": "Tại sao các thao tác chèn `v.insert(pos, val)` hoặc xóa `v.erase(pos)` ở vị trí bất kỳ trong `std::vector` lại có độ phức tạp thời gian là O(n)?",
+    "options": [
+      "Vì vector phải dịch chuyển tất cả các phần tử nằm phía sau vị trí thao tác sang phải (khi chèn) hoặc sang trái (khi xóa)",
+      "Vì vector phải duyệt qua toàn bộ RAM máy tính để tìm ô nhớ trống",
+      "Vì trình biên dịch C++ bắt buộc phải sắp xếp lại toàn bộ vector sau mỗi thao tác",
+      "Vì vector chuyển đổi nội bộ thành danh sách liên kết đơn khi chèn"
+    ],
+    "answer": "Vì vector phải dịch chuyển tất cả các phần tử nằm phía sau vị trí thao tác sang phải (khi chèn) hoặc sang trái (khi xóa)",
+    "explanation": "Do vector lưu trữ các phần tử trên một vùng nhớ liên tục (contiguous array), nên khi chèn một phần tử vào giữa, tất cả các phần tử từ vị trí đó về cuối phải dịch sang phải 1 bước (O(n)). Tương tự khi xóa, các phần tử phía sau phải dịch sang trái 1 bước."
+  },
+  {
+    "id": "q082",
+    "topicId": 6,
+    "topicName": "Vector & Dynamic Arrays",
+    "question": "Trong `std::vector`, bộ duyệt (Iterator) trả về bởi phương thức `v.end()` trỏ tới vị trí nào?",
+    "options": [
+      "Vị trí ngay sau phần tử cuối cùng trong vector (past-the-end element)",
+      "Chính xác phần tử cuối cùng đang có trong vector",
+      "Phần tử đầu tiên ở vị trí chỉ số 0",
+      "Địa chỉ ô nhớ của biến `size()`"
+    ],
+    "answer": "Vị trí ngay sau phần tử cuối cùng trong vector (past-the-end element)",
+    "explanation": "Trong chuẩn C++ STL, nửa khoảng duyệt là [begin, end). Iterator `v.begin()` trỏ tới phần tử đầu tiên, còn `v.end()` trỏ tới vị trí ảo ngay sau phần tử cuối cùng (past-the-end element), dùng làm mốc dừng cho vòng lặp."
+  },
+  {
+    "id": "q083",
+    "topicId": 6,
+    "topicName": "Vector & Dynamic Arrays",
+    "question": "Để duyệt ngược các phần tử của một `std::vector` từ phần tử cuối cùng về phần tử đầu tiên, ta sử dụng cặp bộ duyệt nào sau đây?",
+    "options": [
+      "`v.rbegin()` và `v.rend()`",
+      "`v.begin()` và `v.end()`",
+      "`v.front()` và `v.back()`",
+      "`v.head()` và `v.tail()`"
+    ],
+    "answer": "`v.rbegin()` và `v.rend()`",
+    "explanation": "Trong C++, Reverse Iterators cho phép duyệt ngược dãy: `v.rbegin()` trỏ tới phần tử cuối cùng (đóng vai trò bắt đầu khi duyệt ngược), và `v.rend()` trỏ tới vị trí trước phần tử đầu tiên."
+  },
+  {
+    "id": "q084",
+    "topicId": 6,
+    "topicName": "Vector & Dynamic Arrays",
+    "question": "Khi gọi phương thức `v.clear()` trên một vector đang chứa nhiều dữ liệu, trạng thái của `size()` và `capacity()` sẽ như thế nào?",
+    "options": [
+      "`size()` trở về 0, nhưng `capacity()` vẫn được giữ nguyên không tự động giải phóng",
+      "Cả `size()` và `capacity()` đều lập tức trở về 0",
+      "`capacity()` trở về 0, còn `size()` giữ nguyên",
+      "Vector bị xóa bỏ hoàn toàn khỏi bộ nhớ và không thể sử dụng lại"
+    ],
+    "answer": "`size()` trở về 0, nhưng `capacity()` vẫn được giữ nguyên không tự động giải phóng",
+    "explanation": "Theo chuẩn C++ STL, `v.clear()` hủy bỏ toàn bộ các phần tử hiện có, đưa `size()` về 0, nhưng vùng đệm bộ nhớ `capacity()` vẫn được giữ nguyên để tái sử dụng hiệu quả cho các lần chèn tiếp theo."
+  },
+  {
+    "id": "q085",
+    "topicId": 6,
+    "topicName": "Vector & Dynamic Arrays",
+    "question": "Hiện tượng mất hiệu lực của bộ lặp (Iterator Invalidation) trong `std::vector` xảy ra khi nào?",
+    "options": [
+      "Khi các thao tác chèn hoặc xóa làm dịch chuyển phần tử, hoặc khi thao tác thêm phần tử kích hoạt tái cấp phát lại bộ nhớ (Reallocation)",
+      "Chỉ khi chương trình bị tắt hoặc máy tính hết pin",
+      "Chỉ khi ta gán giá trị của vector cho một biến kiểu số nguyên",
+      "Khi gọi phương thức `v.size()` quá nhiều lần trong vòng lặp"
+    ],
+    "answer": "Khi các thao tác chèn hoặc xóa làm dịch chuyển phần tử, hoặc khi thao tác thêm phần tử kích hoạt tái cấp phát lại bộ nhớ (Reallocation)",
+    "explanation": "Trong `std::vector`, khi thêm phần tử vượt quá `capacity`, vector sẽ cấp phát vùng nhớ mới, copy dữ liệu sang và hủy vùng nhớ cũ, khiến tất cả iterator trỏ vào vùng nhớ cũ bị vô hiệu hóa (invalidation). Thao tác xóa `erase` cũng làm mất hiệu lực các iterator từ vị trí xóa về sau."
+  },
+  {
+    "id": "q086",
+    "topicId": 6,
+    "topicName": "Vector & Dynamic Arrays",
+    "question": "Tại sao các thư viện vector hiện đại áp dụng Chiến lược nhân đôi dung lượng (Doubling Strategy × 2) thay vì tăng một lượng cố định (+c) khi mảng đầy?",
+    "options": [
+      "Vì chiến lược nhân đôi đảm bảo tổng thời gian copy dữ liệu khi thêm n phần tử là O(n), mang lại chi phí khấu hao O(1) cho mỗi thao tác",
+      "Vì bộ nhớ RAM của máy tính chỉ cho phép cấp phát theo lũy thừa của 2",
+      "Vì chiến lược tăng cố định +c sẽ gây lỗi biên dịch trong C++",
+      "Vì nhân đôi dung lượng giúp vector không bao giờ bị đầy"
+    ],
+    "answer": "Vì chiến lược nhân đôi đảm bảo tổng thời gian copy dữ liệu khi thêm n phần tử là O(n), mang lại chi phí khấu hao O(1) cho mỗi thao tác",
+    "explanation": "Phân tích khấu hao (Amortized Analysis): Nếu tăng +c, cần copy n/c lần với tổng chi phí O(n²), trung bình mỗi lần push tốn O(n). Nếu nhân đôi (imes 2), tổng chi phí copy chuỗi hình học là 1 + 2 + 4 + ... + n = 2n - 1 = O(n), chi phí khấu hao trung bình mỗi lần push là O(n)/n = O(1)."
+  },
+  {
+    "id": "q087",
+    "topicId": 6,
+    "topicName": "Vector & Dynamic Arrays",
+    "question": "Phương thức `v.front()` và `v.back()` trong `std::vector` trả về kết quả gì?",
+    "options": [
+      "Tham chiếu tới phần tử đầu tiên (`v[0]`) và phần tử cuối cùng (`v[v.size() - 1]`)",
+      "Địa chỉ con trỏ tới vùng nhớ buffer và dung lượng capacity",
+      "Chỉ số nguyên 0 và chỉ số nguyên n-1",
+      "Bộ duyệt iterator trỏ tới đầu và cuối vector"
+    ],
+    "answer": "Tham chiếu tới phần tử đầu tiên (`v[0]`) và phần tử cuối cùng (`v[v.size() - 1]`)",
+    "explanation": "`v.front()` trả về tham chiếu trực tiếp đến phần tử đầu tiên `v[0]`, còn `v.back()` trả về tham chiếu đến phần tử cuối cùng `v[v.size() - 1]`. Chúng trả về giá trị/tham chiếu phần tử chứ không phải iterator."
+  },
+  {
+    "id": "q088",
+    "topicId": 6,
+    "topicName": "Vector & Dynamic Arrays",
+    "question": "Độ phức tạp thời gian của phương thức `v1.swap(v2)` hoán đổi hai `std::vector` cùng kiểu dữ liệu là bao nhiêu?",
+    "options": [
+      "O(1) vì chỉ hoán đổi con trỏ buffer nội bộ và các biến quản trị size, capacity",
+      "O(n) vì phải duyệt sao chép toàn bộ các phần tử từ vector này sang vector kia",
+      "O(n²) vì phải cấp phát lại bộ nhớ cho cả hai vector",
+      "O(log n)"
+    ],
+    "answer": "O(1) vì chỉ hoán đổi con trỏ buffer nội bộ và các biến quản trị size, capacity",
+    "explanation": "Phương thức `swap` giữa hai vector cùng kiểu đạt độ phức tạp O(1) hằng số vì nó không hề sao chép các phần tử bên trong, mà chỉ đơn giản tráo đổi con trỏ vùng nhớ nội bộ, biến kích thước `size` và dung lượng `capacity` giữa hai đối tượng."
+  },
+  {
+    "id": "q089",
+    "topicId": 6,
+    "topicName": "Vector & Dynamic Arrays",
+    "question": "Cho đoạn mã: `vector<int> v = {10, 20, 30}; v.pop_back(); v.push_back(40);`. Giá trị của `v.back()` và `v.size()` lần lượt là bao nhiêu?",
+    "options": [
+      "40 và 3",
+      "30 và 3",
+      "40 và 4",
+      "20 và 2"
+    ],
+    "answer": "40 và 3",
+    "explanation": "Ban đầu v = [10, 20, 30] (size = 3). Lệnh `v.pop_back()` xóa phần tử cuối 30 ⇒ v = [10, 20] (size = 2). Lệnh `v.push_back(40)` thêm 40 vào cuối ⇒ v = [10, 20, 40] (size = 3). Vậy `v.back() == 40` và `v.size() == 3`."
+  },
+  {
+    "id": "q090",
+    "topicId": 6,
+    "topicName": "Vector & Dynamic Arrays",
+    "question": "Trong chuẩn C++11 trở lên, phương thức nào sau đây được cung cấp để yêu cầu vector giải phóng lượng bộ nhớ đệm thừa, đưa `capacity()` về sát với `size()` hiện tại?",
+    "options": [
+      "`v.shrink_to_fit();`",
+      "`v.compact();`",
+      "`v.truncate();`",
+      "`v.free_capacity();`"
+    ],
+    "answer": "`v.shrink_to_fit();`",
+    "explanation": "Trong C++11, `shrink_to_fit()` là phương thức chuẩn của `std::vector` để giải phóng bộ nhớ không sử dụng, giúp giảm `capacity` về bằng với `size` hiện tại của vector."
+  },
+  {
+    "id": "q091",
+    "topicId": 7,
+    "topicName": "Linked List",
+    "question": "Trong cấu trúc Danh sách liên kết đơn (Singly Linked List), mỗi nút (Node) bắt buộc phải bao gồm những thành phần cơ bản nào?",
+    "options": [
+      "Trường dữ liệu chứa phần tử (Element) và một con trỏ trỏ tới nút kế tiếp (`next`)",
+      "Trường dữ liệu và hai con trỏ `prev` và `next`",
+      "Một mảng tĩnh 100 phần tử và một biến chỉ số `top`",
+      "Một mã băm nguyên tố và một con trỏ trỏ về chính nó"
+    ],
+    "answer": "Trường dữ liệu chứa phần tử (Element) và một con trỏ trỏ tới nút kế tiếp (`next`)",
+    "explanation": "Theo Slide 4-5 Lecture 7, một Node trong DSLK đơn bao gồm 2 thành phần chính: phần tử dữ liệu (`Element elem`) và con trỏ liên kết đơn hướng trỏ tới nút tiếp theo (`Node *next`). Nút cuối cùng trỏ tới `NULL`."
+  },
+  {
+    "id": "q092",
+    "topicId": 7,
+    "topicName": "Linked List",
+    "question": "Trong Danh sách liên kết kép (Doubly Linked List), mỗi nút (Node) có thêm con trỏ nào so với danh sách liên kết đơn?",
+    "options": [
+      "Con trỏ `prev` trỏ tới nút đứng ngay trước nó",
+      "Con trỏ `child` trỏ tới nút con bên trái",
+      "Con trỏ `random` trỏ tới một nút ngẫu nhiên trong bộ nhớ",
+      "Con trỏ `parent` trỏ tới nút gốc cây"
+    ],
+    "answer": "Con trỏ `prev` trỏ tới nút đứng ngay trước nó",
+    "explanation": "Theo Slide 15 Lecture 7, mỗi Node trong DSLK kép có hai con trỏ liên kết: `next` trỏ tới nút kế tiếp (successor) và `prev` trỏ tới nút liền trước (predecessor), cho phép duyệt danh sách theo cả hai chiều."
+  },
+  {
+    "id": "q093",
+    "topicId": 7,
+    "topicName": "Linked List",
+    "question": "Độ phức tạp thời gian của thao tác chèn một phần tử vào đầu Danh sách liên kết đơn (`push_front`) là bao nhiêu?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n²)"
+    ],
+    "answer": "O(1)",
+    "explanation": "Chèn vào đầu DSLK đơn chỉ tốn 3 bước: tạo nút mới `q = new Node(e)`, gán `q->next = head`, và cập nhật `head = q`. Toàn bộ thao tác chỉ mất vài phép gán con trỏ hằng số, đạt thời gian tuyệt đối O(1)."
+  },
+  {
+    "id": "q094",
+    "topicId": 7,
+    "topicName": "Linked List",
+    "question": "Tại sao trong Danh sách liên kết đơn, thao tác xóa phần tử ở cuối danh sách (`pop_back`) luôn mất thời gian O(n) ngay cả khi có con trỏ `tail` trỏ sẵn vào phần tử cuối?",
+    "options": [
+      "Vì cần duyệt tuần tự từ đầu danh sách để tìm nút nằm ngay trước `tail` nhằm cập nhật con trỏ `next` của nó thành NULL",
+      "Vì hệ điều hành cấm gọi lệnh delete trên con trỏ tail",
+      "Vì DSLK đơn tự động sắp xếp lại các phần tử mỗi khi xóa",
+      "Vì phải giải phóng toàn bộ các nút trong danh sách trước khi xóa nút cuối"
+    ],
+    "answer": "Vì cần duyệt tuần tự từ đầu danh sách để tìm nút nằm ngay trước `tail` nhằm cập nhật con trỏ `next` của nó thành NULL",
+    "explanation": "Trong DSLK đơn, liên kết chỉ có một chiều từ trước ra sau. Để xóa nút cuối `tail`, ta phải cập nhật con trỏ `next` của nút áp chót về `NULL` và gán `tail` mới là nút áp chót. Do không có con trỏ lùi, ta bắt buộc phải duyệt từ `head` mất O(n) bước để tìm nút áp chót."
+  },
+  {
+    "id": "q095",
+    "topicId": 7,
+    "topicName": "Linked List",
+    "question": "Vai trò cốt lõi của các Nút canh gác (Sentinel Nodes: `header` và `trailer`) trong Danh sách liên kết kép là gì?",
+    "options": [
+      "Triệt tiêu các trường hợp biên đặc biệt khi danh sách rỗng hoặc thao tác ở hai đầu, giúp giải thuật thêm/xóa đồng nhất không cần kiểm tra `NULL`",
+      "Lưu trữ dữ liệu mã hóa mật khẩu của danh sách",
+      "Đóng vai trò là bộ nhớ cache tăng tốc độ truy xuất",
+      "Tự động giải phóng danh sách khi bộ nhớ RAM đạt ngưỡng 90%"
+    ],
+    "answer": "Triệt tiêu các trường hợp biên đặc biệt khi danh sách rỗng hoặc thao tác ở hai đầu, giúp giải thuật thêm/xóa đồng nhất không cần kiểm tra `NULL`",
+    "explanation": "Theo Slide 16-17 Lecture 7, các nút canh gác (`header` và `trailer`) là các nút giả không chứa dữ liệu thực tế, đứng ở hai đầu danh sách. Mọi nút dữ liệu thực đều nằm giữa `header` và `trailer`. Nhờ đó, việc chèn hay xóa bất kỳ vị trí nào đều áp dụng cùng một công thức cập nhật 4 con trỏ mà không lo lỗi con trỏ `NULL`."
+  },
+  {
+    "id": "q096",
+    "topicId": 7,
+    "topicName": "Linked List",
+    "question": "Trong DSLK kép có nút canh gác, thứ tự các bước để chèn nút mới `q` vào ngay sau nút `p` (`insertAfter(p, q)`) sao cho không làm đứt gãy liên kết là gì?",
+    "options": [
+      "`q->setNext(p->getNext()); p->getNext()->setPrev(q); q->setPrev(p); p->setNext(q);`",
+      "`p->setNext(q); q->setPrev(p); q->setNext(p->getNext()); p->getNext()->setPrev(q);`",
+      "`delete p; q->setNext(p); p->setPrev(q);`",
+      "`q = p; p->setNext(q->getNext());`"
+    ],
+    "answer": "`q->setNext(p->getNext()); p->getNext()->setPrev(q); q->setPrev(p); p->setNext(q);`",
+    "explanation": "Theo Slide 18 Lecture 7: Đầu tiên nối hai liên kết của nút mới `q` với nút sau của `p`: `q->next = p->next` và `p->next->prev = q`. Sau đó mới gắn liên kết giữa `p` và `q`: `q->prev = p` và `p->next = q`. Nếu gán `p->next = q` trước sẽ làm mất con trỏ tới nút sau của `p`."
+  },
+  {
+    "id": "q097",
+    "topicId": 7,
+    "topicName": "Linked List",
+    "question": "Độ phức tạp thời gian của thao tác xóa một nút `p` khi đã có sẵn con trỏ trỏ tới `p` trong Danh sách liên kết kép (`remove(p)`) là bao nhiêu?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n²)"
+    ],
+    "answer": "O(1)",
+    "explanation": "Trong DSLK kép, mỗi nút biết cả nút trước `p->prev` và nút sau `p->next`. Để xóa `p`, chỉ cần: `p->prev->next = p->next; p->next->prev = p->prev; delete p;`. Toàn bộ thao tác chỉ gồm vài phép gán con trỏ hằng số, đạt thời gian O(1) mà không cần duyệt danh sách."
+  },
+  {
+    "id": "q098",
+    "topicId": 7,
+    "topicName": "Linked List",
+    "question": "Đặc điểm cấu trúc nhận diện của Danh sách liên kết vòng (Circular Linked List) là gì?",
+    "options": [
+      "Con trỏ `next` của nút cuối cùng trỏ ngược lại nút đầu tiên của danh sách thay vì trỏ tới `NULL`",
+      "Mỗi nút trong danh sách đều có đúng 3 con trỏ liên kết",
+      "Danh sách không cho phép chứa các phần tử có giá trị trùng lặp",
+      "Dữ liệu trong các nút bắt buộc phải được sắp xếp theo hình tròn số học"
+    ],
+    "answer": "Con trỏ `next` của nút cuối cùng trỏ ngược lại nút đầu tiên của danh sách thay vì trỏ tới `NULL`",
+    "explanation": "Trong Danh sách liên kết vòng (Circular Linked List), nút cuối cùng không trỏ tới `NULL` mà trỏ quay trở lại nút đầu tiên (nút `head`), tạo thành một vòng khép kín liên tục không có điểm kết thúc."
+  },
+  {
+    "id": "q099",
+    "topicId": 7,
+    "topicName": "Linked List",
+    "question": "Ứng dụng thực tế kinh điển của Danh sách liên kết vòng trong hệ điều hành là gì?",
+    "options": [
+      "Thuật toán lập lịch phân phối thời gian CPU xoay vòng (Round-Robin CPU Scheduling)",
+      "Thuật toán tìm kiếm nhị phân trên bộ nhớ phụ",
+      "Lưu trữ bảng phân bổ file FAT32",
+      "Mã hóa khóa công khai RSA"
+    ],
+    "answer": "Thuật toán lập lịch phân phối thời gian CPU xoay vòng (Round-Robin CPU Scheduling)",
+    "explanation": "DSLK vòng là cấu trúc dữ liệu lý tưởng cho thuật toán điều phối CPU Round-Robin: các tiến trình được xếp vào một vòng tròn, CPU cấp một lượng thời gian quantum cho tiến trình hiện tại rồi tự động chuyển sang tiến trình kế tiếp theo vòng tròn."
+  },
+  {
+    "id": "q100",
+    "topicId": 7,
+    "topicName": "Linked List",
+    "question": "Về mặt chi phí bộ nhớ phụ trội (Memory Overhead), cấu trúc Danh sách liên kết có đặc điểm gì so với Mảng tĩnh?",
+    "options": [
+      "Danh sách liên kết tốn thêm bộ nhớ cho các biến con trỏ liên kết (`next`, `prev`) tại mỗi nút dữ liệu",
+      "Danh sách liên kết tiết kiệm bộ nhớ hơn mảng 100% trong mọi tình huống",
+      "Danh sách liên kết không tốn thêm bất kỳ byte bộ nhớ phụ nào",
+      "Mảng tốn nhiều bộ nhớ con trỏ hơn danh sách liên kết"
+    ],
+    "answer": "Danh sách liên kết tốn thêm bộ nhớ cho các biến con trỏ liên kết (`next`, `prev`) tại mỗi nút dữ liệu",
+    "explanation": "Theo bảng so sánh Slide 28 Lecture 7: Trong mảng/vector, các phần tử nằm liền kề chỉ chứa dữ liệu thuần. Trong DSLK, mỗi nút bắt buộc phải tốn thêm bộ nhớ cho con trỏ (4 hoặc 8 bytes trên máy 64-bit cho mỗi con trỏ `next` và `prev`), tạo ra chi phí phụ trội bộ nhớ (overhead)."
+  },
+  {
+    "id": "q101",
+    "topicId": 7,
+    "topicName": "Linked List",
+    "question": "Tại sao việc duyệt tuần tự các phần tử trên Mảng (Array/Vector) thường chạy nhanh hơn đáng kể so với duyệt trên Danh sách liên kết trên các máy tính hiện đại?",
+    "options": [
+      "Mảng có tính định vị bộ nhớ đệm (Cache Locality) vượt trội do các phần tử nằm liên tục trong RAM, giảm thiểu hiện tượng Cache Miss",
+      "Vì ngôn ngữ C++ tự động bỏ qua các phần tử trong danh sách liên kết",
+      "Vì con trỏ trong danh sách liên kết luôn có tốc độ truyền tải 1 byte/giây",
+      "Vì vi xử lý CPU không hỗ trợ câu lệnh giải tham chiếu con trỏ"
+    ],
+    "answer": "Mảng có tính định vị bộ nhớ đệm (Cache Locality) vượt trội do các phần tử nằm liên tục trong RAM, giảm thiểu hiện tượng Cache Miss",
+    "explanation": "Mảng lưu trữ trên một dải ô nhớ liên tục (contiguous memory), khi CPU nạp dữ liệu vào Cache Line sẽ nạp luôn các phần tử liền kề kế tiếp (Spatial Locality). Trong khi DSLK cấp phát các nút rải rác trên Heap, việc nhảy con trỏ liên tục gây Cache Miss thường xuyên, làm chậm tốc độ thực thi."
+  },
+  {
+    "id": "q102",
+    "topicId": 7,
+    "topicName": "Linked List",
+    "question": "Thao tác truy xuất phần tử tại chỉ số ngẫu nhiên `i` trên Danh sách liên kết có độ phức tạp thời gian là bao nhiêu?",
+    "options": [
+      "O(n) vì bắt buộc phải duyệt tuần tự qua i nút từ đầu danh sách",
+      "O(1) nhờ cơ chế con trỏ nhảy cóc trực tiếp",
+      "O(log n) bằng thuật toán tìm kiếm nhị phân",
+      "O(n²)"
+    ],
+    "answer": "O(n) vì bắt buộc phải duyệt tuần tự qua i nút từ đầu danh sách",
+    "explanation": "Danh sách liên kết không hỗ trợ truy cập ngẫu nhiên (No Random Access). Để truy xuất phần tử thứ i, chương trình bắt buộc phải lần theo con trỏ `next` từ nút đầu qua từng nút một, tốn O(n) bước."
+  },
+  {
+    "id": "q103",
+    "topicId": 7,
+    "topicName": "Linked List",
+    "question": "Container `std::list` trong thư viện chuẩn C++ STL được cài đặt dựa trên cấu trúc dữ liệu nền tảng nào?",
+    "options": [
+      "Danh sách liên kết kép (Doubly Linked List)",
+      "Mảng động tự co giãn kích thước (Dynamic Array)",
+      "Danh sách liên kết đơn không có nút canh gác",
+      "Cây tìm kiếm nhị phân tự cân bằng AVL"
+    ],
+    "answer": "Danh sách liên kết kép (Doubly Linked List)",
+    "explanation": "Trong C++ STL, `std::list` được cài đặt chuẩn mực dưới dạng Danh sách liên kết kép (Doubly Linked List), cung cấp các thao tác chèn/xóa hai đầu và chèn/xóa tại vị trí iterator trong thời gian O(1)."
+  },
+  {
+    "id": "q104",
+    "topicId": 7,
+    "topicName": "Linked List",
+    "question": "Tại sao lập trình viên KHÔNG THỂ sử dụng toán tử truy xuất chỉ số `mylist[k]` trên đối tượng `std::list<int> mylist` trong C++?",
+    "options": [
+      "Vì `std::list` chỉ cung cấp bộ duyệt hai chiều (Bidirectional Iterator), không hỗ trợ toán tử ngẫu nhiên truy cập O(1)",
+      "Vì thư viện STL cấm sử dụng số nguyên làm chỉ số danh sách",
+      "Vì `std::list` chỉ cho phép truy xuất qua giao thức mạng",
+      "Vì `std::list` luôn tự động xóa phần tử sau khi đọc"
+    ],
+    "answer": "Vì `std::list` chỉ cung cấp bộ duyệt hai chiều (Bidirectional Iterator), không hỗ trợ toán tử ngẫu nhiên truy cập O(1)",
+    "explanation": "Nguyên tắc thiết kế của C++ STL là không cung cấp `operator[]` cho các cấu trúc không hỗ trợ truy cập ngẫu nhiên O(1). Do `std::list` là DSLK kép mất O(n) để truy cập vị trí k, nên STL không hỗ trợ `operator[]` để tránh việc lập trình viên vô tình viết vòng lặp O(n²)."
+  },
+  {
+    "id": "q105",
+    "topicId": 7,
+    "topicName": "Linked List",
+    "question": "Trong hàm hủy (Destructor) của một lớp Danh sách liên kết tự cài đặt trong C++, thao tác nào bắt buộc phải thực hiện để tránh rò rỉ bộ nhớ (Memory Leak)?",
+    "options": [
+      "Duyệt qua toàn bộ danh sách và gọi lệnh `delete` giải phóng lần lượt từng nút một",
+      "Chỉ cần gán con trỏ `head = NULL;`",
+      "Gọi lệnh `delete head;` một lần duy nhất mà không cần vòng lặp",
+      "Chỉ cần gọi lệnh `free(this);`"
+    ],
+    "answer": "Duyệt qua toàn bộ danh sách và gọi lệnh `delete` giải phóng lần lượt từng nút một",
+    "explanation": "Mỗi nút trong DSLK là một vùng nhớ độc lập được cấp phát riêng rẽ bằng `new`. Nếu chỉ gán `head = NULL` hoặc chỉ `delete head`, tất cả các nút còn lại sẽ bị cô lập trên Heap và gây rò rỉ bộ nhớ nghiêm trọng. Hàm hủy bắt buộc phải có vòng lặp duyệt xóa từng nút."
+  },
+  {
+    "id": "q106",
+    "topicId": 8,
+    "topicName": "Stack",
+    "question": "Kiểu dữ liệu trừu tượng Ngăn xếp (Stack ADT) hoạt động nghiêm ngặt theo nguyên lý truy cập dữ liệu nào sau đây?",
+    "options": [
+      "LIFO (Last In, First Out) - Vào sau ra trước",
+      "FIFO (First In, First Out) - Vào trước ra trước",
+      "LILO (Last In, Last Out) - Vào sau ra sau",
+      "Random Access - Truy xuất ngẫu nhiên bất kỳ vị trí nào"
+    ],
+    "answer": "LIFO (Last In, First Out) - Vào sau ra trước",
+    "explanation": "Theo Slide 4-5 Lecture 8, Stack là cấu trúc dữ liệu tuyến tính tuân thủ nghiêm ngặt nguyên lý LIFO (Last In, First Out): phần tử được thêm vào cuối cùng sẽ là phần tử đầu tiên được lấy ra khỏi ngăn xếp."
+  },
+  {
+    "id": "q107",
+    "topicId": 8,
+    "topicName": "Stack",
+    "question": "Hai thao tác cơ bản nhất của Ngăn xếp: bổ sung một phần tử vào đỉnh và loại bỏ một phần tử khỏi đỉnh lần lượt có tên chuẩn là gì?",
+    "options": [
+      "`push` và `pop`",
+      "`enqueue` và `dequeue`",
+      "`insert` và `remove`",
+      "`append` và `delete`"
+    ],
+    "answer": "`push` và `pop`",
+    "explanation": "Theo quy ước chuẩn của Stack ADT (Slide 5-6 Lecture 8): `push(o)` là thao tác đẩy một phần tử mới vào đỉnh ngăn xếp, và `pop()` là thao tác loại bỏ phần tử ở đỉnh ngăn xếp."
+  },
+  {
+    "id": "q108",
+    "topicId": 8,
+    "topicName": "Stack",
+    "question": "Hiện tượng Ngoại lệ `Stack Underflow` (Ngăn xếp rỗng) xảy ra trong tình huống nào sau đây?",
+    "options": [
+      "Khi chương trình cố gắng thực hiện thao tác `pop()` hoặc `top()` trên một ngăn xếp đang không có phần tử nào (rỗng)",
+      "Khi thực hiện `push()` vào một ngăn xếp đã đầy dung lượng bộ nhớ",
+      "Khi số lượng phần tử trong ngăn xếp vượt quá giới hạn kiểu số nguyên int",
+      "Khi khai báo ngăn xếp mà không khởi tạo giá trị ban đầu"
+    ],
+    "answer": "Khi chương trình cố gắng thực hiện thao tác `pop()` hoặc `top()` trên một ngăn xếp đang không có phần tử nào (rỗng)",
+    "explanation": "Theo Slide 7 Lecture 8: `StackEmptyException` (hay Underflow) xảy ra khi gọi `pop()` hoặc `top()` trên một stack rỗng. Ngược lại, `StackFullException` (Overflow) xảy ra khi gọi `push()` vào stack mảng cố định đã đầy."
+  },
+  {
+    "id": "q109",
+    "topicId": 8,
+    "topicName": "Stack",
+    "question": "Khi cài đặt Stack bằng mảng một chiều tĩnh kích thước N với biến chỉ số đỉnh `t` (khởi tạo ban đầu `t = -1`), thao tác `push(o)` được cài đặt bằng dòng lệnh nào?",
+    "options": [
+      "`S[++t] = o;`",
+      "`S[t++] = o;`",
+      "`S[--t] = o;`",
+      "`S[t] = o; t--;`"
+    ],
+    "answer": "`S[++t] = o;`",
+    "explanation": "Theo Slide 14 Lecture 8: Khởi tạo stack rỗng có `t = -1`. Khi thêm phần tử, ta cần tăng chỉ số đỉnh lên trước rồi mới gán dữ liệu vào ô nhớ mới đó: `S[++t] = o;` (tiền tố `++`)."
+  },
+  {
+    "id": "q110",
+    "topicId": 8,
+    "topicName": "Stack",
+    "question": "Khi cài đặt Stack bằng mảng động, nếu áp dụng Chiến lược tăng kích thước cố định (+c ô nhớ) mỗi khi mảng bị đầy, tổng thời gian copy dữ liệu khi thực hiện chuỗi n thao tác push là bao nhiêu?",
+    "options": [
+      "O(n²), dẫn đến chi phí trung bình cho mỗi thao tác push là O(n)",
+      "O(n), dẫn đến chi phí trung bình là O(1)",
+      "O(n log n), dẫn đến chi phí trung bình là O(log n)",
+      "O(1) trong mọi trường hợp"
+    ],
+    "answer": "O(n²), dẫn đến chi phí trung bình cho mỗi thao tác push là O(n)",
+    "explanation": "Theo Slide 27-28 Lecture 8: Nếu tăng thêm c ô nhớ mỗi lần đầy, sau k = n/c lần cấp phát lại, tổng chi phí copy là chuỗi số học c(1 + 2 + ... + k) = c (k(k+1))/(2) = O(k²) = O(n²). Do đó chi phí trung bình mỗi lần push là O(n²)/n = O(n) (kém hiệu quả)."
+  },
+  {
+    "id": "q111",
+    "topicId": 8,
+    "topicName": "Stack",
+    "question": "Khi cài đặt Stack bằng mảng động, Chiến lược nhân đôi kích thước (× 2) mang lại chi phí khấu hao (Amortized Time) cho mỗi thao tác `push` là bao nhiêu?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n²)"
+    ],
+    "answer": "O(1)",
+    "explanation": "Theo Slide 29-30 Lecture 8: Khi nhân đôi dung lượng mỗi lần đầy mảng, tổng chi phí copy chuỗi hình học là 1 + 2 + 4 + ... + 2ᵏ ≈ 2n = O(n). Chia đều cho n thao tác push, thời gian trung bình khấu hao (Amortized Time) cho mỗi phép push là O(n)/n = O(1)."
+  },
+  {
+    "id": "q112",
+    "topicId": 8,
+    "topicName": "Stack",
+    "question": "Khi cài đặt Stack bằng Danh sách liên kết đơn, vị trí nào của danh sách nên được chọn làm Đỉnh ngăn xếp (Top) để đảm bảo thời gian O(1) cho cả hai thao tác `push` và `pop`?",
+    "options": [
+      "Đầu danh sách (Head)",
+      "Cuối danh sách (Tail)",
+      "Chính giữa danh sách",
+      "Vị trí ngẫu nhiên"
+    ],
+    "answer": "Đầu danh sách (Head)",
+    "explanation": "Trong DSLK đơn, các thao tác ở đầu danh sách (`push_front` và `pop_front`) đều tốn O(1). Nếu chọn cuối danh sách làm Top, thao tác `pop` sẽ tốn O(n) do phải tìm nút liền trước. Do đó đỉnh ngăn xếp Top luôn gắn với đầu danh sách (Head)."
+  },
+  {
+    "id": "q113",
+    "topicId": 8,
+    "topicName": "Stack",
+    "question": "Khung ngăn xếp (Stack Frame / Activation Record) trên Call Stack của chương trình C++ được tạo ra và giải phóng vào những thời điểm nào?",
+    "options": [
+      "Được đẩy vào (push) khi gọi hàm và được lấy ra giải phóng (pop) khi hàm kết thúc thực thi (return)",
+      "Được tạo ra khi bật máy tính và giải phóng khi tắt máy tính",
+      "Được tạo ra khi lưu file mã nguồn và giải phóng khi biên dịch",
+      "Được tạo ra ngẫu nhiên bởi trình điều khiển card mạng"
+    ],
+    "answer": "Được đẩy vào (push) khi gọi hàm và được lấy ra giải phóng (pop) khi hàm kết thúc thực thi (return)",
+    "explanation": "Theo Slide 8-9 Lecture 8: Quá trình thực thi hàm trong C++ hoạt động theo cơ chế Call Stack: khi một hàm được gọi, hệ thống đẩy một Frame chứa biến cục bộ và địa chỉ trở về vào đỉnh Stack; khi hàm gặp lệnh return, Frame đó được pop ra và CPU quay lại hàm gọi."
+  },
+  {
+    "id": "q114",
+    "topicId": 8,
+    "topicName": "Stack",
+    "question": "Trong thuật toán kiểm tra tính hợp lệ của các dấu ngoặc (Balanced Parentheses), khi duyệt gặp một ký tự mở ngoặc `(`, thuật toán sẽ xử lý như thế nào?",
+    "options": [
+      "Đẩy (push) ký tự mở ngoặc đó vào đỉnh ngăn xếp",
+      "Lấy một phần tử ra khỏi ngăn xếp bằng thao tác pop",
+      "Dừng chương trình và thông báo biểu thức không hợp lệ ngay lập tức",
+      "Xóa sạch toàn bộ ngăn xếp"
+    ],
+    "answer": "Đẩy (push) ký tự mở ngoặc đó vào đỉnh ngăn xếp",
+    "explanation": "Theo Slide 34 Lecture 8: Khi duyệt chuỗi biểu thức, gặp bất kỳ dấu mở ngoặc nào `(`, `[`, `{` ta đều đẩy nó vào Stack. Khi gặp dấu đóng ngoặc tương ứng, ta lấy dấu mở ngoặc ở đỉnh Stack ra kiểm tra xem có khớp cặp hay không."
+  },
+  {
+    "id": "q115",
+    "topicId": 8,
+    "topicName": "Stack",
+    "question": "Ưu điểm vượt trội nhất của biểu thức toán học biểu diễn dưới dạng Ký pháp Hậu tố (Postfix / Reverse Polish Notation) so với Trung tố (Infix) là gì?",
+    "options": [
+      "Hoàn toàn không cần sử dụng dấu ngoặc và thứ tự thực hiện các phép toán hoàn toàn đơn trị từ trái qua phải",
+      "Dung lượng chuỗi ký tự luôn ngắn hơn một nửa so với trung tố",
+      "Có thể tính toán trực tiếp mà không cần dùng đến vi xử lý",
+      "Chỉ thực hiện được các phép cộng và trừ"
+    ],
+    "answer": "Hoàn toàn không cần sử dụng dấu ngoặc và thứ tự thực hiện các phép toán hoàn toàn đơn trị từ trái qua phải",
+    "explanation": "Theo Slide 22-25 Lecture 8: Trong ký pháp Hậu tố (Postfix), toán tử đứng ngay sau các toán hạng của nó. Do đó cấu trúc này không cần đến dấu ngoặc hay quy tắc ưu tiên toán tử phức tạp, máy tính có thể đánh giá kết quả dễ dàng bằng một Stack duy nhất."
+  },
+  {
+    "id": "q116",
+    "topicId": 8,
+    "topicName": "Stack",
+    "question": "Biểu thức Trung tố (Infix) sau: `(A + B) * C` khi chuyển đổi sang dạng Ký pháp Hậu tố (Postfix) sẽ có kết quả là gì?",
+    "options": [
+      "`A B + C *`",
+      "`A B C + *`",
+      "`* + A B C`",
+      "`A B + * C`"
+    ],
+    "answer": "`A B + C *`",
+    "explanation": "Trong biểu thức `(A + B) * C`, phép cộng `A + B` nằm trong ngoặc nên được thực hiện trước ⇒ `A B +`. Kết quả này sau đó được nhân với C ⇒ `A B + C *`."
+  },
+  {
+    "id": "q117",
+    "topicId": 8,
+    "topicName": "Stack",
+    "question": "Trong thuật toán tính giá trị biểu thức Hậu tố (Postfix Evaluation) sử dụng Stack, khi gặp một toán tử hai ngôi số học (ví dụ dấu trừ `-`), thứ tự lấy các toán hạng ra khỏi Stack như thế nào?",
+    "options": [
+      "Toán hạng lấy ra đầu tiên là toán hạng bên phải (op2), toán hạng lấy ra thứ hai là toán hạng bên trái (op1), sau đó tính op1 - op2",
+      "Toán hạng lấy ra đầu tiên là toán hạng bên trái (op1), toán hạng lấy ra thứ hai là toán hạng bên phải (op2), sau đó tính op1 - op2",
+      "Lấy ra một toán hạng duy nhất rồi trừ cho 0",
+      "Lấy ra 3 toán hạng cùng một lúc và cộng dồn lại"
+    ],
+    "answer": "Toán hạng lấy ra đầu tiên là toán hạng bên phải (op2), toán hạng lấy ra thứ hai là toán hạng bên trái (op1), sau đó tính op1 - op2",
+    "explanation": "Do cơ chế LIFO của Stack, phần tử được push vào sau cùng nằm ở đỉnh stack chính là toán hạng bên phải (op2). Khi pop phần tử đầu tiên ta nhận được op2, pop phần tử tiếp theo nhận được op1. Phép toán được thực hiện là op1  operator  op2 (đặc biệt quan trọng với phép trừ và phép chia)."
+  },
+  {
+    "id": "q118",
+    "topicId": 8,
+    "topicName": "Stack",
+    "question": "Trong bài toán Computing Spans (Stock Span Problem) ở Slide 18-21 Lecture 8, giải thuật tối ưu sử dụng Stack đơn điệu (Monotonic Stack) đạt độ phức tạp thời gian là bao nhiêu so với cách vét cạn 2 vòng lặp O(n²)?",
+    "options": [
+      "O(n) tuyến tính",
+      "O(n log n)",
+      "O(log n)",
+      "O(n³)"
+    ],
+    "answer": "O(n) tuyến tính",
+    "explanation": "Thuật toán tối ưu dùng Stack lưu trữ chỉ số các phần tử. Mỗi phần tử trong mảng được push vào stack đúng 1 lần và bị pop ra tối đa 1 lần trong toàn bộ tiến trình. Tổng số thao tác trên stack tối đa là 2n, do đó thuật toán đạt độ phức tạp thời gian tuyến tính O(n)."
+  },
+  {
+    "id": "q119",
+    "topicId": 8,
+    "topicName": "Stack",
+    "question": "Khi sử dụng Stack để chuyển đổi một số nguyên dương hệ thập phân sang hệ nhị phân, thuật toán liên tục chia số đó cho 2 và đẩy phần dư vào Stack. Kết quả chuỗi nhị phân thu được bằng cách nào?",
+    "options": [
+      "Lấy lần lượt các phần dư ra khỏi Stack từ đỉnh về đáy cho tới khi Stack rỗng",
+      "Đọc các phần tử từ đáy Stack lên đỉnh Stack",
+      "Nhân các phần tử trong Stack với số 2 rồi cộng lại",
+      "Chỉ cần lấy phần tử ở đáy Stack là đủ"
+    ],
+    "answer": "Lấy lần lượt các phần dư ra khỏi Stack từ đỉnh về đáy cho tới khi Stack rỗng",
+    "explanation": "Trong phép đổi cơ số, chữ số dư đầu tiên tính được là bit trọng số thấp nhất (LSB) nằm ở bên phải cùng, còn số dư cuối cùng là bit trọng số cao nhất (MSB). Bằng cách đẩy vào Stack và sau đó pop ra lần lượt, thứ tự các bit được đảo ngược lại một cách tự nhiên và chính xác."
+  },
+  {
+    "id": "q120",
+    "topicId": 8,
+    "topicName": "Stack",
+    "question": "Trong thư viện chuẩn C++ STL `std::stack`, phương thức nào được sử dụng để đọc giá trị phần tử ở đỉnh ngăn xếp mà không loại bỏ phần tử đó khỏi ngăn xếp?",
+    "options": [
+      "`top()`",
+      "`pop()`",
+      "`peek_back()`",
+      "`front()`"
+    ],
+    "answer": "`top()`",
+    "explanation": "Trong C++ STL `std::stack`: hàm `pop()` chỉ loại bỏ phần tử ở đỉnh và có kiểu trả về `void` (không trả về giá trị). Để xem giá trị phần tử đỉnh ngăn xếp, ta phải gọi phương thức `top()`."
+  },
+  {
+    "id": "q121",
+    "topicId": 9,
+    "topicName": "Queue",
+    "question": "Kiểu dữ liệu trừu tượng Hàng đợi (Queue ADT) hoạt động nghiêm ngặt theo nguyên lý truy cập dữ liệu nào sau đây?",
+    "options": [
+      "FIFO (First In, First Out) - Vào trước ra trước",
+      "LIFO (Last In, First Out) - Vào sau ra trước",
+      "FILO (First In, Last Out) - Vào trước ra sau",
+      "LILO (Last In, Lowest Out) - Ưu tiên phần tử giá trị nhỏ nhất"
+    ],
+    "answer": "FIFO (First In, First Out) - Vào trước ra trước",
+    "explanation": "Theo Slide 3-4 Lecture 9, Hàng đợi (Queue) là cấu trúc dữ liệu tuyến tính hoạt động theo nguyên lý FIFO (First In, First Out): phần tử nào được thêm vào trước sẽ là phần tử đầu tiên được lấy ra, tương tự dòng người xếp hàng mua vé."
+  },
+  {
+    "id": "q122",
+    "topicId": 9,
+    "topicName": "Queue",
+    "question": "Trong Hàng đợi chuẩn (Standard Queue), thao tác bổ sung phần tử mới và thao tác lấy phần tử ra được thực hiện ở những vị trí nào?",
+    "options": [
+      "Bổ sung ở Cuối hàng (Rear / Back) và lấy ra ở Đầu hàng (Front)",
+      "Bổ sung ở Đầu hàng (Front) và lấy ra ở Cuối hàng (Rear)",
+      "Cả thêm và lấy ra đều thực hiện ở cùng một vị trí Đỉnh (Top)",
+      "Bổ sung và lấy ra ở vị trí chính giữa hàng đợi"
+    ],
+    "answer": "Bổ sung ở Cuối hàng (Rear / Back) và lấy ra ở Đầu hàng (Front)",
+    "explanation": "Theo Slide 4 Lecture 9, Queue có hai đầu tách biệt: phần tử mới luôn được thêm vào ở cuối hàng (Rear/Back - Enqueue/Push), và phần tử bị loại bỏ luôn ở đầu hàng (Front - Dequeue/Pop)."
+  },
+  {
+    "id": "q123",
+    "topicId": 9,
+    "topicName": "Queue",
+    "question": "Hiện tượng \"Trôi mảng / Đầy giả tạo\" (Array Drifting / False Overflow) khi cài đặt Hàng đợi bằng mảng tuyến tính thông thường là hiện tượng gì?",
+    "options": [
+      "Chỉ số cuối hàng chạm giới hạn mảng nhưng các ô nhớ phía trước đã bị bỏ trống do các thao tác lấy ra, khiến mảng báo đầy dù dung lượng thực tế vẫn còn dư",
+      "Mảng bị tràn bộ nhớ do chứa quá nhiều số âm",
+      "Các phần tử trong mảng tự động dịch chuyển ngẫu nhiên khi không có thao tác",
+      "Hệ điều hành tự động xóa các ô nhớ sau 10 giây không truy cập"
+    ],
+    "answer": "Chỉ số cuối hàng chạm giới hạn mảng nhưng các ô nhớ phía trước đã bị bỏ trống do các thao tác lấy ra, khiến mảng báo đầy dù dung lượng thực tế vẫn còn dư",
+    "explanation": "Nếu dùng mảng tuyến tính với 2 con trỏ `front` và `rear` tăng dần, sau một loạt thao tác enqueue và dequeue, cả hai con trỏ đều dịch dần về cuối mảng. Dù các ô ở đầu mảng đã trống nhưng con trỏ `rear` chạm N-1 khiến hàng đợi báo đầy giả (False Overflow)."
+  },
+  {
+    "id": "q124",
+    "topicId": 9,
+    "topicName": "Queue",
+    "question": "Cơ chế Mảng vòng (Circular Array) giải quyết hiện tượng trôi mảng trong Hàng đợi bằng cách áp dụng toán tử toán học nào?",
+    "options": [
+      "Toán tử chia lấy phần dư (Modulo `% N`)",
+      "Toán tử căn bậc hai",
+      "Toán tử nhân đôi bitwise shift left",
+      "Toán tử logarit cơ số e"
+    ],
+    "answer": "Toán tử chia lấy phần dư (Modulo `% N`)",
+    "explanation": "Theo Slide 6, 8 Lecture 9: Mảng vòng sử dụng phép toán Modulo `% N` để nối vòng ô cuối cùng N-1 quay trở lại ô đầu tiên chỉ số 0, cho phép tái sử dụng các ô nhớ trống ở đầu mảng mà không cần dịch chuyển dữ liệu."
+  },
+  {
+    "id": "q125",
+    "topicId": 9,
+    "topicName": "Queue",
+    "question": "Trong Hàng đợi mảng vòng kích thước N với chỉ số đầu F, chỉ số ô kế tiếp nhận phần tử mới L, công thức cập nhật chỉ số L khi thêm phần tử (`push`) là gì?",
+    "options": [
+      "`L = (L + 1) % N;`",
+      "`L = L + 1;`",
+      "`L = (L - 1) % N;`",
+      "`L = (F + L) / 2;`"
+    ],
+    "answer": "`L = (L + 1) % N;`",
+    "explanation": "Theo Slide 8 Lecture 9: Khi thêm một phần tử vào vị trí L, phần tử mới chiếm ô Q[L], sau đó con trỏ L dịch chuyển sang ô kế tiếp theo quy tắc vòng tròn: `L = (L + 1) % N;`."
+  },
+  {
+    "id": "q126",
+    "topicId": 9,
+    "topicName": "Queue",
+    "question": "Trong Queue mảng vòng kích thước N, nếu chỉ số ô tiếp theo nhận phần tử mới là L, công thức tính chỉ số của phần tử cuối cùng hiện tại trong hàng đợi (`back()`) là gì?",
+    "options": [
+      "`(L - 1 + N) % N`",
+      "`L - 1`",
+      "`(L + 1) % N`",
+      "`F % N`"
+    ],
+    "answer": "`(L - 1 + N) % N`",
+    "explanation": "Do L luôn trỏ tới ô trống kế tiếp sau phần tử cuối, nên phần tử cuối cùng nằm ở ô liền trước L, tức là L - 1. Để tránh giá trị âm khi L = 0, ta cộng thêm chu kỳ N trước khi modulo: `(L - 1 + N) % N`."
+  },
+  {
+    "id": "q127",
+    "topicId": 9,
+    "topicName": "Queue",
+    "question": "Khi cài đặt Queue bằng mảng vòng có sử dụng biến đếm số lượng phần tử hiện tại num, điều kiện để kiểm tra Hàng đợi rỗng và Hàng đợi đầy lần lượt là gì?",
+    "options": [
+      "Rỗng khi `num == 0`; Đầy khi `num == N`",
+      "Rỗng khi `F == L`; Đầy khi `F == 0`",
+      "Rỗng khi `num == N`; Đầy khi `num == 0`",
+      "Rỗng khi `F == -1`; Đầy khi `L == -1`"
+    ],
+    "answer": "Rỗng khi `num == 0`; Đầy khi `num == N`",
+    "explanation": "Theo Slide 8-10 Lecture 9: Sử dụng biến đếm num (0 ≤ num ≤ N) là giải pháp hoàn hảo để phân biệt rõ ràng giữa trạng thái rỗng (`num == 0`) và trạng thái đầy (`num == N`), tránh được sự nhập nhằng của điều kiện F == L."
+  },
+  {
+    "id": "q128",
+    "topicId": 9,
+    "topicName": "Queue",
+    "question": "Độ phức tạp thời gian của các thao tác `enqueue` (thêm vào) và `dequeue` (lấy ra) trên Hàng đợi mảng vòng tròn (Circular Queue) là bao nhiêu?",
+    "options": [
+      "O(1) cho cả hai thao tác",
+      "O(n) cho thao tác lấy ra do phải dịch chuyển các phần tử",
+      "O(log n)",
+      "O(n) cho thao tác thêm vào"
+    ],
+    "answer": "O(1) cho cả hai thao tác",
+    "explanation": "Nhờ cơ chế vòng tròn bằng phép toán modulo `% N`, việc thêm vào cuối và lấy ra ở đầu chỉ bao gồm việc tăng chỉ số con trỏ L hoặc F và tăng/giảm biến đếm num. Hoàn toàn không có thao tác dồn dịch mảng, do đó thời gian đạt hằng số O(1) tuyệt đối."
+  },
+  {
+    "id": "q129",
+    "topicId": 9,
+    "topicName": "Queue",
+    "question": "Khi cài đặt Queue bằng Danh sách liên kết đơn có hai con trỏ `head` và `tail`, cách thiết lập vị trí `Front` và `Rear` nào sau đây giúp cả hai thao tác thêm và lấy ra đều đạt O(1)?",
+    "options": [
+      "Đặt `Front` ở `head` (lấy ra ở đầu) và `Rear` ở `tail` (thêm vào ở cuối)",
+      "Đặt `Front` ở `tail` (lấy ra ở cuối) và `Rear` ở `head` (thêm vào ở đầu)",
+      "Đặt cả `Front` và `Rear` cùng ở vị trí `head`",
+      "Đặt cả `Front` và `Rear` cùng ở vị trí `tail`"
+    ],
+    "answer": "Đặt `Front` ở `head` (lấy ra ở đầu) và `Rear` ở `tail` (thêm vào ở cuối)",
+    "explanation": "Trong DSLK đơn: thêm vào cuối `push_back` (qua `tail->next`) tốn O(1), và xóa ở đầu `pop_front` (qua `head = head->next`) tốn O(1). Do đó chọn `Front = head` và `Rear = tail` sẽ đảm bảo mọi thao tác của Queue đều đạt O(1)."
+  },
+  {
+    "id": "q130",
+    "topicId": 9,
+    "topicName": "Queue",
+    "question": "Nếu cài đặt Queue bằng DSLK đơn nhưng đảo ngược lại: đặt `Front` ở `tail` và `Rear` ở `head`, thì thao tác nào sẽ bị suy giảm hiệu năng nghiêm trọng thành O(n)?",
+    "options": [
+      "Thao tác lấy phần tử ra (`dequeue`)",
+      "Thao tác thêm phần tử vào (`enqueue`)",
+      "Thao tác kiểm tra rỗng (`isEmpty`)",
+      "Thao tác lấy kích thước (`size`)"
+    ],
+    "answer": "Thao tác lấy phần tử ra (`dequeue`)",
+    "explanation": "Nếu `Front` ở `tail`, khi lấy phần tử ra khỏi hàng đợi (`dequeue`), ta phải xóa nút ở cuối DSLK đơn (`pop_back`). Thao tác này bắt buộc phải duyệt tuần tự từ đầu để tìm nút áp chót nhằm cập nhật liên kết, khiến chi phí bị đội lên O(n)."
+  },
+  {
+    "id": "q131",
+    "topicId": 9,
+    "topicName": "Queue",
+    "question": "Ứng dụng thực tế nào sau đây trong Hệ điều hành sử dụng trực tiếp cấu trúc Hàng đợi (Queue)?",
+    "options": [
+      "Hàng đợi điều phối tiến trình CPU (CPU Scheduling) và Hàng đợi đệm in ấn (Printer Spooler)",
+      "Trình soạn thảo văn bản hỗ trợ chức năng Undo/Redo",
+      "Bộ nhớ Call Stack quản lý các hàm đệ quy",
+      "Thuật toán tìm kiếm sâu (DFS) trên đồ thị"
+    ],
+    "answer": "Hàng đợi điều phối tiến trình CPU (CPU Scheduling) và Hàng đợi đệm in ấn (Printer Spooler)",
+    "explanation": "Theo Slide 5 Lecture 9: Hàng đợi Queue áp dụng rộng rãi trong các hệ thống dùng chung tài nguyên theo thứ tự đến trước phục vụ trước: hàng đợi in ấn (Printer Spooler), điều phối tiến trình CPU đa nhiệm (Multiprogramming), bộ đệm truyền gói tin mạng (Packet Buffering)."
+  },
+  {
+    "id": "q132",
+    "topicId": 9,
+    "topicName": "Queue",
+    "question": "Thuật toán duyệt đồ thị hoặc duyệt cây theo chiều rộng (BFS - Breadth-First Search) bắt buộc phải sử dụng cấu trúc dữ liệu nào để lưu trữ danh sách các đỉnh cần thăm theo từng mức?",
+    "options": [
+      "Hàng đợi (Queue)",
+      "Ngăn xếp (Stack)",
+      "Bảng băm (Hash Table)",
+      "Cây nhị phân tìm kiếm (BST)"
+    ],
+    "answer": "Hàng đợi (Queue)",
+    "explanation": "Thuật toán BFS duyệt các đỉnh theo từng tầng/mức (level by level). Đỉnh nào được phát hiện trước sẽ được thăm và mở rộng trước, do đó bắt buộc phải sử dụng cấu trúc Hàng đợi (Queue) tuân thủ nguyên lý FIFO."
+  },
+  {
+    "id": "q133",
+    "topicId": 9,
+    "topicName": "Queue",
+    "question": "Trong thư viện chuẩn C++ STL, container nền tảng mặc định (Underlying Container) của bộ điều hợp `std::queue` là gì?",
+    "options": [
+      "`std::deque` (Double-ended Queue)",
+      "`std::vector`",
+      "`std::list`",
+      "`std::array`"
+    ],
+    "answer": "`std::deque` (Double-ended Queue)",
+    "explanation": "Trong C++ STL, `std::queue` không phải là một container độc lập mà là một container adaptor. Container cơ sở mặc định của nó là `std::deque` (hàng đợi 2 đầu), cho phép thao tác `push_back` và `pop_front` đều đạt hiệu năng tối ưu O(1) mà không bị phân mảnh bộ nhớ."
+  },
+  {
+    "id": "q134",
+    "topicId": 9,
+    "topicName": "Queue",
+    "question": "Cấu trúc Hàng đợi hai đầu (Deque - Double-Ended Queue) có đặc điểm gì khác biệt so với Queue thông thường?",
+    "options": [
+      "Cho phép thực hiện cả thao tác chèn và xóa phần tử ở cả hai đầu (Front và Back) trong thời gian O(1)",
+      "Chỉ cho phép thêm ở đầu và chỉ cho phép xóa ở cuối",
+      "Tự động sắp xếp các phần tử theo thứ tự tăng dần mỗi khi chèn",
+      "Bắt buộc kích thước phải là số lẻ"
+    ],
+    "answer": "Cho phép thực hiện cả thao tác chèn và xóa phần tử ở cả hai đầu (Front và Back) trong thời gian O(1)",
+    "explanation": "Deque (Double-Ended Queue) là cấu trúc tổng quát hóa kết hợp giữa Stack và Queue: hỗ trợ đồng thời cả 4 thao tác `push_front`, `push_back`, `pop_front`, `pop_back` với chi phí thời gian hằng số O(1)."
+  },
+  {
+    "id": "q135",
+    "topicId": 9,
+    "topicName": "Queue",
+    "question": "Cho một hàng đợi rỗng, thực hiện lần lượt chuỗi thao tác sau: `push(5); push(8); pop(); push(12); push(15); pop();`. Giá trị trả về khi gọi `front()` là bao nhiêu?",
+    "options": [
+      "12",
+      "15",
+      "8",
+      "5"
+    ],
+    "answer": "12",
+    "explanation": "Truy vết chuỗi thao tác trên Queue:\n1. `push(5)` ⇒ [5]\n2. `push(8)` ⇒ [5, 8]\n3. `pop()` loại bỏ 5 ⇒ [8]\n4. `push(12)` ⇒ [8, 12]\n5. `push(15)` ⇒ [8, 12, 15]\n6. `pop()` loại bỏ 8 ⇒ [12, 15]\nKhi đó phần tử ở đầu hàng đợi là 12 (`front() == 12`)."
+  },
+  {
+    "id": "q136",
+    "topicId": 10,
+    "topicName": "Trees",
+    "question": "Cấu trúc dữ liệu Cây (Tree) thuộc nhóm cấu trúc dữ liệu nào sau đây?",
+    "options": [
+      "Cấu trúc dữ liệu phi tuyến tính (Non-linear) và phân cấp (Hierarchical)",
+      "Cấu trúc dữ liệu tuyến tính liên tục giống như mảng 1 chiều",
+      "Cấu trúc dữ liệu ngăn xếp truy xuất theo cơ chế LIFO",
+      "Cấu trúc dữ liệu dạng bảng quan hệ SQL"
+    ],
+    "answer": "Cấu trúc dữ liệu phi tuyến tính (Non-linear) và phân cấp (Hierarchical)",
+    "explanation": "Theo Slide 13 Lecture 10: Cây (Tree) là cấu trúc dữ liệu phi tuyến (Non-linear) lưu trữ các phần tử theo quan hệ thứ bậc phân cấp (Hierarchical relationship) cha - con (parent - child)."
+  },
+  {
+    "id": "q137",
+    "topicId": 10,
+    "topicName": "Trees",
+    "question": "Trong cấu trúc Cây tổng quát, Nút gốc (Root) được định nghĩa là nút như thế nào?",
+    "options": [
+      "Nút duy nhất trong cây không có bất kỳ nút cha nào (Node with no parent)",
+      "Nút có giá trị khóa lớn nhất trong toàn bộ cây",
+      "Nút nằm ở mức sâu nhất của cây",
+      "Nút không có bất kỳ nút con nào"
+    ],
+    "answer": "Nút duy nhất trong cây không có bất kỳ nút cha nào (Node with no parent)",
+    "explanation": "Theo Slide 14 Lecture 10: Gốc (Root) là điểm khởi đầu duy nhất của cây, đặc trưng bởi việc nó không có nút cha (Node with no parent). Mọi nút khác trong cây đều có duy nhất 1 nút cha."
+  },
+  {
+    "id": "q138",
+    "topicId": 10,
+    "topicName": "Trees",
+    "question": "Nút lá (External Node / Leaf) trong cấu trúc Cây là nút thỏa mãn điều kiện nào sau đây?",
+    "options": [
+      "Là nút không có bất kỳ nút con nào (Node with no children)",
+      "Là nút có cả con trái và con phải",
+      "Là nút có độ sâu bằng 0",
+      "Là nút nằm ở vị trí chính giữa cây"
+    ],
+    "answer": "Là nút không có bất kỳ nút con nào (Node with no children)",
+    "explanation": "Theo Slide 14 Lecture 10: Nút ngoài (External Node hay Lá - Leaf) là nút không có con nào. Ngược lại, Nút trong (Internal Node) là nút có ít nhất một nút con."
+  },
+  {
+    "id": "q139",
+    "topicId": 10,
+    "topicName": "Trees",
+    "question": "Độ sâu (Depth) của nút gốc trong cây theo quy ước chuẩn của giáo trình bằng bao nhiêu?",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "Vô cùng"
+    ],
+    "answer": "0",
+    "explanation": "Theo Slide 14 Lecture 10: Độ sâu (Depth) của nút gốc bằng 0. Độ sâu của một nút con bất kỳ bằng độ sâu của nút cha cộng thêm 1."
+  },
+  {
+    "id": "q140",
+    "topicId": 10,
+    "topicName": "Trees",
+    "question": "Trong thuật toán Duyệt cây thứ tự trước (Preorder Traversal), thứ tự các bước thăm nút được thực hiện như thế nào?",
+    "options": [
+      "Thăm nút gốc/nút cha trước, sau đó duyệt đệ quy lần lượt các cây con từ trái qua phải",
+      "Duyệt đệ quy tất cả các cây con trước rồi mới thăm nút cha",
+      "Duyệt cây con bên phải trước, sau đó thăm nút gốc, rồi đến cây con bên trái",
+      "Thăm các nút lá trước rồi mới duyệt lên các nút trong"
+    ],
+    "answer": "Thăm nút gốc/nút cha trước, sau đó duyệt đệ quy lần lượt các cây con từ trái qua phải",
+    "explanation": "Theo Slide 19 Lecture 10: Duyệt Preorder (Thứ tự trước) thăm nút hiện tại trước (`visit(v)`), sau đó lần lượt duyệt đệ quy các cây con của nó từ trái sang phải. Ứng dụng: in mục lục sách, in phân cấp thư mục."
+  },
+  {
+    "id": "q141",
+    "topicId": 10,
+    "topicName": "Trees",
+    "question": "Ứng dụng thực tế điển hình của phép Duyệt cây thứ tự sau (Postorder Traversal) là gì?",
+    "options": [
+      "Tính tổng dung lượng đĩa của một thư mục (cần tính dung lượng các tệp và thư mục con trước khi cộng dồn lên thư mục cha)",
+      "Tìm kiếm phần tử nhỏ nhất trong cây tìm kiếm nhị phân",
+      "In ấn danh sách học sinh theo thứ tự điểm số giảm dần",
+      "Đo độ dài của cáp mạng LAN"
+    ],
+    "answer": "Tính tổng dung lượng đĩa của một thư mục (cần tính dung lượng các tệp và thư mục con trước khi cộng dồn lên thư mục cha)",
+    "explanation": "Theo Slide 24-25 Lecture 10: Trong Postorder, các cây con được xử lý trước rồi mới đến nút cha. Khi tính dung lượng thư mục file của hệ điều hành, hệ thống phải cộng dồn dung lượng tất cả các file và thư mục con bên dưới trước rồi mới ra kết quả của thư mục cha."
+  },
+  {
+    "id": "q142",
+    "topicId": 10,
+    "topicName": "Trees",
+    "question": "Cây nhị phân hoàn chỉnh (Proper / Full Binary Tree) được định nghĩa là cây nhị phân thỏa mãn điều kiện nào?",
+    "options": [
+      "Mỗi nút trong đều có đúng 2 nút con (nói cách khác: mỗi nút đều có 0 hoặc 2 con)",
+      "Mọi nút trong cây bắt buộc phải có đúng 1 nút con",
+      "Tất cả các nút lá đều chứa giá trị là số nguyên tố",
+      "Chiều cao của cây bắt buộc phải bằng số lượng nút trừ đi 1"
+    ],
+    "answer": "Mỗi nút trong đều có đúng 2 nút con (nói cách khác: mỗi nút đều có 0 hoặc 2 con)",
+    "explanation": "Theo Slide 32 Lecture 10: Cây nhị phân hoàn chỉnh (Proper / Full Binary Tree) là cây nhị phân mà mọi nút trong (Internal node) đều có chính xác 2 nút con (không tồn tại nút nào có đúng 1 con)."
+  },
+  {
+    "id": "q143",
+    "topicId": 10,
+    "topicName": "Trees",
+    "question": "Trong một Cây nhị phân hoàn chỉnh (Proper Binary Tree), nếu số nút lá là e và số nút trong là i, mối quan hệ toán học nào sau đây luôn luôn đúng?",
+    "options": [
+      "e = i + 1",
+      "e = 2i",
+      "e = i - 1",
+      "e = i²"
+    ],
+    "answer": "e = i + 1",
+    "explanation": "Theo Định lý toán học tại Slide 33 Lecture 10: Trong mọi Proper Binary Tree, số nút lá (external nodes e) luôn nhiều hơn số nút trong (internal nodes i) đúng 1 nút: e = i + 1."
+  },
+  {
+    "id": "q144",
+    "topicId": 10,
+    "topicName": "Trees",
+    "question": "Trong một Cây nhị phân hoàn chỉnh (Proper Binary Tree) có tổng cộng n nút và e nút lá, mối liên hệ nào sau đây là chính xác?",
+    "options": [
+      "n = 2e - 1",
+      "n = 2e + 1",
+      "n = e²",
+      "n = 3e - 2"
+    ],
+    "answer": "n = 2e - 1",
+    "explanation": "Tổng số nút n = i + e. Do i = e - 1, thay vào ta có n = (e - 1) + e = 2e - 1. Tương tự theo số nút trong: n = 2i + 1 (Slide 33 Lecture 10)."
+  },
+  {
+    "id": "q145",
+    "topicId": 10,
+    "topicName": "Trees",
+    "question": "Chiều cao nhỏ nhất có thể đạt được h_{min} của một cây nhị phân gồm có n nút là bao nhiêu?",
+    "options": [
+      "⌈log₂(n + 1)⌉ - 1",
+      "n - 1",
+      "√(n)",
+      "n / 2"
+    ],
+    "answer": "⌈log₂(n + 1)⌉ - 1",
+    "explanation": "Theo Slide 33 Lecture 10: Ở mỗi mức d, số nút tối đa là 2ᵈ. Tổng số nút lớn nhất của cây chiều cao h là 2^{h+1} - 1. Do đó n ≤ 2^{h+1} - 1 ⇒ h ≥ log₂(n + 1) - 1. Chiều cao tối thiểu đạt xấp xỉ log₂ n."
+  },
+  {
+    "id": "q146",
+    "topicId": 10,
+    "topicName": "Trees",
+    "question": "Phép duyệt Inorder (Thứ tự giữa) trên Cây nhị phân được thực hiện tuần tự theo quy tắc nào?",
+    "options": [
+      "Duyệt đệ quy cây con trái → Thăm nút gốc → Duyệt đệ quy cây con phải",
+      "Thăm nút gốc → Duyệt cây con trái → Duyệt cây con phải",
+      "Duyệt cây con trái → Duyệt cây con phải → Thăm nút gốc",
+      "Thăm nút gốc → Duyệt cây con phải → Duyệt cây con trái"
+    ],
+    "answer": "Duyệt đệ quy cây con trái → Thăm nút gốc → Duyệt đệ quy cây con phải",
+    "explanation": "Theo Slide 35 Lecture 10: Thuật toán duyệt Inorder trên cây nhị phân thực hiện theo thứ tự: Left → Root → Right (Duyệt con trái trước, thăm nút gốc ở giữa, duyệt con phải sau cùng)."
+  },
+  {
+    "id": "q147",
+    "topicId": 10,
+    "topicName": "Trees",
+    "question": "Trong một Cây biểu thức toán học (Arithmetic Expression Tree), các nút lá và các nút trong lần lượt lưu trữ những đối tượng nào?",
+    "options": [
+      "Nút lá lưu trữ các toán hạng (số hoặc biến); Nút trong lưu trữ các toán tử số học (+, -, ×, /)",
+      "Nút lá lưu trữ toán tử; Nút trong lưu trữ toán hạng",
+      "Tất cả các nút đều chỉ lưu trữ dấu ngoặc đơn",
+      "Nút gốc lưu trữ toán hạng; các nút lá lưu trữ toán tử"
+    ],
+    "answer": "Nút lá lưu trữ các toán hạng (số hoặc biến); Nút trong lưu trữ các toán tử số học (+, -, ×, /)",
+    "explanation": "Theo Slide 9, 30 Lecture 10: Cây biểu thức số học tổ chức toán tử (+, -, *, /) tại các nút trong (Internal nodes) và các toán hạng (biến, hằng số) tại các nút lá (External nodes). Khi duyệt Inorder có ngoặc sẽ sinh biểu thức Trung tố."
+  },
+  {
+    "id": "q148",
+    "topicId": 10,
+    "topicName": "Trees",
+    "question": "Tính chất sắp xếp cốt lõi của Cây tìm kiếm nhị phân (Binary Search Tree - BST) tại mỗi nút v là gì?",
+    "options": [
+      "Mọi khóa trong cây con trái < v->getKey() < Mọi khóa trong cây con phải",
+      "Mọi khóa trong cây con trái phải lớn hơn khóa nút gốc",
+      "Tất cả các nút con đều phải có cùng một giá trị khóa",
+      "Khóa của nút gốc luôn luôn bằng tổng khóa của hai nút con"
+    ],
+    "answer": "Mọi khóa trong cây con trái < v->getKey() < Mọi khóa trong cây con phải",
+    "explanation": "Tính chất định nghĩa BST: Với mọi nút v, tất cả các khóa ở cây con trái của v đều nhỏ hơn khóa tại v, và tất cả các khóa ở cây con phải của v đều lớn hơn khóa tại v."
+  },
+  {
+    "id": "q149",
+    "topicId": 10,
+    "topicName": "Trees",
+    "question": "Khi thực hiện phép duyệt Inorder (Thứ tự giữa) trên một Cây tìm kiếm nhị phân (BST), dãy khóa thu được có đặc điểm đặc biệt gì?",
+    "options": [
+      "Dãy khóa luôn luôn được sắp xếp theo thứ tự tăng dần",
+      "Dãy khóa luôn được sắp xếp theo thứ tự giảm dần",
+      "Dãy khóa có thứ tự ngẫu nhiên hoàn toàn",
+      "Dãy khóa chỉ chứa toàn số chẵn"
+    ],
+    "answer": "Dãy khóa luôn luôn được sắp xếp theo thứ tự tăng dần",
+    "explanation": "Do tính chất BST: Cây con trái < Gốc < Cây con phải. Phép duyệt Inorder duyệt Trái trước → Gốc → Phải sau, do đó các khóa được thăm theo đúng thứ tự tăng dần từ nhỏ nhất đến lớn nhất."
+  },
+  {
+    "id": "q150",
+    "topicId": 10,
+    "topicName": "Trees",
+    "question": "Trong Cây tự cân bằng AVL, Hệ số cân bằng (Balance Factor) của một nút được tính bằng gì và nhận các giá trị hợp lệ nào?",
+    "options": [
+      "Hiệu số giữa chiều cao cây con trái và chiều cao cây con phải: height(Left) - height(Right), chỉ nhận các giá trị {-1, 0, 1}",
+      "Tổng số nút con của cây con trái cộng với cây con phải, nhận giá trị bất kỳ",
+      "Tỉ số giữa số nút lá và số nút trong",
+      "Hiệu số giữa độ sâu lớn nhất và độ sâu nhỏ nhất, nhận giá trị {0, 2}"
+    ],
+    "answer": "Hiệu số giữa chiều cao cây con trái và chiều cao cây con phải: height(Left) - height(Right), chỉ nhận các giá trị {-1, 0, 1}",
+    "explanation": "Cây AVL là cây BST tự cân bằng có điều kiện nghiêm ngặt: tại mọi nút, độ chênh lệch chiều cao giữa cây con trái và cây con phải (Hệ số cân bằng) không vượt quá 1, tức là chỉ được phép nhận giá trị trong tập {-1, 0, 1}. Khi mất cân bằng, cây sử dụng các phép quay (LL, RR, LR, RL) để tái cân bằng về O(log n)."
+  },
+  {
+    "id": "q151",
+    "topicId": 11,
+    "topicName": "Sorting O(n^2)",
+    "question": "Ý tưởng cốt lõi của thuật toán Sắp xếp nổi bọt (Bubble Sort) là gì?",
+    "options": [
+      "Liên tục so sánh các cặp phần tử liền kề và tráo đổi nếu chúng sai thứ tự để đưa phần tử nhỏ nhất nổi dần về đầu mảng",
+      "Tìm phần tử nhỏ nhất trong toàn bộ mảng và đưa ngay về vị trí đầu tiên sau một bước",
+      "Chia đôi mảng thành hai nửa bằng nhau rồi trộn lại bằng mảng phụ",
+      "Xây dựng cây nhị phân đống rồi trích xuất phần tử lớn nhất ở gốc"
+    ],
+    "answer": "Liên tục so sánh các cặp phần tử liền kề và tráo đổi nếu chúng sai thứ tự để đưa phần tử nhỏ nhất nổi dần về đầu mảng",
+    "explanation": "Theo Slide 4-5 Lecture 11, Bubble Sort duyệt qua các cặp phần tử kề nhau từ cuối dãy về đầu (hoặc từ đầu về cuối). Nếu cặp phần tử sai thứ tự thì hoán đổi (swap), làm cho các phần tử nhẹ hơn (nhỏ hơn) \"nổi bọt\" dần về đúng vị trí phía trước."
+  },
+  {
+    "id": "q152",
+    "topicId": 11,
+    "topicName": "Sorting O(n^2)",
+    "question": "Trong thuật toán Bubble Sort tăng dần phiên bản cơ bản chưa tối ưu, tổng số phép so sánh khóa trên mảng gồm n phần tử luôn cố định bằng bao nhiêu trong mọi trường hợp?",
+    "options": [
+      "(n(n-1))/(2)",
+      "n - 1",
+      "n²",
+      "n log₂ n"
+    ],
+    "answer": "(n(n-1))/(2)",
+    "explanation": "Theo Slide 6 Lecture 11: Vòng ngoài lặp n-1 lần (i=0 ... n-2). Vòng trong thực hiện n-1-i phép so sánh. Tổng số phép so sánh là cấp số cộng (n-1) + (n-2) + ... + 1 = (n(n-1))/(2) = O(n²)."
+  },
+  {
+    "id": "q153",
+    "topicId": 11,
+    "topicName": "Sorting O(n^2)",
+    "question": "Kỹ thuật tối ưu hóa Bubble Sort bằng cờ hiệu `swapped` giúp cải thiện thời gian chạy trong trường hợp tốt nhất (mảng đã có thứ tự sẵn) thành bao nhiêu?",
+    "options": [
+      "O(n)",
+      "O(1)",
+      "O(n log n)",
+      "O(n²)"
+    ],
+    "answer": "O(n)",
+    "explanation": "Nếu sau một lượt quét đầu tiên mà không có bất kỳ cặp phần tử nào bị tráo đổi (`swapped == false`), thuật toán nhận biết mảng đã hoàn toàn có thứ tự và dừng ngay lập tức. Khi đó chỉ tốn n-1 phép so sánh, đạt thời gian tốt nhất là O(n)."
+  },
+  {
+    "id": "q154",
+    "topicId": 11,
+    "topicName": "Sorting O(n^2)",
+    "question": "Phát biểu nào sau đây đúng về tính ổn định (Stability) và không gian bộ nhớ phụ của thuật toán Bubble Sort?",
+    "options": [
+      "Là thuật toán sắp xếp ổn định (Stable) và sắp xếp tại chỗ (O(1) bộ nhớ phụ)",
+      "Là thuật toán không ổn định và đòi hỏi O(n) bộ nhớ phụ",
+      "Là thuật toán ổn định nhưng đòi hỏi O(n) mảng phụ",
+      "Là thuật toán không ổn định nhưng sắp xếp tại chỗ"
+    ],
+    "answer": "Là thuật toán sắp xếp ổn định (Stable) và sắp xếp tại chỗ (O(1) bộ nhớ phụ)",
+    "explanation": "Bubble Sort chỉ hoán đổi hai phần tử kề nhau khi A[j] < A[j-1]. Nếu hai phần tử bằng nhau, nó không hoán đổi nên giữ nguyên thứ tự tương đối ban đầu ⇒ Ổn định (Stable). Thuật toán chỉ dùng biến tạm để swap ⇒ Sắp xếp tại chỗ (O(1) space)."
+  },
+  {
+    "id": "q155",
+    "topicId": 11,
+    "topicName": "Sorting O(n^2)",
+    "question": "Cho mảng số nguyên: `A = [5, 1, 4, 2, 8]`. Thực hiện thuật toán Bubble Sort nổi phần tử nhỏ nhất từ cuối mảng về đầu theo mã giả slide bài giảng. Sau khi kết thúc lượt lặp ngoài đầu tiên (i = 0), trạng thái của mảng là gì?",
+    "options": [
+      "`[1, 5, 2, 4, 8]`",
+      "`[1, 2, 4, 5, 8]`",
+      "`[5, 1, 2, 4, 8]`",
+      "`[1, 4, 2, 5, 8]`"
+    ],
+    "answer": "`[1, 5, 2, 4, 8]`",
+    "explanation": "Truy vết Bubble Sort duyệt từ j = 4 về 1:\n- So sánh A[4]=8, A[3]=2 ⇒ giữ nguyên\n- So sánh A[3]=2, A[2]=4 ⇒ swap ⇒ [5, 1, 2, 4, 8]\n- So sánh A[2]=2, A[1]=1 ⇒ giữ nguyên\n- So sánh A[1]=1, A[0]=5 ⇒ swap ⇒ [1, 5, 2, 4, 8].\nPhần tử nhỏ nhất 1 đã nổi về vị trí A[0]."
+  },
+  {
+    "id": "q156",
+    "topicId": 11,
+    "topicName": "Sorting O(n^2)",
+    "question": "Ý tưởng cốt lõi của thuật toán Sắp xếp chọn (Selection Sort) là gì?",
+    "options": [
+      "Tại mỗi bước i, tìm phần tử có khóa nhỏ nhất trong đoạn chưa sắp từ i đến n-1 và tráo đổi với phần tử A[i]",
+      "Chèn lần lượt từng phần tử vào một cây nhị phân tìm kiếm",
+      "Liên tục chia mảng làm đôi cho tới khi mỗi đoạn chỉ còn 1 phần tử",
+      "So sánh các phần tử cách nhau một khoảng bước nhảy giảm dần (Shell sort)"
+    ],
+    "answer": "Tại mỗi bước i, tìm phần tử có khóa nhỏ nhất trong đoạn chưa sắp từ i đến n-1 và tráo đổi với phần tử A[i]",
+    "explanation": "Theo Slide 8-9 Lecture 11, Selection Sort chia mảng thành 2 phần: đoạn đã sắp A[0..i-1] và đoạn chưa sắp A[i..n-1]. Ở bước i, tìm vị trí `posmin` có giá trị nhỏ nhất trong đoạn chưa sắp, rồi tráo đổi A[i] với A[posmin]."
+  },
+  {
+    "id": "q157",
+    "topicId": 11,
+    "topicName": "Sorting O(n^2)",
+    "question": "Ưu điểm nổi bật nhất của Selection Sort so với Bubble Sort và Insertion Sort là gì?",
+    "options": [
+      "Số phép tráo đổi (Swap) dữ liệu là ít nhất, tối đa chỉ thực hiện đúng n-1 lần swap trong suốt quá trình chạy",
+      "Tốc độ so sánh khóa nhanh gấp 10 lần các thuật toán khác",
+      "Có khả năng sắp xếp mảng vô hạn phần tử",
+      "Hoàn toàn không cần so sánh khóa các phần tử"
+    ],
+    "answer": "Số phép tráo đổi (Swap) dữ liệu là ít nhất, tối đa chỉ thực hiện đúng n-1 lần swap trong suốt quá trình chạy",
+    "explanation": "Trong Selection Sort, mỗi lượt lặp ngoài chỉ thực hiện tối đa đúng 1 lần swap (khi `posmin != i`). Tổng số lần swap trên toàn bộ mảng tối đa là n-1. Đây là ưu thế lớn khi kích thước bản ghi phần tử rất lớn và chi phí sao chép/swap đắt đỏ."
+  },
+  {
+    "id": "q158",
+    "topicId": 11,
+    "topicName": "Sorting O(n^2)",
+    "question": "Thuật toán Selection Sort có tính ổn định (Stability) hay không, và tại sao?",
+    "options": [
+      "Không ổn định (Unstable), vì phép tráo đổi các phần tử ở khoảng cách xa có thể làm đảo lộn thứ tự tương đối ban đầu của các phần tử có cùng giá trị",
+      "Có tính ổn định tuyệt đối trong mọi trường hợp",
+      "Chỉ ổn định khi sắp xếp mảng số thực",
+      "Chỉ ổn định khi số phần tử n là số chẵn"
+    ],
+    "answer": "Không ổn định (Unstable), vì phép tráo đổi các phần tử ở khoảng cách xa có thể làm đảo lộn thứ tự tương đối ban đầu của các phần tử có cùng giá trị",
+    "explanation": "Selection Sort là thuật toán không ổn định (Unstable). Ví dụ với dãy `[5a, 5b, 2]`, phần tử nhỏ nhất là 2 sẽ tráo đổi với vị trí đầu tiên là `5a`, tạo ra dãy `[2, 5b, 5a]`. Thứ tự ban đầu của `5a` đứng trước `5b` đã bị đảo lộn."
+  },
+  {
+    "id": "q159",
+    "topicId": 11,
+    "topicName": "Sorting O(n^2)",
+    "question": "Độ phức tạp thời gian của Selection Sort trong trường hợp tốt nhất (mảng đã được sắp xếp sẵn từ trước) là bao nhiêu?",
+    "options": [
+      "O(n²) vì vẫn phải duyệt qua tất cả các phần tử còn lại để tìm giá trị nhỏ nhất",
+      "O(n) vì mảng đã có thứ tự",
+      "O(log n)",
+      "O(1)"
+    ],
+    "answer": "O(n²) vì vẫn phải duyệt qua tất cả các phần tử còn lại để tìm giá trị nhỏ nhất",
+    "explanation": "Dù mảng đã sắp xếp sẵn, Selection Sort vẫn không thể phát hiện dừng sớm mà vẫn phải chạy đủ 2 vòng lặp để tìm giá trị nhỏ nhất trong đoạn còn lại. Số phép so sánh luôn là (n(n-1))/(2), do đó thời gian trong mọi trường hợp đều là Θ(n²)."
+  },
+  {
+    "id": "q160",
+    "topicId": 11,
+    "topicName": "Sorting O(n^2)",
+    "question": "Ý tưởng cốt lõi của thuật toán Sắp xếp chèn (Insertion Sort) là gì?",
+    "options": [
+      "Giả sử đoạn A[0..i-1] đã có thứ tự, tìm vị trí thích hợp trong đoạn này để chèn phần tử A[i] bằng cách dịch chuyển các phần tử lớn hơn sang phải",
+      "Chèn một phần tử ngẫu nhiên vào giữa mảng rồi hoán đổi hai đầu",
+      "Chọn một phần tử chốt pivot rồi phân hoạch mảng thành hai nửa",
+      "Trộn hai mảng con đã sắp xếp vào một mảng phụ"
+    ],
+    "answer": "Giả sử đoạn A[0..i-1] đã có thứ tự, tìm vị trí thích hợp trong đoạn này để chèn phần tử A[i] bằng cách dịch chuyển các phần tử lớn hơn sang phải",
+    "explanation": "Theo Slide 12-13 Lecture 11, Insertion Sort tương tự cách xếp bài tây trên tay: coi đoạn đầu đã sắp, lấy lá bài tiếp theo A[i], duyệt lùi dịch các lá bài lớn hơn sang phải một vị trí để tạo khoảng trống chèn A[i] vào đúng vị trí."
+  },
+  {
+    "id": "q161",
+    "topicId": 11,
+    "topicName": "Sorting O(n^2)",
+    "question": "Độ phức tạp thời gian của Insertion Sort trong trường hợp tốt nhất (Best-case: mảng đã được sắp xếp tăng dần từ trước) là bao nhiêu?",
+    "options": [
+      "O(n) vì vòng lặp `while` dịch phần tử dừng ngay sau 1 lần so sánh ở mỗi bước i",
+      "O(n²)",
+      "O(1)",
+      "O(n log n)"
+    ],
+    "answer": "O(n) vì vòng lặp `while` dịch phần tử dừng ngay sau 1 lần so sánh ở mỗi bước i",
+    "explanation": "Khi mảng đã tăng dần sẵn, ở mỗi bước i, phần tử A[i] > A[i-1] nên điều kiện vòng lặp `while` bị sai ngay lập tức mà không dịch chuyển phần tử nào. Thuật toán chỉ thực hiện đúng n-1 phép so sánh, đạt thời gian tuyến tính O(n)."
+  },
+  {
+    "id": "q162",
+    "topicId": 11,
+    "topicName": "Sorting O(n^2)",
+    "question": "Trong trường hợp mảng ban đầu có thứ tự giảm dần ngược lại hoàn toàn, độ phức tạp thời gian của Insertion Sort là bao nhiêu?",
+    "options": [
+      "O(n²)",
+      "O(n)",
+      "O(n log n)",
+      "O(n³)"
+    ],
+    "answer": "O(n²)",
+    "explanation": "Khi mảng giảm dần hoàn toàn (trường hợp xấu nhất), mỗi phần tử A[i] nhỏ hơn tất cả i phần tử đứng trước nó, nên phải so sánh và dịch chuyển toàn bộ i phần tử. Tổng số phép toán là sum_{i=1}^{n-1} i = (n(n-1))/(2) = O(n²)."
+  },
+  {
+    "id": "q163",
+    "topicId": 11,
+    "topicName": "Sorting O(n^2)",
+    "question": "Thuật toán Insertion Sort có đặc điểm nào nổi trội sau đây?",
+    "options": [
+      "Là thuật toán ổn định (Stable) và có tính thích ứng rất cao (chạy cực nhanh gần O(n) khi mảng gần như đã có thứ tự sẵn)",
+      "Không ổn định và không thể chạy trên mảng nhỏ",
+      "Đòi hỏi bộ nhớ phụ bằng kích thước mảng ban đầu",
+      "Luôn chạy chậm hơn Bubble Sort trong mọi tình huống"
+    ],
+    "answer": "Là thuật toán ổn định (Stable) và có tính thích ứng rất cao (chạy cực nhanh gần O(n) khi mảng gần như đã có thứ tự sẵn)",
+    "explanation": "Insertion Sort là thuật toán ổn định (Stable) và có tính thích ứng (Adaptive): khi mảng gần như đã sắp xếp, số phép dịch chuyển rất ít, thời gian chạy tiệm cận O(n). Do đó trong thực tế nó thường được dùng để sắp xếp các đoạn con nhỏ trong QuickSort/Timsort."
+  },
+  {
+    "id": "q164",
+    "topicId": 11,
+    "topicName": "Sorting O(n^2)",
+    "question": "Trong mã giả Insertion Sort sắp xếp tăng dần, điều kiện lặp của vòng `while` để dịch chuyển các phần tử sang phải là gì?",
+    "options": [
+      "`(j >= 0) and (A[j].Key > x.Key)`",
+      "`(j > 0) and (A[j].Key < x.Key)`",
+      "`(j < n) and (A[j].Key == x.Key)`",
+      "`(j >= 0) or (A[j].Key > x.Key)`"
+    ],
+    "answer": "`(j >= 0) and (A[j].Key > x.Key)`",
+    "explanation": "Theo Slide 14 Lecture 11: Vòng lặp duyệt lùi từ j = i - 1 về 0. Điều kiện tiếp tục dịch chuyển là chưa vượt quá đầu mảng (`j >= 0`) VÀ phần tử đang xét lớn hơn giá trị cần chèn (`A[j].Key > x.Key`). Khi dừng lại, ta chèn x vào `A[j + 1]`."
+  },
+  {
+    "id": "q165",
+    "topicId": 11,
+    "topicName": "Sorting O(n^2)",
+    "question": "So sánh nào sau đây là chính xác về Tính ổn định (Stability) và Bộ nhớ phụ của 3 thuật toán sắp xếp O(n²)?",
+    "options": [
+      "Bubble Sort (Ổn định, O(1) phụ); Selection Sort (Không ổn định, O(1) phụ); Insertion Sort (Ổn định, O(1) phụ)",
+      "Cả ba thuật toán đều là không ổn định và tốn O(n) bộ nhớ phụ",
+      "Bubble Sort (Không ổn định); Selection Sort (Ổn định); Insertion Sort (Ổn định)",
+      "Cả ba thuật toán đều ổn định và đều tốn O(1) bộ nhớ phụ"
+    ],
+    "answer": "Bubble Sort (Ổn định, O(1) phụ); Selection Sort (Không ổn định, O(1) phụ); Insertion Sort (Ổn định, O(1) phụ)",
+    "explanation": "Cả ba thuật toán đều là sắp xếp tại chỗ (in-place) với chi phí bộ nhớ phụ O(1). Về tính ổn định: Bubble Sort và Insertion Sort bảo toàn thứ tự ban đầu của các phần tử bằng nhau (Ổn định - Stable); trong khi Selection Sort có thể hoán đổi nhảy cóc làm đảo lộn thứ tự (Không ổn định - Unstable)."
+  },
+  {
+    "id": "q166",
+    "topicId": 12,
+    "topicName": "Sorting O(n log n)",
+    "question": "Thuật toán Sắp xếp nhanh (Quick Sort) áp dụng phương pháp thiết kế giải thuật nào sau đây?",
+    "options": [
+      "Chia và trị (Divide and Conquer)",
+      "Quy hoạch động (Dynamic Programming)",
+      "Thuật toán tham lam (Greedy Algorithm)",
+      "Tìm kiếm nhánh cận (Branch and Bound)"
+    ],
+    "answer": "Chia và trị (Divide and Conquer)",
+    "explanation": "Theo Slide 4 Lecture 12, Quick Sort áp dụng mô hình Chia và trị (Divide and Conquer): phân hoạch dãy thành các bài toán con độc lập dựa trên phần tử chốt, sau đó gọi đệ quy sắp xếp từng bài toán con."
+  },
+  {
+    "id": "q167",
+    "topicId": 12,
+    "topicName": "Sorting O(n log n)",
+    "question": "Trong thuật toán Quick Sort, phần tử được chọn làm mốc để phân hoạch dãy thành các phần tử nhỏ hơn và lớn hơn được gọi là gì?",
+    "options": [
+      "Chốt (Pivot)",
+      "Nút gốc (Root)",
+      "Nút canh gác (Sentinel)",
+      "Phần tử trung vị lý thuyết (Median)"
+    ],
+    "answer": "Chốt (Pivot)",
+    "explanation": "Theo Slide 5 Lecture 12, phần tử chốt (Pivot) là phần tử được chọn từ dãy ban đầu, dùng để chia mảng thành 3 phần: các phần tử nhỏ hơn hoặc bằng chốt (S₁), chính phần tử chốt (S₂), và các phần tử lớn hơn chốt (S₃)."
+  },
+  {
+    "id": "q168",
+    "topicId": 12,
+    "topicName": "Sorting O(n log n)",
+    "question": "Vị trí của phần tử chốt (Pivot) sau khi hoàn thành thủ tục Phân hoạch (Partition) trong Quick Sort có tính chất gì?",
+    "options": [
+      "Đã nằm ở vị trí chính xác cuối cùng của nó trong mảng khi đã sắp xếp hoàn chỉnh",
+      "Luôn nằm ở vị trí chính giữa mảng n/2",
+      "Luôn bị đưa về vị trí đầu mảng chỉ số 0",
+      "Vị trí của chốt vẫn có thể bị xáo trộn ở các bước đệ quy tiếp theo"
+    ],
+    "answer": "Đã nằm ở vị trí chính xác cuối cùng của nó trong mảng khi đã sắp xếp hoàn chỉnh",
+    "explanation": "Sau thủ tục Partition, tất cả phần tử bên trái chốt đều ≤ chốt và tất cả phần tử bên phải chốt đều > chốt. Do đó, phần tử chốt đã nằm ở vị trí đúng tuyệt đối của nó trong mảng đích và không bao giờ bị di chuyển nữa."
+  },
+  {
+    "id": "q169",
+    "topicId": 12,
+    "topicName": "Sorting O(n log n)",
+    "question": "Độ phức tạp thời gian của thủ tục phân hoạch `Partition` trên một đoạn gồm m phần tử trong Quick Sort là bao nhiêu?",
+    "options": [
+      "O(m) tuyến tính",
+      "O(m²)",
+      "O(log m)",
+      "O(m log m)"
+    ],
+    "answer": "O(m) tuyến tính",
+    "explanation": "Thủ tục phân hoạch sử dụng hai con trỏ `left` và `right` duyệt từ hai đầu tiến dần vào giữa, mỗi phần tử được xét đúng 1 lần. Do đó thời gian phân hoạch một đoạn m phần tử luôn là O(m) tuyến tính."
+  },
+  {
+    "id": "q170",
+    "topicId": 12,
+    "topicName": "Sorting O(n log n)",
+    "question": "Độ phức tạp thời gian trong trường hợp trung bình (Average-case) của Quick Sort là bao nhiêu?",
+    "options": [
+      "O(n log n)",
+      "O(n²)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "answer": "O(n log n)",
+    "explanation": "Theo Slide 11 Lecture 12: Trong trường hợp trung bình, chốt chia mảng thành các phần tương đối cân xứng. Chiều sâu cây đệ quy là O(log n), mỗi tầng tốn O(n) công phân hoạch, do đó thời gian trung bình đạt O(n log n)."
+  },
+  {
+    "id": "q171",
+    "topicId": 12,
+    "topicName": "Sorting O(n log n)",
+    "question": "Trường hợp xấu nhất (Worst-case) của Quick Sort dẫn đến thời gian thực thi bị suy thoái thành O(n²) xảy ra khi nào?",
+    "options": [
+      "Khi chốt chọn luôn là phần tử nhỏ nhất hoặc lớn nhất ở mọi bước đệ quy (ví dụ mảng đã sắp xếp sẵn và luôn chọn phần tử đầu làm chốt)",
+      "Khi tất cả các phần tử trong mảng đều là số nguyên tố",
+      "Khi kích thước mảng là lũy thừa của 2",
+      "Khi chốt luôn chia mảng thành 2 nửa có kích thước hoàn toàn bằng nhau"
+    ],
+    "answer": "Khi chốt chọn luôn là phần tử nhỏ nhất hoặc lớn nhất ở mọi bước đệ quy (ví dụ mảng đã sắp xếp sẵn và luôn chọn phần tử đầu làm chốt)",
+    "explanation": "Nếu luôn chọn phần tử đầu làm chốt trên mảng đã sắp xếp, dãy bị chia thành 1 phần có 0 phần tử và 1 phần có n-1 phần tử. Chiều sâu đệ quy tăng lên thành n, phương trình T(n) = T(n-1) + O(n) ⇒ T(n) = O(n²)."
+  },
+  {
+    "id": "q172",
+    "topicId": 12,
+    "topicName": "Sorting O(n log n)",
+    "question": "Không gian bộ nhớ ngăn xếp đệ quy của Quick Sort trong trường hợp trung bình và trường hợp xấu nhất lần lượt là bao nhiêu?",
+    "options": [
+      "O(log n) trong trường hợp trung bình và O(n) trong trường hợp xấu nhất",
+      "Luôn luôn là O(1) trong mọi trường hợp",
+      "O(n) trong trường hợp trung bình và O(n²) trong trường hợp xấu nhất",
+      "O(log n) trong mọi trường hợp"
+    ],
+    "answer": "O(log n) trong trường hợp trung bình và O(n) trong trường hợp xấu nhất",
+    "explanation": "Ngăn xếp Call Stack phải lưu trữ các khung đệ quy. Trong trường hợp trung bình/tốt nhất, độ sâu cây đệ quy là log₂ n ⇒ O(log n). Trong trường hợp xấu nhất khi phân hoạch lệch hoàn toàn, độ sâu đệ quy là n ⇒ O(n)."
+  },
+  {
+    "id": "q173",
+    "topicId": 12,
+    "topicName": "Sorting O(n log n)",
+    "question": "Nguyên lý hoạt động của thuật toán Sắp xếp trộn (Merge Sort) là gì?",
+    "options": [
+      "Chia đôi mảng thành 2 nửa tại chỉ số giữa, gọi đệ quy sắp xếp từng nửa rồi dùng mảng phụ trộn (Merge) hai nửa đã sắp lại thành dãy hoàn chỉnh",
+      "Chọn phần tử nhỏ nhất đưa về đầu rồi sắp xếp đoạn còn lại",
+      "Phân hoạch mảng quanh một phần tử chốt pivot",
+      "Đổi chỗ các phần tử cách nhau một bước nhảy giảm dần"
+    ],
+    "answer": "Chia đôi mảng thành 2 nửa tại chỉ số giữa, gọi đệ quy sắp xếp từng nửa rồi dùng mảng phụ trộn (Merge) hai nửa đã sắp lại thành dãy hoàn chỉnh",
+    "explanation": "Theo Slide 13-14 Lecture 12: Merge Sort chia đôi mảng tại k = ⌊(i+j)/2⌋, gọi đệ quy `Mergesort` trên hai nửa, sau đó dùng thủ tục `Merge` kết hợp mảng phụ B để trộn hai dãy con đã có thứ tự thành dãy tăng dần."
+  },
+  {
+    "id": "q174",
+    "topicId": 12,
+    "topicName": "Sorting O(n log n)",
+    "question": "Độ phức tạp thời gian của Merge Sort trong các trường hợp: tốt nhất, trung bình và xấu nhất lần lượt là bao nhiêu?",
+    "options": [
+      "Luôn luôn là Θ(n log n) trong TẤT CẢ các trường hợp",
+      "Tốt nhất O(n), trung bình O(n log n), xấu nhất O(n²)",
+      "Tốt nhất O(log n), trung bình O(n), xấu nhất O(n log n)",
+      "Tốt nhất O(1), trung bình và xấu nhất O(n²)"
+    ],
+    "answer": "Luôn luôn là Θ(n log n) trong TẤT CẢ các trường hợp",
+    "explanation": "Theo Slide 17 Lecture 12: Merge Sort luôn chia mảng làm đôi chính xác tại vị trí giữa độc lập với nội dung dữ liệu. Chiều cao cây đệ quy luôn là ⌈log₂ n⌉ và chi phí trộn ở mỗi tầng luôn là O(n). Do đó thời gian luôn đạt O(n log n) trong mọi tình huống."
+  },
+  {
+    "id": "q175",
+    "topicId": 12,
+    "topicName": "Sorting O(n log n)",
+    "question": "Nhược điểm lớn nhất của thuật toán Merge Sort khi cài đặt trên mảng một chiều thông thường là gì?",
+    "options": [
+      "Đòi hỏi không gian bộ nhớ phụ là O(n) để cấp phát mảng đệm phục vụ thủ tục trộn (không phải thuật toán tại chỗ in-place)",
+      "Có thể bị suy thoái thời gian chạy lên thành O(n²) khi mảng đã sắp xếp",
+      "Không có tính ổn định khi sắp xếp các phần tử trùng lặp",
+      "Chỉ sắp xếp được các mảng có kích thước nhỏ hơn 1000 phần tử"
+    ],
+    "answer": "Đòi hỏi không gian bộ nhớ phụ là O(n) để cấp phát mảng đệm phục vụ thủ tục trộn (không phải thuật toán tại chỗ in-place)",
+    "explanation": "Thủ tục trộn `Merge` cần một mảng phụ B có kích thước tương đương mảng cần sắp (O(n) bộ nhớ phụ). Đây là nhược điểm chính của Merge Sort so với QuickSort và HeapSort (chỉ cần O(1) phụ)."
+  },
+  {
+    "id": "q176",
+    "topicId": 12,
+    "topicName": "Sorting O(n log n)",
+    "question": "Tính chất ổn định (Stability) của hai thuật toán Quick Sort và Merge Sort lần lượt là gì?",
+    "options": [
+      "Quick Sort là Không ổn định (Unstable); Merge Sort là Ổn định (Stable)",
+      "Quick Sort là Ổn định (Stable); Merge Sort là Không ổn định (Unstable)",
+      "Cả hai thuật toán đều là Ổn định (Stable)",
+      "Cả hai thuật toán đều là Không ổn định (Unstable)"
+    ],
+    "answer": "Quick Sort là Không ổn định (Unstable); Merge Sort là Ổn định (Stable)",
+    "explanation": "Quick Sort tráo đổi các phần tử ở khoảng cách xa qua chốt nên không ổn định. Trong khi đó, thủ tục `Merge` khi gặp hai phần tử bằng nhau ở nửa trái và nửa phải luôn ưu tiên chọn phần tử nửa trái trước, do đó Merge Sort bảo toàn thứ tự ban đầu ⇒ Ổn định (Stable)."
+  },
+  {
+    "id": "q177",
+    "topicId": 12,
+    "topicName": "Sorting O(n log n)",
+    "question": "Trong cấu trúc Max-Heap biểu diễn trên mảng với chỉ số từ 1 đến n, nút cha của nút nằm tại chỉ số i được xác định ở vị trí nào?",
+    "options": [
+      "⌊i / 2⌋",
+      "2i",
+      "2i + 1",
+      "i - 1"
+    ],
+    "answer": "⌊i / 2⌋",
+    "explanation": "Theo Slide 23 Lecture 12: Trong biểu diễn mảng 1-based index của cây nhị phân gần hoàn chỉnh: Nút cha của nút i nằm ở ⌊i / 2⌋; Con trái nằm ở 2i; Con phải nằm ở 2i + 1."
+  },
+  {
+    "id": "q178",
+    "topicId": 12,
+    "topicName": "Sorting O(n log n)",
+    "question": "Trong mảng biểu diễn cây Max-Heap gồm có n phần tử (chỉ số 1 đến n), các nút lá (không có nút con nào) nằm ở khoảng chỉ số nào?",
+    "options": [
+      "Từ ⌊n/2⌋ + 1 đến n",
+      "Từ 1 đến ⌊n/2⌋",
+      "Chỉ nằm tại chỉ số n",
+      "Từ 1 đến n - 1"
+    ],
+    "answer": "Từ ⌊n/2⌋ + 1 đến n",
+    "explanation": "Các nút nội (Internal nodes - có con) có chỉ số thỏa mãn 2i ≤ n ⇒ i ≤ ⌊n/2⌋. Do đó các nút có chỉ số lớn hơn ⌊n/2⌋, tức từ ⌊n/2⌋ + 1 đến n, không có con và đương nhiên là các nút lá."
+  },
+  {
+    "id": "q179",
+    "topicId": 12,
+    "topicName": "Sorting O(n log n)",
+    "question": "Giai đoạn tạo đống ban đầu (Build Heap) từ một mảng bất kỳ bằng cách gọi thủ tục `Pushdown` lùi dần từ ⌊n/2⌋ về 1 có độ phức tạp thời gian là bao nhiêu?",
+    "options": [
+      "O(n) tuyến tính",
+      "O(n log n)",
+      "O(n²)",
+      "O(log n)"
+    ],
+    "answer": "O(n) tuyến tính",
+    "explanation": "Theo Slide 29 Lecture 12: Mặc dù gọi n/2 lần `Pushdown`, nhưng đa số các nút ở gần đáy cây chỉ có chiều cao nhỏ và di chuyển ít bước. Tổng số bước tính theo chuỗi hình học toán học chứng minh được thời gian tạo đống chỉ là O(n) tuyến tính."
+  },
+  {
+    "id": "q180",
+    "topicId": 12,
+    "topicName": "Sorting O(n log n)",
+    "question": "Độ phức tạp thời gian tổng thể và không gian bộ nhớ phụ của thuật toán Sắp xếp vun đống (Heap Sort) lần lượt là bao nhiêu?",
+    "options": [
+      "Thời gian O(n log n) trong mọi trường hợp và bộ nhớ phụ tại chỗ O(1)",
+      "Thời gian O(n) tốt nhất, O(n²) xấu nhất và bộ nhớ phụ O(n)",
+      "Thời gian O(n log n) và bộ nhớ phụ O(n)",
+      "Thời gian O(n²) trong mọi trường hợp và bộ nhớ phụ O(1)"
+    ],
+    "answer": "Thời gian O(n log n) trong mọi trường hợp và bộ nhớ phụ tại chỗ O(1)",
+    "explanation": "Theo Slide 31 Lecture 12: Heap Sort gồm 2 giai đoạn: Tạo đống O(n) và Trích xuất n-1 phần tử gốc với mỗi lần vun đống tốn O(log n) ⇒ (n-1) × O(log n) = O(n log n). Tổng thời gian luôn là O(n log n) trong mọi trường hợp, và sắp xếp tại chỗ O(1) bộ nhớ phụ."
+  },
+  {
+    "id": "q181",
+    "topicId": 13,
+    "topicName": "Search Algorithms",
+    "question": "Mô hình bài toán tìm kiếm chuẩn mực trong khoa học máy tính tổ chức dữ liệu dưới dạng các cặp phần tử nào sau đây?",
+    "options": [
+      "Khóa - Giá trị (Key - Value)",
+      "Đầu vào - Đầu ra (Input - Output)",
+      "Chỉ số mảng - Độ dài mảng (Index - Length)",
+      "Tên biến - Kiểu dữ liệu (Name - Type)"
+    ],
+    "answer": "Khóa - Giá trị (Key - Value)",
+    "explanation": "Theo Slide 3-4 Lecture 13: Tập dữ liệu tìm kiếm S gồm các phần tử là các bộ Khóa - Giá trị (Key-Value). Mục tiêu bài toán là tìm phần tử trong S có thuộc tính khóa trùng với khóa tìm kiếm k cho trước."
+  },
+  {
+    "id": "q182",
+    "topicId": 13,
+    "topicName": "Search Algorithms",
+    "question": "Ưu điểm lớn nhất của thuật toán Tìm kiếm tuần tự (Sequential / Linear Search) là gì?",
+    "options": [
+      "Áp dụng được trên mọi tập dữ liệu mảng hoặc danh sách liên kết mà không yêu cầu dữ liệu phải được sắp xếp trước",
+      "Có tốc độ tìm kiếm nhanh bằng logarit O(log n)",
+      "Chỉ cần so sánh đúng 1 lần là tìm thấy kết quả",
+      "Không tiêu tốn điện năng khi thực thi"
+    ],
+    "answer": "Áp dụng được trên mọi tập dữ liệu mảng hoặc danh sách liên kết mà không yêu cầu dữ liệu phải được sắp xếp trước",
+    "explanation": "Theo Slide 5 Lecture 13: Tìm kiếm tuần tự duyệt lần lượt từng phần tử từ đầu đến cuối dãy, do đó áp dụng được cho dữ liệu hoàn toàn ngẫu nhiên chưa sắp xếp và hỗ trợ tốt cả trên mảng lẫn danh sách liên kết."
+  },
+  {
+    "id": "q183",
+    "topicId": 13,
+    "topicName": "Search Algorithms",
+    "question": "Số phép so sánh trung bình của thuật toán Tìm kiếm tuần tự trên mảng gồm n phần tử khi tìm kiếm thành công (giả thiết xác suất xuất hiện ở các vị trí là như nhau) là bao nhiêu?",
+    "options": [
+      "(n+1)/(2)",
+      "n",
+      "log₂ n",
+      "(n)/(4)"
+    ],
+    "answer": "(n+1)/(2)",
+    "explanation": "Theo Slide 6 Lecture 13: Nếu phần tử ở vị trí thứ i, cần i phép so sánh. Trung bình: (1)/(n) sum_{i=1}ⁿ i = (1)/(n) (n(n+1))/(2) = (n+1)/(2) = O(n)."
+  },
+  {
+    "id": "q184",
+    "topicId": 13,
+    "topicName": "Search Algorithms",
+    "question": "Điều kiện tiên quyết bắt buộc để có thể áp dụng thuật toán Tìm kiếm nhị phân (Binary Search) trên mảng là gì?",
+    "options": [
+      "Mảng dữ liệu BẮT BUỘC phải được sắp xếp trước theo thứ tự của khóa (tăng dần hoặc giảm dần)",
+      "Số lượng phần tử của mảng bắt buộc phải là một số chẵn",
+      "Mảng bắt buộc phải chứa toàn các số nguyên dương",
+      "Mảng bắt buộc phải được cấp phát động trên vùng nhớ Heap"
+    ],
+    "answer": "Mảng dữ liệu BẮT BUỘC phải được sắp xếp trước theo thứ tự của khóa (tăng dần hoặc giảm dần)",
+    "explanation": "Theo Slide 7-8 Lecture 13: Binary Search dựa trên tính chất thứ tự để loại bỏ một nửa khoảng tìm kiếm sau mỗi phép so sánh. Nếu mảng chưa có thứ tự, việc so sánh với phần tử ở giữa không thể cho biết phần tử cần tìm nằm ở nửa trái hay nửa phải."
+  },
+  {
+    "id": "q185",
+    "topicId": 13,
+    "topicName": "Search Algorithms",
+    "question": "Trong thuật toán Binary Search trên mảng tăng dần đoạn [i, j], nếu khóa tìm kiếm k nhỏ hơn giá trị tại chỉ số giữa mid = ⌊(i+j)/2⌋, khoảng tìm kiếm tiếp theo sẽ được cập nhật như thế nào?",
+    "options": [
+      "j = mid - 1 (thu hẹp tìm kiếm về nửa bên trái)",
+      "i = mid + 1 (thu hẹp tìm kiếm về nửa bên phải)",
+      "j = mid và giữ nguyên i",
+      "Dừng thuật toán và thông báo tìm thấy"
+    ],
+    "answer": "j = mid - 1 (thu hẹp tìm kiếm về nửa bên trái)",
+    "explanation": "Do mảng tăng dần, nếu k < S[mid].Key, toàn bộ các phần tử từ mid đến j đều lớn hơn k nên không thể chứa k. Do đó ta thu hẹp khoảng tìm kiếm sang nửa trái: đặt biên phải j = mid - 1."
+  },
+  {
+    "id": "q186",
+    "topicId": 13,
+    "topicName": "Search Algorithms",
+    "question": "Độ phức tạp thời gian trong trường hợp xấu nhất của thuật toán Tìm kiếm nhị phân trên mảng gồm n phần tử là bao nhiêu?",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(1)",
+      "O(n log n)"
+    ],
+    "answer": "O(log n)",
+    "explanation": "Sau mỗi phép so sánh, kích thước khoảng tìm kiếm giảm đi một nửa: n, n/2, n/4, ..., 1. Số lần chia đôi tối đa là ⌊log₂ n⌋ + 1. Do đó thời gian chạy xấu nhất chỉ là O(log n)."
+  },
+  {
+    "id": "q187",
+    "topicId": 13,
+    "topicName": "Search Algorithms",
+    "question": "Cây tìm kiếm nhị phân (Binary Search Tree - BST) định nghĩa mối quan hệ khóa tại nút v như thế nào?",
+    "options": [
+      "Mọi khóa ở cây con trái < v->getKey() < Mọi khóa ở cây con phải",
+      "Mọi khóa ở cây con trái phải lớn hơn khóa nút v",
+      "Khóa nút v phải bằng trung bình cộng khóa hai con",
+      "Cây con trái và cây con phải phải có cùng số lượng nút"
+    ],
+    "answer": "Mọi khóa ở cây con trái < v->getKey() < Mọi khóa ở cây con phải",
+    "explanation": "Theo Slide 14 Lecture 13: Định nghĩa BST yêu cầu tại mọi nút v, tất cả các khóa ở cây con trái của v đều nhỏ hơn khóa của v, và tất cả các khóa ở cây con phải của v đều lớn hơn khóa của v."
+  },
+  {
+    "id": "q188",
+    "topicId": 13,
+    "topicName": "Search Algorithms",
+    "question": "Phép duyệt cây nào trên Cây tìm kiếm nhị phân (BST) luôn đảm bảo liệt kê danh sách các khóa theo thứ tự tăng dần?",
+    "options": [
+      "Duyệt trung thứ tự (In-Order Traversal: Trái → Gốc → Phải)",
+      "Duyệt tiền thứ tự (Pre-Order Traversal: Gốc → Trái → Phải)",
+      "Duyệt hậu thứ tự (Post-Order Traversal: Trái → Phải → Gốc)",
+      "Duyệt theo mức (Level-Order Traversal bằng Queue)"
+    ],
+    "answer": "Duyệt trung thứ tự (In-Order Traversal: Trái → Gốc → Phải)",
+    "explanation": "Theo Slide 15 Lecture 13: Do tính chất BST Khóa trái < Gốc < Khóa phải, nên phép duyệt In-Order (thăm cây con trái trước, thăm gốc ở giữa, thăm cây con phải sau) sẽ lần lượt in ra các khóa theo đúng thứ tự tăng dần hoàn hảo."
+  },
+  {
+    "id": "q189",
+    "topicId": 13,
+    "topicName": "Search Algorithms",
+    "question": "Độ phức tạp thời gian của thao tác tìm kiếm đệ quy `TreeSearch` trên Cây BST phụ thuộc trực tiếp vào yếu tố nào?",
+    "options": [
+      "Chiều cao h của cây (O(h))",
+      "Tổng số lượng nút lá của cây",
+      "Số lượng nút con của nút gốc",
+      "Kích thước bộ nhớ RAM máy tính"
+    ],
+    "answer": "Chiều cao h của cây (O(h))",
+    "explanation": "Theo Slide 19-20 Lecture 13: Thao tác `TreeSearch` duyệt từ gốc dọc theo một đường đi đơn duy nhất xuống tới nút lá. Số bước so sánh tối đa bằng chiều cao h của cây, do đó thời gian chạy là O(h)."
+  },
+  {
+    "id": "q190",
+    "topicId": 13,
+    "topicName": "Search Algorithms",
+    "question": "Khi chèn một nút mới vào Cây tìm kiếm nhị phân (BST) bằng thuật toán chuẩn `InsertNode`, nút mới sẽ luôn luôn được gắn vào vị trí nào trên cây?",
+    "options": [
+      "Vị trí một nút lá mới của cây",
+      "Vị trí nút gốc thay thế nút gốc cũ",
+      "Vị trí nút trong có đúng một con",
+      "Vị trí ngẫu nhiên do hệ điều hành chọn"
+    ],
+    "answer": "Vị trí một nút lá mới của cây",
+    "explanation": "Theo Slide 21 Lecture 13: Thuật toán chèn vào BST duyệt so sánh khóa từ gốc xuống tương tự tìm kiếm. Khi gặp con trỏ liên kết rỗng (`NULL`), nó cấp phát nút mới và gắn làm lá mới của cây tại vị trí đó."
+  },
+  {
+    "id": "q191",
+    "topicId": 13,
+    "topicName": "Search Algorithms",
+    "question": "Khi xóa một nút lá (nút không có con nào) trên Cây tìm kiếm nhị phân (BST), thao tác được thực hiện như thế nào?",
+    "options": [
+      "Giải phóng trực tiếp nút lá bằng `delete` và gán con trỏ tương ứng của nút cha trỏ về `NULL`",
+      "Tìm nút thế mạng ở cây con bên phải",
+      "Chuyển toàn bộ cây con trái sang nút cha",
+      "Xóa luôn cả nút cha của nút lá đó"
+    ],
+    "answer": "Giải phóng trực tiếp nút lá bằng `delete` và gán con trỏ tương ứng của nút cha trỏ về `NULL`",
+    "explanation": "Trường hợp 1 khi xóa nút trên BST (Slide 24 Lecture 13): Nút cần xóa là nút lá (không có con). Ta chỉ việc ngắt liên kết từ nút cha của nó (gán con trỏ `Left` hoặc `Right` của cha về `NULL`) và giải phóng ô nhớ của nút lá."
+  },
+  {
+    "id": "q192",
+    "topicId": 13,
+    "topicName": "Search Algorithms",
+    "question": "Khi xóa một nút có đúng 1 con (chỉ có con trái hoặc chỉ có con phải) trên Cây tìm kiếm nhị phân (BST), thao tác được xử lý như thế nào?",
+    "options": [
+      "Nối trực tiếp con duy nhất của nút bị xóa vào nút cha của nút bị xóa, sau đó giải phóng nút",
+      "Báo lỗi không thể xóa vì cây sẽ mất tính chất nhị phân",
+      "Xóa luôn cả nút con duy nhất đó cùng lúc",
+      "Thay thế giá trị của nút bị xóa bằng 0"
+    ],
+    "answer": "Nối trực tiếp con duy nhất của nút bị xóa vào nút cha của nút bị xóa, sau đó giải phóng nút",
+    "explanation": "Trường hợp 2 khi xóa nút trên BST (Slide 25 Lecture 13): Nút có đúng 1 con. Ta \"bỏ qua\" nút bị xóa bằng cách nối trực tiếp con duy nhất của nó với nút cha của nút bị xóa, sau đó giải phóng ô nhớ của nút cần xóa."
+  },
+  {
+    "id": "q193",
+    "topicId": 13,
+    "topicName": "Search Algorithms",
+    "question": "Khi xóa một nút có đủ cả 2 con trên Cây tìm kiếm nhị phân (BST), nút thế mạng (sao chép giá trị thay thế) được chọn là nút nào sau đây?",
+    "options": [
+      "Nút tiền nhiệm (In-order Predecessor: nút lớn nhất cây con trái) hoặc Nút kế vị (In-order Successor: nút nhỏ nhất cây con phải)",
+      "Nút gốc của toàn bộ cây",
+      "Một nút ngẫu nhiên bất kỳ ở cây con trái",
+      "Nút lá có độ sâu lớn nhất trong toàn bộ cây"
+    ],
+    "answer": "Nút tiền nhiệm (In-order Predecessor: nút lớn nhất cây con trái) hoặc Nút kế vị (In-order Successor: nút nhỏ nhất cây con phải)",
+    "explanation": "Trường hợp 3 khi xóa nút trên BST (Slide 26 Lecture 13): Để bảo toàn tính chất thứ tự của BST, ta tìm nút đứng liền trước (nút cực phải của cây con trái) hoặc nút đứng liền sau (nút cực trái của cây con phải) trong thứ tự duyệt In-Order để chép dữ liệu đè lên nút bị xóa, sau đó xóa nút thế mạng."
+  },
+  {
+    "id": "q194",
+    "topicId": 13,
+    "topicName": "Search Algorithms",
+    "question": "Trong trường hợp xấu nhất khi các phần tử được chèn vào BST theo thứ tự đã được sắp xếp tăng dần sẵn, cây sẽ bị suy thoái như thế nào và độ phức tạp tìm kiếm là bao nhiêu?",
+    "options": [
+      "Cây suy thoái thành một danh sách liên kết lệch hoàn toàn về bên phải với chiều cao h = n, độ phức tạp tìm kiếm thoái hóa thành O(n)",
+      "Cây vẫn giữ được cân bằng hoàn hảo và thời gian tìm kiếm là O(log n)",
+      "Cây bị lỗi tràn ngăn xếp ngay khi chèn phần tử thứ 3",
+      "Cây tự động biến thành Max-Heap"
+    ],
+    "answer": "Cây suy thoái thành một danh sách liên kết lệch hoàn toàn về bên phải với chiều cao h = n, độ phức tạp tìm kiếm thoái hóa thành O(n)",
+    "explanation": "Nếu chèn dãy đã sắp xếp (ví dụ 1, 2, 3, 4, 5), mỗi nút mới luôn lớn hơn nút trước nên luôn được gắn vào con phải. Cây thoái hóa thành một đường thẳng (danh sách liên kết) có chiều cao h = n, khiến thao tác tìm kiếm mất O(n) thay vì O(log n)."
+  },
+  {
+    "id": "q195",
+    "topicId": 13,
+    "topicName": "Search Algorithms",
+    "question": "So sánh nào sau đây là chính xác giữa Mảng đã sắp xếp và Cây BST cân bằng về chi phí các thao tác tìm kiếm, chèn và xóa?",
+    "options": [
+      "Mảng tìm kiếm O(log n) nhưng chèn/xóa tốn O(n); BST cân bằng cho phép tìm kiếm, chèn và xóa đều đạt O(log n)",
+      "Mảng chèn nhanh hơn BST cân bằng trong mọi trường hợp",
+      "BST cân bằng tốn O(n) cho thao tác tìm kiếm",
+      "Cả hai cấu trúc đều có chi phí tìm kiếm, chèn và xóa là O(1)"
+    ],
+    "answer": "Mảng tìm kiếm O(log n) nhưng chèn/xóa tốn O(n); BST cân bằng cho phép tìm kiếm, chèn và xóa đều đạt O(log n)",
+    "explanation": "Mảng đã sắp cho phép Binary Search trong O(log n) nhưng khi chèn/xóa phần tử phải dịch chuyển mảng tốn O(n). Cây BST cân bằng (như AVL hay Đỏ-Đen) khắc phục nhược điểm này: cả 3 thao tác Tìm kiếm, Chèn và Xóa đều đạt thời gian tối ưu O(log n)."
+  },
+  {
+    "id": "q196",
+    "topicId": 14,
+    "topicName": "Hash Tables",
+    "question": "Mục đích cốt lõi của cấu trúc dữ liệu Bảng băm (Hash Table) là gì?",
+    "options": [
+      "Cho phép truy cập, thêm và xóa phần tử trực tiếp thông qua địa chỉ tính bằng hàm băm h(k) với thời gian trung bình O(1)",
+      "Sắp xếp các phần tử theo thứ tự tăng dần với chi phí bộ nhớ nhỏ nhất",
+      "Nén dung lượng dữ liệu xuống một nửa",
+      "Tự động mã hóa dữ liệu theo chuẩn quân sự AES"
+    ],
+    "answer": "Cho phép truy cập, thêm và xóa phần tử trực tiếp thông qua địa chỉ tính bằng hàm băm h(k) với thời gian trung bình O(1)",
+    "explanation": "Theo Slide 3-4 Lecture 14: Bảng băm là cấu trúc dữ liệu lưu trữ các cặp Khóa-Giá trị. Bằng cách sử dụng hàm băm h(k) ánh xạ trực tiếp khóa vào vị trí ô nhớ trong mảng, bảng băm hỗ trợ tìm kiếm, chèn và xóa với hiệu năng vượt trội đạt thời gian trung bình O(1)."
+  },
+  {
+    "id": "q197",
+    "topicId": 14,
+    "topicName": "Hash Tables",
+    "question": "Tiêu chí nào sau đây KHÔNG PHẢI là yêu cầu đối với một Hàm băm (Hash Function) tốt?",
+    "options": [
+      "Hàm băm phải trả về các giá trị băm khác nhau mỗi lần gọi với cùng một khóa để tăng tính ngẫu nhiên",
+      "Hàm băm phải phân bổ đều các khóa trên toàn bộ không gian địa chỉ của bảng",
+      "Tốc độ tính toán của hàm băm phải đơn giản và nhanh chóng",
+      "Hàm băm phải có tính xác định (Deterministic): cùng một khóa luôn cho ra cùng một giá trị băm"
+    ],
+    "answer": "Hàm băm phải trả về các giá trị băm khác nhau mỗi lần gọi với cùng một khóa để tăng tính ngẫu nhiên",
+    "explanation": "Hàm băm BẮT BUỘC phải có tính xác định (Deterministic): với cùng một khóa k, hàm luôn phải trả về cùng một giá trị băm h(k). Nếu trả về giá trị khác nhau, ta sẽ không bao giờ tìm lại được phần tử đã lưu trước đó!"
+  },
+  {
+    "id": "q198",
+    "topicId": 14,
+    "topicName": "Hash Tables",
+    "question": "Trong Phương pháp chia (Division Method) để xây dựng hàm băm: h(k) = k mod m, tại sao kích thước bảng m thường được chọn là một số nguyên tố?",
+    "options": [
+      "Để các giá trị băm phân bố đồng đều trên toàn bảng và hạn chế tối đa các quy luật tuần hoàn của khóa gây đụng độ",
+      "Vì ngôn ngữ C++ chỉ hỗ trợ toán tử `%` với số nguyên tố",
+      "Để tiết kiệm dung lượng RAM máy tính",
+      "Vì số nguyên tố giúp hàm băm chạy nhanh gấp 10 lần"
+    ],
+    "answer": "Để các giá trị băm phân bố đồng đều trên toàn bảng và hạn chế tối đa các quy luật tuần hoàn của khóa gây đụng độ",
+    "explanation": "Theo Slide 5 Lecture 14: Chọn m là số nguyên tố (prime number) không quá gần lũy thừa của 2 hoặc 10 giúp giảm thiểu hiện tượng đụng độ, vì số nguyên tố không chia hết cho các ước số chung phổ biến của tập khóa trong thực tế."
+  },
+  {
+    "id": "q199",
+    "topicId": 14,
+    "topicName": "Hash Tables",
+    "question": "Nguyên lý hoạt động của Phương pháp bình phương giữa (Mid-Square Method) khi tạo hàm băm là gì?",
+    "options": [
+      "Bình phương giá trị khóa (k²) rồi trích lấy một số chữ số nằm ở phần giữa làm địa chỉ băm",
+      "Lấy căn bậc hai của khóa rồi làm tròn xuống",
+      "Chia khóa cho 2 rồi bình phương kết quả",
+      "Cộng các chữ số đầu và cuối của khóa lại với nhau"
+    ],
+    "answer": "Bình phương giá trị khóa (k²) rồi trích lấy một số chữ số nằm ở phần giữa làm địa chỉ băm",
+    "explanation": "Theo Slide 6 Lecture 14: Phương pháp Mid-Square bình phương khóa k², sau đó lấy các chữ số ở đoạn giữa làm giá trị băm. Ưu điểm là các chữ số ở giữa phụ thuộc vào tất cả các chữ số của khóa ban đầu, tạo ra sự phân tán rất tốt."
+  },
+  {
+    "id": "q200",
+    "topicId": 14,
+    "topicName": "Hash Tables",
+    "question": "Trong Phương pháp phân đoạn (Folding Method) tạo hàm băm, kỹ thuật Gấp mép biên (Boundary Folding) khác kỹ thuật Tách dóng lề (Shift Folding) ở điểm nào?",
+    "options": [
+      "Kỹ thuật gấp mép thực hiện đảo ngược thứ tự các chữ số của các đoạn biên/xen kẽ trước khi cộng dồn lại",
+      "Kỹ thuật gấp mép nhân các đoạn với nhau thay vì cộng",
+      "Kỹ thuật gấp mép chỉ áp dụng cho chuỗi ký tự",
+      "Kỹ thuật gấp mép luôn bỏ qua đoạn chính giữa"
+    ],
+    "answer": "Kỹ thuật gấp mép thực hiện đảo ngược thứ tự các chữ số của các đoạn biên/xen kẽ trước khi cộng dồn lại",
+    "explanation": "Theo Slide 7-8 Lecture 14: Trong Shift Folding, các đoạn được dóng lề cùng chiều rồi cộng. Trong Boundary Folding, các đoạn được coi như dải giấy gấp khúc lại ở mép biên, nghĩa là các đoạn xen kẽ bị đảo ngược thứ tự các chữ số trước khi cộng lại."
+  },
+  {
+    "id": "q201",
+    "topicId": 14,
+    "topicName": "Hash Tables",
+    "question": "Hiện tượng Đụng độ (Collision) trong Bảng băm được giải thích tất yếu bởi nguyên lý toán học nào?",
+    "options": [
+      "Nguyên lý chuồng bồ câu Dirichlet (Pigeonhole Principle) vì số lượng khóa khả dĩ luôn lớn hơn kích thước bảng băm",
+      "Định lý Pytago",
+      "Định lý giới hạn trung tâm xác suất",
+      "Tiên đề Euclid về đường thẳng song song"
+    ],
+    "answer": "Nguyên lý chuồng bồ câu Dirichlet (Pigeonhole Principle) vì số lượng khóa khả dĩ luôn lớn hơn kích thước bảng băm",
+    "explanation": "Theo Slide 9 Lecture 14: Tập không gian khóa K thường rất lớn hoặc vô hạn, trong khi kích thước bảng băm m là hữu hạn (|K| > m). Theo nguyên lý Dirichlet, chắc chắn sẽ tồn tại ít nhất hai khóa khác nhau k₁ ≠ k₂ có cùng giá trị băm h(k₁) = h(k₂), gây ra đụng độ."
+  },
+  {
+    "id": "q202",
+    "topicId": 14,
+    "topicName": "Hash Tables",
+    "question": "Cơ chế giải quyết đụng độ bằng Danh sách liên kết ngoài (Separate Chaining) hoạt động như thế nào?",
+    "options": [
+      "Mỗi ô trong bảng băm đóng vai trò là một thùng chứa (Bucket) quản lý một danh sách liên kết chứa tất cả các phần tử có cùng giá trị băm",
+      "Ghi đè phần tử mới lên phần tử cũ và vứt bỏ phần tử cũ",
+      "Mở rộng kích thước bảng băm gấp 10 lần mỗi khi có đụng độ",
+      "Dò tìm ô trống tiếp theo liền kề trong mảng để lưu"
+    ],
+    "answer": "Mỗi ô trong bảng băm đóng vai trò là một thùng chứa (Bucket) quản lý một danh sách liên kết chứa tất cả các phần tử có cùng giá trị băm",
+    "explanation": "Theo Slide 10-12 Lecture 14: Trong Separate Chaining, bảng băm là một mảng các danh sách liên kết. Khi xảy ra đụng độ (nhiều khóa có cùng h(k)), tất cả các phần tử này đều được thêm vào danh sách liên kết tại ô table[h(k)] đó."
+  },
+  {
+    "id": "q203",
+    "topicId": 14,
+    "topicName": "Hash Tables",
+    "question": "Trong mã nguồn cài đặt C++ của Bảng băm Separate Chaining ở Slide 13 Lecture 14, biến thành viên `table` được khai báo dưới dạng cấu trúc dữ liệu nào?",
+    "options": [
+      "`SingleList<Keys, T> *table;` (Mảng động các danh sách liên kết đơn)",
+      "`int **table;` (Ma trận số nguyên hai chiều)",
+      "`vector<T> table;` (Một vector đơn độc)",
+      "`stack<T> table;` (Một ngăn xếp)"
+    ],
+    "answer": "`SingleList<Keys, T> *table;` (Mảng động các danh sách liên kết đơn)",
+    "explanation": "Trong mã nguồn bài giảng Slide 13 Lecture 14: Lớp `Hashtable` khai báo `SingleList<Keys, T> *table;` và khởi tạo bằng `table = new SingleList<Keys, T>[N];`, tức là một mảng gồm N danh sách liên kết đơn."
+  },
+  {
+    "id": "q204",
+    "topicId": 14,
+    "topicName": "Hash Tables",
+    "question": "Hệ số tải (Load Factor α) của một Bảng băm được định nghĩa bằng công thức nào sau đây?",
+    "options": [
+      "α = (n)/(m) (n là số phần tử đã lưu trữ, m là kích thước sức chứa của bảng)",
+      "α = n × m",
+      "α = m - n",
+      "α = (m)/(n²)"
+    ],
+    "answer": "α = (n)/(m) (n là số phần tử đã lưu trữ, m là kích thước sức chứa của bảng)",
+    "explanation": "Hệ số tải α = n/m phản ánh mức độ lấp đầy của bảng băm. Với Separate Chaining, α biểu thị độ dài trung bình của các danh sách liên kết tại mỗi ô."
+  },
+  {
+    "id": "q205",
+    "topicId": 14,
+    "topicName": "Hash Tables",
+    "question": "Trong phương pháp Separate Chaining, phát biểu nào sau đây về Hệ số tải α là đúng?",
+    "options": [
+      "Hệ số tải α hoàn toàn có thể lớn hơn 1 vì mỗi ô mảng có thể chứa một danh sách gồm nhiều phần tử",
+      "Hệ số tải α bắt buộc phải luôn luôn nhỏ hơn 0.5",
+      "Hệ số tải α không bao giờ vượt quá 1",
+      "Hệ số tải α luôn luôn bằng 0"
+    ],
+    "answer": "Hệ số tải α hoàn toàn có thể lớn hơn 1 vì mỗi ô mảng có thể chứa một danh sách gồm nhiều phần tử",
+    "explanation": "Khác với Địa chỉ mở (Open Addressing) bắt buộc α < 1 do các ô mảng chỉ chứa 1 phần tử, trong Separate Chaining các phần tử được nối ngoài bằng danh sách liên kết. Do đó số phần tử n có thể lớn hơn nhiều kích thước bảng m, dẫn đến α > 1."
+  },
+  {
+    "id": "q206",
+    "topicId": 14,
+    "topicName": "Hash Tables",
+    "question": "Độ phức tạp thời gian của thao tác tìm kiếm trên Bảng băm trong trường hợp xấu nhất (Worst-case) là bao nhiêu và xảy ra khi nào?",
+    "options": [
+      "O(n), xảy ra khi tất cả các khóa chèn vào đều bị hàm băm ánh xạ về cùng một ô địa chỉ duy nhất",
+      "O(1) trong mọi trường hợp xấu nhất",
+      "O(log n)",
+      "O(n²)"
+    ],
+    "answer": "O(n), xảy ra khi tất cả các khóa chèn vào đều bị hàm băm ánh xạ về cùng một ô địa chỉ duy nhất",
+    "explanation": "Nếu hàm băm quá kém hoặc bị kẻ tấn công cố tình chọn các khóa đụng độ (Hash Collision Attack), toàn bộ n phần tử sẽ rơi vào cùng một danh sách liên kết tại ô đó. Khi đó việc tìm kiếm suy thoái thành tìm kiếm tuần tự trên DSLK tốn thời gian O(n)."
+  },
+  {
+    "id": "q207",
+    "topicId": 14,
+    "topicName": "Hash Tables",
+    "question": "Trong phương pháp Địa chỉ mở (Open Addressing), kỹ thuật Thử tuyến tính (Linear Probing) sử dụng công thức dò tìm nào?",
+    "options": [
+      "h(k, i) = (h(k) + i) mod m   (i = 0, 1, 2, ...)",
+      "h(k, i) = (h(k) + i²) mod m",
+      "h(k, i) = (h(k) × i) mod m",
+      "h(k, i) = (h₁(k) + i · h₂(k)) mod m"
+    ],
+    "answer": "h(k, i) = (h(k) + i) mod m   (i = 0, 1, 2, ...)",
+    "explanation": "Theo nguyên lý Thử tuyến tính (Linear Probing): Nếu ô h(k) bị đụng độ, thuật toán sẽ lần lượt thử các ô kế tiếp liền kề: (h(k)+1) % m, (h(k)+2) % m, ... cho tới khi tìm thấy ô trống."
+  },
+  {
+    "id": "q208",
+    "topicId": 14,
+    "topicName": "Hash Tables",
+    "question": "Hiện tượng Kết chùm nguyên phát (Primary Clustering) là nhược điểm đặc trưng của phương pháp giải quyết đụng độ nào trong Địa chỉ mở?",
+    "options": [
+      "Thử tuyến tính (Linear Probing)",
+      "Danh sách liên kết ngoài (Separate Chaining)",
+      "Băm kép (Double Hashing)",
+      "Cây nhị phân tìm kiếm AVL"
+    ],
+    "answer": "Thử tuyến tính (Linear Probing)",
+    "explanation": "Trong Linear Probing, khi các ô bị chiếm đóng nằm liền kề nhau sẽ tạo thành các cụm dài (cluster). Bất kỳ khóa nào bị băm vào trong cụm đó đều phải dò qua toàn bộ cụm rồi gắn tiếp vào cuối cụm, khiến cụm càng ngày càng phình to và làm chậm đáng kể tốc độ tìm kiếm."
+  },
+  {
+    "id": "q209",
+    "topicId": 14,
+    "topicName": "Hash Tables",
+    "question": "Kỹ thuật Băm kép (Double Hashing) trong Địa chỉ mở sử dụng công thức dò tìm nào sau đây để loại bỏ hiện tượng kết chùm?",
+    "options": [
+      "h(k, i) = (h₁(k) + i · h₂(k)) mod m",
+      "h(k, i) = (h(k) + i) mod m",
+      "h(k, i) = (h(k) + i²) mod m",
+      "h(k, i) = (h₁(k) + h₂(k)) mod m"
+    ],
+    "answer": "h(k, i) = (h₁(k) + i · h₂(k)) mod m",
+    "explanation": "Băm kép (Double Hashing) sử dụng hàm băm thứ hai h₂(k) để xác định bước nhảy cho chuỗi dò tìm: h(k, i) = (h₁(k) + i · h₂(k)) mod m. Do bước nhảy phụ thuộc vào từng khóa k, các khóa đụng độ tại h₁(k) sẽ phân tán theo các bước nhảy khác nhau, triệt tiêu hiện tượng kết chùm."
+  },
+  {
+    "id": "q210",
+    "topicId": 14,
+    "topicName": "Hash Tables",
+    "question": "Khi xóa một phần tử trong Bảng băm sử dụng phương pháp Địa chỉ mở (Open Addressing), tại sao không được gán ô đó thành ô trống (Empty) mà phải đánh dấu là `DELETED` (Tombstone)?",
+    "options": [
+      "Vì nếu gán thành rỗng sẽ làm ngắt quãng chuỗi dò tìm của các phần tử được chèn sau đó nhưng bị đụng độ cùng mã băm",
+      "Vì trình biên dịch C++ cấm sửa đổi giá trị các ô trong mảng",
+      "Vì ô trống sẽ làm mất điện áp của thanh ghi RAM",
+      "Vì nếu gán rỗng thì bảng băm sẽ tự động xóa tất cả các phần tử khác"
+    ],
+    "answer": "Vì nếu gán thành rỗng sẽ làm ngắt quãng chuỗi dò tìm của các phần tử được chèn sau đó nhưng bị đụng độ cùng mã băm",
+    "explanation": "Trong Địa chỉ mở, thao tác tìm kiếm dừng lại khi gặp một ô rỗng (Empty) vì suy luận rằng phần tử chưa từng tồn tại. Nếu ta xóa bằng cách gán ô về rỗng, những phần tử chèn sau đó từng bị đụng độ nhảy qua ô này sẽ không bao giờ được tìm thấy nữa! Do đó phải dùng cờ đánh dấu `DELETED` (xóa lười / Tombstone) để chuỗi dò tìm tiếp tục đi qua."
+  }
+]

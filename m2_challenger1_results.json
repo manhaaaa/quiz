@@ -1,0 +1,292 @@
+{
+  "area1_path_traversal": {
+    "total": 12,
+    "passed": 12,
+    "details": [
+      {
+        "test": "Raw dot-dot win.ini",
+        "path": "/../../windows/win.ini",
+        "status_code": 403,
+        "allowed": [
+          403,
+          404
+        ],
+        "passed": true
+      },
+      {
+        "test": "URL encoded dot-dot package.json",
+        "path": "/%2e%2e%2fpackage.json",
+        "status_code": 403,
+        "allowed": [
+          403,
+          404
+        ],
+        "passed": true
+      },
+      {
+        "test": "Mixed URL encoded dot-dot questions.json",
+        "path": "/..%2f..%2fquestions.json",
+        "status_code": 403,
+        "allowed": [
+          403,
+          404
+        ],
+        "passed": true
+      },
+      {
+        "test": "Null byte with txt extension",
+        "path": "/index.html%00.txt",
+        "status_code": 404,
+        "allowed": [
+          403,
+          404
+        ],
+        "passed": true
+      },
+      {
+        "test": "Backslash traversal",
+        "path": "/..%5c..%5cwindows/win.ini",
+        "status_code": 403,
+        "allowed": [
+          403,
+          404
+        ],
+        "passed": true
+      },
+      {
+        "test": "Direct backslashes",
+        "path": "/..\\..\\windows\\win.ini",
+        "status_code": 403,
+        "allowed": [
+          403,
+          404
+        ],
+        "passed": true
+      },
+      {
+        "test": "Windows drive letter absolute path",
+        "path": "/C:/Windows/win.ini",
+        "status_code": 404,
+        "allowed": [
+          403,
+          404
+        ],
+        "passed": true
+      },
+      {
+        "test": "Directory listing on __pycache__",
+        "path": "/__pycache__/",
+        "status_code": 403,
+        "allowed": [
+          403,
+          404
+        ],
+        "passed": true
+      },
+      {
+        "test": "Legitimate index.html",
+        "path": "/index.html",
+        "status_code": 200,
+        "allowed": [
+          200
+        ],
+        "passed": true
+      },
+      {
+        "test": "Legitimate root /",
+        "path": "/",
+        "status_code": 200,
+        "allowed": [
+          200
+        ],
+        "passed": true
+      },
+      {
+        "test": "Legitimate questions.json",
+        "path": "/questions.json",
+        "status_code": 200,
+        "allowed": [
+          200
+        ],
+        "passed": true
+      },
+      {
+        "test": "Legitimate coding_problems.json",
+        "path": "/coding_problems.json",
+        "status_code": 200,
+        "allowed": [
+          200
+        ],
+        "passed": true
+      }
+    ]
+  },
+  "area2_huge_body": {
+    "payload_size_bytes": 11534336,
+    "got_413": false,
+    "got_conn_reset": true,
+    "server_alive": true,
+    "error_detail": "Connection reset / socket aborted by server: ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host",
+    "passed": true
+  },
+  "area3_malformed_json": {
+    "total": 10,
+    "passed": 10,
+    "details": [
+      {
+        "test": "Truncated JSON object",
+        "expected": 400,
+        "actual": 400,
+        "response_body": "{\"success\":false,\"error\":\"Invalid JSON syntax: Unterminated string in JSON at position 28 (line 1 column 29)\"}",
+        "passed": true
+      },
+      {
+        "test": "Trailing comma syntax error",
+        "expected": 400,
+        "actual": 400,
+        "response_body": "{\"success\":false,\"error\":\"Invalid JSON syntax: Expected double-quoted property name in JSON at position 31 (line 1 colum",
+        "passed": true
+      },
+      {
+        "test": "Unquoted JavaScript object key",
+        "expected": 400,
+        "actual": 400,
+        "response_body": "{\"success\":false,\"error\":\"Invalid JSON syntax: Expected property name or '}' in JSON at position 1 (line 1 column 2)\"}",
+        "passed": true
+      },
+      {
+        "test": "Raw non-JSON string",
+        "expected": 400,
+        "actual": 400,
+        "response_body": "{\"success\":false,\"error\":\"Invalid JSON syntax: Unexpected token 'h', \\\"this is raw\\\"... is not valid JSON\"}",
+        "passed": true
+      },
+      {
+        "test": "JSON primitive string",
+        "expected": 400,
+        "actual": 400,
+        "response_body": "{\"success\":false,\"error\":\"Source code is required\"}",
+        "passed": true
+      },
+      {
+        "test": "JSON primitive number",
+        "expected": 400,
+        "actual": 400,
+        "response_body": "{\"success\":false,\"error\":\"Source code is required\"}",
+        "passed": true
+      },
+      {
+        "test": "JSON array instead of object",
+        "expected": 400,
+        "actual": 400,
+        "response_body": "{\"success\":false,\"error\":\"Source code is required\"}",
+        "passed": true
+      },
+      {
+        "test": "Empty JSON object {}",
+        "expected": 400,
+        "actual": 400,
+        "response_body": "{\"success\":false,\"error\":\"Source code is required\"}",
+        "passed": true
+      },
+      {
+        "test": "Missing testCases & invalid problemId",
+        "expected": 400,
+        "actual": 400,
+        "response_body": "{\"success\":false,\"error\":\"Test cases or valid problemId required\"}",
+        "passed": true
+      },
+      {
+        "test": "Whitespace only sourceCode",
+        "expected": 400,
+        "actual": 400,
+        "response_body": "{\"success\":false,\"error\":\"Invalid JSON syntax: Bad control character in string literal in JSON at position 19 (line 1 co",
+        "passed": true
+      }
+    ]
+  },
+  "area4_concurrency": {
+    "total_jobs": 8,
+    "passed_jobs": 8,
+    "total_wall_clock_time_s": 24.76,
+    "orphan_sandboxes_count": 0,
+    "details": [
+      {
+        "job_id": "job6_syntax_error",
+        "duration_s": 0.74,
+        "compiled": false,
+        "score": 0,
+        "passed": true,
+        "issues": []
+      },
+      {
+        "job_id": "job4_segfault",
+        "duration_s": 1.89,
+        "compiled": true,
+        "score": 0,
+        "passed": true,
+        "issues": []
+      },
+      {
+        "job_id": "job3_div_by_zero",
+        "duration_s": 1.98,
+        "compiled": true,
+        "score": 0,
+        "passed": true,
+        "issues": []
+      },
+      {
+        "job_id": "job2_cp01_wrong_answer",
+        "duration_s": 2.06,
+        "compiled": true,
+        "score": 0,
+        "passed": true,
+        "issues": []
+      },
+      {
+        "job_id": "job8_cp02_correct",
+        "duration_s": 2.07,
+        "compiled": true,
+        "score": 100,
+        "passed": true,
+        "issues": []
+      },
+      {
+        "job_id": "job1_cp01_correct",
+        "duration_s": 2.09,
+        "compiled": true,
+        "score": 100,
+        "passed": true,
+        "issues": []
+      },
+      {
+        "job_id": "job7_large_stdout",
+        "duration_s": 2.12,
+        "compiled": true,
+        "score": 0,
+        "passed": true,
+        "issues": []
+      },
+      {
+        "job_id": "job5_infinite_loop_tle",
+        "duration_s": 24.75,
+        "compiled": true,
+        "score": 0,
+        "passed": true,
+        "issues": []
+      }
+    ]
+  },
+  "area5_large_streaming": {
+    "status_code": 200,
+    "content_type": "application/json; charset=utf-8",
+    "content_length": 1894614,
+    "disk_size": 1894614,
+    "received_bytes": 1894614,
+    "stream_duration_ms": 12.1,
+    "valid_json": true,
+    "items_count": 18,
+    "head_passed": true,
+    "passed": true
+  }
+}
